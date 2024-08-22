@@ -1,0 +1,203 @@
+// Color Palette
+$color-primary: #F3C84B; // Sarı
+$color-secondary: #5A4999; // Mor
+$color-dark: #333333; // Koyu Gri
+$color-gray: #6B6B6B; // Orta Gri
+$color-light-gray: #D1D1D1; // Açık Gri
+$color-lightest-gray: #F1F0ED; // Çok Açık Gri
+$color-white: #FFFFFF; // Beyaz
+
+// Typography
+$font-family-primary: 'Sen', sans-serif;
+
+// Font Sizes
+$display-size: 56px;
+$heading-h1-size: 48px;
+$heading-h2-size: 36px;
+$heading-h3-size: 28px;
+$heading-h4-size: 24px;
+$heading-h5-size: 20px;
+$heading-h6-size: 16px;
+
+$body01-size: 16px;
+$body02-size: 14px;
+$label-size: 14px;
+
+// Line Heights
+$line-height-large: 64px;
+$line-height-medium: 48px;
+$line-height-small: 36px;
+$line-height-xsmall: 32px;
+$line-height-xxsmall: 28px;
+$line-height-xxxsmall: 24px;
+$line-height-label: 20px;
+
+// Base Styles
+body {
+    font-family: $font-family-primary;
+    color: $color-dark;
+}
+
+// Headings
+h1, .heading-h1 {
+    font-size: $heading-h1-size;
+    line-height: $line-height-large;
+    font-weight: bold;
+}
+
+h2, .heading-h2 {
+    font-size: $heading-h2-size;
+    line-height: $line-height-medium;
+    font-weight: bold;
+}
+
+h3, .heading-h3 {
+    font-size: $heading-h3-size;
+    line-height: $line-height-small;
+    font-weight: bold;
+}
+
+h4, .heading-h4 {
+    font-size: $heading-h4-size;
+    line-height: $line-height-xsmall;
+    font-weight: bold;
+}
+
+h5, .heading-h5 {
+    font-size: $heading-h5-size;
+    line-height: $line-height-xxsmall;
+    font-weight: bold;
+}
+
+h6, .heading-h6 {
+    font-size: $heading-h6-size;
+    line-height: $line-height-xxxsmall;
+    font-weight: bold;
+}
+
+// Display
+.display {
+    font-size: $display-size;
+    line-height: $line-height-large;
+    font-weight: bold;
+    
+}
+
+// Body Text
+.body01 {
+    font-size: $body01-size;
+    line-height: $line-height-xxsmall;
+    font-weight: normal;
+}
+
+.body02 {
+    font-size: $body02-size;
+    line-height: $line-height-label;
+    font-weight: normal;
+}
+
+// Label
+.label {
+    font-size: $label-size;
+    line-height: $line-height-label;
+    font-weight: 600; // Medium weight
+}
+
+// Buttons
+.btn {
+    background-color: $color-primary;
+    color: $color-dark;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: $body01-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+}
+
+// Social Wrapper
+.social-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+    a {
+        color: $color-dark;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+.hero-section {
+  position: relative;
+  width: 1440px;
+  height: 720px;
+  margin: 0 auto; /* Ortalamak için */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resmi kapsayacak şekilde ayarlar */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Resmi yazının arkasına yerleştirir */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Yazıyı resmin üstüne getirir */
+  padding: 172px 556px 420px 81px; /* Yukarı, sağa, aşağı, sola padding */
+  color: white;
+  max-width: 800px; /* İçeriğin genişliğini sınırlar */
+}
+
+.hero-text {
+  font-family: 'Sen', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  font-size: 20px;
+  line-height: 28px;
+  color: #F3C84B; /* Sarı renk, isteğe göre */
+  margin-bottom: 20px;
+}
+
+.hero-paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #F3C84B;
+  color: #333;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+      background-color: #333;
+      color: #F3C84B;
+  }
+}
+

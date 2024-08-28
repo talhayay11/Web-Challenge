@@ -409,7 +409,7 @@ $line-height-xxsmall: 20px;
          }
          &--highlighted {
           background-color: $color-light-yellow; /* Lightest Yellow arka plan rengi */
-          border: 1px solid darken($color-light-yellow, 10%); /* Biraz daha koyu bir kenarlık */
+          border: 1px solid darken($color-light-yellow, 0%); /* Biraz daha koyu bir kenarlık */
          }
         }
       }

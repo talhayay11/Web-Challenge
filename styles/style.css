@@ -326,7 +326,7 @@
 }
 .home__posts-list-items-item--highlighted {
   background-color: #fbf6ea; /* Lightest Yellow arka plan rengi */
-  border: 1px solid #f3e4bf; /* Biraz daha koyu bir kenarlık */
+  border: 1px solid #fbf6ea; /* Biraz daha koyu bir kenarlık */
 }
 .home__posts__footer {
   background-color: #F1F0ED;

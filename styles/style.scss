@@ -7,8 +7,11 @@ $color-light-gray: #D1D1D1; // Açık Gri
 $color-lightest-gray: #F1F0ED; // Çok Açık Gri
 $color-white: #FFFFFF; // Beyaz
 $color-navbar-bg: #232536;
+$color-light-yellow: rgb(241, 212, 142);
+
 // Font Ailesi
 $font-family-primary: 'Sen', sans-serif;
+$font-family-inter: 'Inter', sans-serif;
 
 // Font Büyüklüğü
 $display-size: 56px;
@@ -17,10 +20,7 @@ $heading-h2-size: 36px;
 $heading-h3-size: 28px;
 $heading-h4-size: 24px;
 $heading-h5-size: 20px;
-$heading-h6-size: 16px;
-$heading-h7-size: 18px;
-
-
+$heading-h6-size: 18px;
 $body01-size: 16px;
 $body02-size: 14px;
 $label-size: 14px;
@@ -33,6 +33,7 @@ $line-height-xsmall: 32px;
 $line-height-xxsmall: 28px;
 $line-height-xxxsmall: 24px;
 $line-height-label: 20px;
+$line-height-xmedium: 40px;
 
 .home {
   &__header {
@@ -80,6 +81,8 @@ $line-height-label: 20px;
     &-link {
       color: $color-white !important; // Navbar linklerinin rengi
       font-size: $body01-size;
+      line-height: $line-height-xxsmall;
+      font-family: $font-family-inter;
 
       &:hover {
         color: $color-white; // Linklerin üzerine gelinceki rengi
@@ -115,9 +118,9 @@ $line-height-label: 20px;
 
       &-text {
         color: $color-dark-gray; // Yazı rengini beyaz yap
-        font-size: $body01-size;
+        font-size: $heading-h6-size;
         font-family: $font-family-primary;
-        line-height: $line-height-label;
+        line-height: $line-height-xxxsmall;
       }
     }
   }
@@ -135,7 +138,7 @@ $line-height-label: 20px;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 3;
+      //opacity: 3;
     }
 
     &-content {
@@ -154,20 +157,29 @@ $line-height-label: 20px;
 
     &-category {
       margin-bottom: 10px;
-      font-weight: bold;
+      //font-weight: bold;
       font-size: $body01-size;
-      line-height: $line-height-label;
+      line-height: $heading-h5-size;
+      font-family: $font-family-inter;
+      letter-spacing: 3px;
+      font-weight: 600;
 
       &-highlight {
+        font-weight: bold;
         color: $color-white;
+        font-family: $font-family-inter;
+        font-size: $body01-size;
+        line-height: $heading-h5-size;
+        letter-spacing: 3px;
+        font-weight: 900;
       }
     }
 
     &-title {
       font-size: $display-size;
       font-weight: 700;
-      width: 803px; // Genişlik
-      height: 128px; // Yükseklik
+      width: 803px; 
+      height: 128px; 
       line-height: $line-height-large;
       letter-spacing: -2px;
       margin-bottom: 20px;
@@ -175,19 +187,29 @@ $line-height-label: 20px;
     }
 
     &-author {
-      font-size: $heading-h6-size;
+      font-size: $body01-size;
       margin-bottom: 10px;
-      line-height: $line-height-label;
+      line-height: $line-height-xxsmall;
+      font-family: $font-family-inter;
+      font-weight: 400;
 
       &-name {
         color: $color-yellow;
+        font-family: $font-family-inter;
+        line-height: $line-height-xxsmall;   
+        font-weight: 400;
       }
     }
 
     &-description {
       margin-bottom: 30px;
       font-size: $body01-size;
-      line-height: $line-height-label;
+      line-height:$line-height-xxsmall;
+      width: 599px; 
+      height: 56px;
+      font-family: $font-family-inter;
+      font-weight: 400;
+      
     }
 
     &-button {
@@ -196,21 +218,22 @@ $line-height-label: 20px;
       width: 204px;
       height: 56px;
       padding: 16px 48px;
-      margin-top: -1px;  // Yukarı kaydırmak için negatif margin kullanılır
+      margin-top: -1px;  
       position: relative;
-      left: 0;  // Butonu solda tutar
+      left: 0;  
       gap: 12px;
-      opacity: 1;  // Görünürlük
+      opacity: 1;  
       color: $color-dark-gray;
       font-family: $font-family-primary;
-      font-size: $heading-h7-size;  // Finsweet yazısıyla aynı boyut
+      font-weight: 700;
+      font-size: $heading-h6-size; 
       line-height: $line-height-xxxsmall;
       text-align: center;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 0;  // Köşeleri köşeli yapar
+      border-radius: 0;  
 
       &:hover {
         background-color: darken($color-yellow, 10%);
@@ -223,78 +246,188 @@ $line-height-label: 20px;
   }
 
   &__posts {
-    margin-top: 50px;
+    display: flex; 
+    width: 1282px;
+    height: 804px;
+    padding-left: 80px;
+    padding-bottom: 128px;
+    padding-top: 128px;
+    //padding-right: 78px;
+
 
     &-featured {
+      width: 733px;
+      height: 804px;
+
+      &-image-container {
+        position: relative;
+      }
+      
+
       &-image {
-        max-width: 100%;
-        height: auto;
+        padding-left: 32px;
+        padding-top: 64px;
       }
 
+      &-label {
+      font-size: $heading-h2-size;
+      font-weight:bold;
+      font-family: $font-family-primary;
+      line-height: $line-height-medium;
+      padding-bottom: 32px;
+      letter-spacing: -2px;
+      }
+
+      &-meta {
+        font-size: $body02-size;
+        color: $color-gray;
+        line-height: $line-height-label;
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-bottom: 16px;
+        font-family: $font-family-inter;
+      
+        &-author{
+        color:#5A4999
+       }
+      }
       &-title {
-        font-size: $heading-h4-size;
+        font-size: $heading-h3-size;
         font-weight: bold;
-        margin: 20px 0;
+        padding-left: 32px;
         font-family: $font-family-primary;
-        line-height: $line-height-medium;
+        line-height: $line-height-xmedium;
+        letter-spacing: -1px;
       }
 
       &-description {
-        margin-bottom: 20px;
         font-size: $body01-size;
         line-height: $line-height-xxsmall;
+        color: $color-dark-gray;
+        padding-left: 32px;
+        padding-top: 16px;
+        width: 551px;
       }
 
       &-button {
         background-color: $color-yellow;
         border: none;
-        padding: 10px 20px;
+        width: 204px;
+        height: 56px;
+        padding: 16px 48px; 
+        position: relative;
+        left: 32px;  
+        gap: 12px;
+        opacity: 1;  
         color: $color-dark-gray;
         font-family: $font-family-primary;
-        font-size: $body01-size;
-        line-height: $line-height-label;
+        font-weight: 700;
+        font-size: $heading-h6-size; 
+        line-height: $line-height-xxxsmall;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;  
+
+        &:hover {
+          background-color: darken($color-yellow, 10%);
+        }
+  
+        &-text {
+          white-space: nowrap;  
+        }
       }
     }
 
     &-list {
-      margin-top: 30px;
+      //width: 100%;  // Tüm genişliği kaplar
+      position: relative; 
+      padding-right: 78px;
+      padding-left: 32px;
+      height: 804px;
+      width: 517px;
 
       &-title {
-        font-size: $heading-h5-size;
+        font-size: $heading-h2-size;
         font-weight: bold;
         font-family: $font-family-primary;
-        line-height: $line-height-xxxsmall;
+        line-height: $line-height-medium;
+        padding-bottom: 32px;
+        letter-spacing: -2px;
+      }
+
+      &-view-all {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: $body01-size;
+        color: $color-purple;
+        text-decoration: none;
+        line-height: $line-height-xxsmall;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       &-items {
         list-style: none;
-        padding-left: 0;
 
         &-item {
-          margin-bottom: 15px;
-        }
-
-        &-link {
-          color: $color-dark-gray;
-          text-decoration: none;
+          
+          padding-bottom: 15px;
+          background-color: $color-lightest-gray;
+          border-radius: 8px;
+          padding: 15px;
+          background-color: #fff; /* Beyaz arka plan */
+          border: 1px solid $color-light-gray; /* Hafif gri kenarlık */
+          transition: background-color 0.3s;
+          font-weight: bold;
 
           &:hover {
-            text-decoration: underline;
+            background-color: $color-lightest-gray; /* Hover'da arka planı değiştirme */
           }
         }
+        &-color{
+         width: 369px;
+         height: 96px;
+         font-size: $body01-size;
+         font-weight: bold;
+         color: $color-dark-gray;
+         line-height: $line-height-medium;
+         background-color:$color-light-yellow !important
 
-        &-date {
+         }
+        &-meta {
           font-size: $body02-size;
           color: $color-gray;
           line-height: $line-height-label;
+          margin-bottom: 5px;
+          width: 199px;
+          height: 20px;
+          
+          &-author{
+            color:#5A4999
+           } 
+        }
+
+        &-text {
+          width: 369px;
+          height: 96px;
+          font-size: $heading-h4-size;
+          font-weight: bold;
+          color: $color-dark-gray;
+          line-height: $line-height-xsmall;
         }
       }
     }
   }
 
   &__footer {
-    background-color: $color-lightest-gray;
-    padding: 40px 0;
+    background-color: $color-white;
+    padding-top: 200px;
 
     &-about {
       // About section style
@@ -312,13 +445,11 @@ $line-height-label: 20px;
     }
 
     &-description {
-      margin-bottom: 20px;
       font-size: $body01-size;
       line-height: $line-height-xxsmall;
     }
 
     &-link {
-      color: $color-purple;
       text-decoration: none;
 
       &:hover {

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finsweet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -47,7 +48,7 @@
   <section class="home__hero hero">
     <img src="images/1.png" alt="Hero Image" class="home__hero-image">
     <div class="home__hero-content">
-      <p class="home__hero-category">Posted on <span class="home__hero-category-highlight">STARTUP</span></p>
+      <p class="home__hero-category">POSTED ON <span class="home__hero-category-highlight">STARTUP</span></p>
       <h1 class="home__hero-title">Step-by-step guide to choosing   great font pairs</h1>
       <p class="home__hero-author">By <span class="home__hero-author-name">James West</span> | May 23, 2022</p>
       <p class="home__hero-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -56,29 +57,51 @@
     </div>
   </section>
 
-  <section class="home__posts posts">
-    <div class="container">
-      <div class="row">
-        <div class="home__posts-featured col-md-8">
-          <img src="images/2.png" alt="Featured Image" class="home__posts-featured-image img-fluid">
-          <h2 class="home__posts-featured-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor.</h2>
-          <p class="home__posts-featured-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#" class="home__posts-featured-button btn btn-warning">Read More</a>
-        </div>
-        <div class="home__posts-list col-md-4">
-          <h3 class="home__posts-list-title">All Posts</h3>
-          <ul class="home__posts-list-items">
-            <li class="home__posts-list-item">
-              <a href="#" class="home__posts-list-link">8 Figma design systems that you can download for
-                free today.</a>
-              <p class="home__posts-list-date">By Jane Weiss | Aug 23, 2022</p>
-            </li>
-            <!-- Add more list items here -->
-          </ul>
-        </div>
+  <section class="home__posts">
+    <div class="home__posts-featured">
+      <h3 class="home__posts-featured-label">Featured Post</h3>
+      <div class="home__posts-featured-image-container">
+        <img src="images/2.png" alt="Featured Image" class="home__posts-featured-image">
       </div>
+      <p class="home__posts-featured-meta">
+        By <span class="home__posts-featured-meta-author">John Doe</span> | May 23, 2022
+      </p>
+      <h2 class="home__posts-featured-title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+      </h2>
+      <p class="home__posts-featured-description">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      </p>
+      <a href="#" class="home__posts-featured-button">
+        <span class="home__posts-featured-button-text">Read More ></span>
+      </a>
+    </div>
+  
+    <div class="home__posts-list">
+      <h3 class="home__posts-list-title">All Posts</h3>
+      <a href="#" class="home__posts-list-view-all">View All</a>
+      <ul class="home__posts-list-items">
+        <li class="home__posts-list-item">
+          <p class="home__posts-list-items-meta">By <span class="home__posts-list-items-meta-author">John Doe</span> | May 23, 2022
+          </p>
+          <p class="home__posts-list-items-text">8 Figma design systems that you can download for free today.</p>
+        </li>
+        <li class="home__posts-list-item">
+          <p class="home__posts-list-items-meta">By <span class="home__posts-list-items-meta-author">John Doe</span> | May 23, 2022
+          </p>
+          <p class="home__posts-list-items-text">8 Figma design systems that you can download for free today.</p>
+        </li>
+        <li class="home__posts-list-item">
+          <p class="home__posts-list-items-meta">By <span class="home__posts-list-items-meta-author">John Doe</span> | May 23, 2022
+          </p>
+          <p class="home__posts-list-items-text">8 Figma design systems that you can download for free today.</p>
+        </li>
+        <li class="home__posts-list-item">
+          <p class="home__posts-list-items-meta">By <span class="home__posts-list-items-meta-author">John Doe</span> | May 23, 2022
+          </p>
+          <p class="home__posts-list-items-text">8 Figma design systems that you can download for free today.</p>
+        </li>
+      </ul>
     </div>
   </section>
 

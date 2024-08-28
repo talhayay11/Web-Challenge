@@ -40,7 +40,7 @@
 .home__navbar-link:hover {
   color: #FFFFFF;
 }
-.home__navbar-button {
+.home__navbar--button {
   width: 179px;
   height: 56px;
   padding: 16px 48px;
@@ -60,10 +60,10 @@
   top: 12px;
   margin-right: 32px;
 }
-.home__navbar-button:hover {
+.home__navbar--button:hover {
   background-color: #e6e6e6;
 }
-.home__navbar-button-text {
+.home__navbar-text {
   color: #333333;
   font-size: 18px;
   font-family: "Sen", sans-serif;
@@ -104,7 +104,7 @@
   letter-spacing: 3px;
   font-weight: 600;
 }
-.home__hero-category-highlight {
+.home__hero-category--highlight {
   font-weight: bold;
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
@@ -145,7 +145,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-.home__hero-button {
+.home__hero--button {
   background-color: #F3C84B;
   border: none;
   width: 204px;
@@ -168,10 +168,10 @@
   justify-content: center;
   border-radius: 0;
 }
-.home__hero-button:hover {
+.home__hero--button:hover {
   background-color: #f0b91b;
 }
-.home__hero-button-text {
+.home__hero--button-text {
   white-space: nowrap;
 }
 .home__posts {
@@ -185,15 +185,14 @@
 .home__posts-featured {
   width: 733px;
   height: 804px;
+  margin-left: 80px;
+  margin-bottom: 128px;
+  margin-right: 32px;
 }
 .home__posts-featured-image-container {
   position: relative;
 }
-.home__posts-featured-image {
-  padding-left: 32px;
-  padding-top: 64px;
-}
-.home__posts-featured-label {
+.home__posts-featured-title {
   font-size: 36px;
   font-weight: bold;
   font-family: "Sen", sans-serif;
@@ -201,7 +200,19 @@
   padding-bottom: 32px;
   letter-spacing: -2px;
 }
-.home__posts-featured-meta {
+.home__posts-featured-content {
+  padding-top: 32px;
+  border-radius: 1px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Soluk gri çerçeve */
+  flex-direction: column;
+  align-items: center;
+}
+.home__posts-featured-content-image {
+  padding-left: 32px;
+}
+.home__posts-featured-content-meta {
   font-size: 14px;
   color: #6B6B6B;
   line-height: 20px;
@@ -210,10 +221,10 @@
   padding-bottom: 16px;
   font-family: "Inter", sans-serif;
 }
-.home__posts-featured-meta-author {
+.home__posts-featured-content-meta-author {
   color: #5A4999;
 }
-.home__posts-featured-title {
+.home__posts-featured-content-title {
   font-size: 28px;
   font-weight: bold;
   padding-left: 32px;
@@ -221,7 +232,7 @@
   line-height: 40px;
   letter-spacing: -1px;
 }
-.home__posts-featured-description {
+.home__posts-featured-content-description {
   font-size: 16px;
   line-height: 28px;
   color: #333333;
@@ -229,7 +240,7 @@
   padding-top: 16px;
   width: 551px;
 }
-.home__posts-featured-button {
+.home__posts-featured-content--button {
   background-color: #F3C84B;
   border: none;
   width: 204px;
@@ -251,16 +262,17 @@
   justify-content: center;
   border-radius: 0;
 }
-.home__posts-featured-button:hover {
+.home__posts-featured-content--button:hover {
   background-color: #f0b91b;
 }
-.home__posts-featured-button-text {
+.home__posts-featured-content--button-text {
   white-space: nowrap;
 }
 .home__posts-list {
   position: relative;
-  padding-right: 78px;
-  padding-left: 32px;
+  margin-right: 78px;
+  margin-left: 32px;
+  margin-bottom: 128px;
   height: 804px;
   width: 517px;
 }
@@ -288,64 +300,57 @@
   list-style: none;
 }
 .home__posts-list-items-item {
-  padding-bottom: 15px;
-  background-color: #F1F0ED;
-  border-radius: 8px;
-  padding: 15px;
-  background-color: #fff; /* Beyaz arka plan */
-  border: 1px solid #D1D1D1; /* Hafif gri kenarlık */
-  transition: background-color 0.3s;
-  font-weight: bold;
+  width: 517px;
+  height: 181px;
 }
-.home__posts-list-items-item:hover {
-  background-color: #F1F0ED; /* Hover'da arka planı değiştirme */
-}
-.home__posts-list-items-color {
-  width: 369px;
-  height: 96px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  line-height: 48px;
-  background-color: rgb(241, 212, 142) !important;
-}
-.home__posts-list-items-meta {
+.home__posts-list-items-item-meta {
   font-size: 14px;
   color: #6B6B6B;
   line-height: 20px;
-  margin-bottom: 5px;
   width: 199px;
   height: 20px;
+  padding-left: 32.1px;
+  white-space: nowrap;
 }
-.home__posts-list-items-meta-author {
+.home__posts-list-items-item-meta-author {
   color: #5A4999;
 }
-.home__posts-list-items-text {
-  width: 369px;
+.home__posts-list-items-item-text {
+  width: 369.18px;
   height: 96px;
   font-size: 24px;
   font-weight: bold;
   color: #333333;
   line-height: 32px;
+  padding-left: 32.1px;
 }
-.home__footer {
-  background-color: #FFFFFF;
-  padding-top: 200px;
+.home__posts-list-items-item--highlighted {
+  background-color: #fbf6ea; /* Lightest Yellow arka plan rengi */
+  border: 1px solid #f3e4bf; /* Biraz daha koyu bir kenarlık */
 }
-.home__footer-title {
+.home__posts__footer {
+  background-color: #F1F0ED;
+  padding: 40px 0;
+  margin-top: 60px; /* Üstteki içerikten daha fazla boşluk bırakmak için */
+  clear: both;
+  width: 100%; /* Footer'ın genişliğini tam olarak kaplaması için */
+  position: relative;
+  clear: both;
+}
+.home__posts__footer-title {
   font-size: 20px;
   font-weight: bold;
   font-family: "Sen", sans-serif;
   line-height: 28px;
 }
-.home__footer-description {
+.home__posts__footer-description {
   font-size: 16px;
   line-height: 28px;
 }
-.home__footer-link {
+.home__posts__footer-link {
   text-decoration: none;
 }
-.home__footer-link:hover {
+.home__posts__footer-link:hover {
   text-decoration: underline;
 }
 

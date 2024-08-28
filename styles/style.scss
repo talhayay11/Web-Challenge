@@ -5,35 +5,29 @@ $color-dark-gray: #333333; // Koyu Gri
 $color-gray: #6B6B6B; // Orta Gri
 $color-light-gray: #D1D1D1; // Açık Gri
 $color-lightest-gray: #F1F0ED; // Çok Açık Gri
+$color-medium-gray: #6d6e76;
 $color-white: #FFFFFF; // Beyaz
-$color-navbar-bg: #232536;
-$color-light-yellow: rgb(241, 212, 142);
+$color-navbar-bg: #232536; //siyah
+$color-light-yellow:#fbf6ea; //açık sarı
+$color-light-lavender:#f4f0f8; //lavender
+
+
 
 // Font Ailesi
 $font-family-primary: 'Sen', sans-serif;
 $font-family-inter: 'Inter', sans-serif;
 
 // Font Büyüklüğü
-$display-size: 56px;
-$heading-h1-size: 48px;
-$heading-h2-size: 36px;
-$heading-h3-size: 28px;
-$heading-h4-size: 24px;
-$heading-h5-size: 20px;
-$heading-h6-size: 18px;
-$body01-size: 16px;
-$body02-size: 14px;
-$label-size: 14px;
+$heading-large-size: 18px;
+$heading-medium-size: 16px;
+$heading-small-size: 14px;
 
 // Line Heights
 $line-height-large: 64px;
 $line-height-medium: 48px;
-$line-height-small: 36px;
-$line-height-xsmall: 32px;
-$line-height-xxsmall: 28px;
-$line-height-xxxsmall: 24px;
-$line-height-label: 20px;
-$line-height-xmedium: 40px;
+$line-height-small: 28px;
+$line-height-xsmall: 24px;
+$line-height-xxsmall: 20px;
 
 .home {
   &__header {
@@ -53,7 +47,7 @@ $line-height-xmedium: 40px;
     opacity: 1;
 
       &-brand {
-       font-size: $heading-h4-size;
+       font-size: 24px;
        font-family: $font-family-primary;
        font-weight: bold;
        color: $color-white !important;
@@ -80,8 +74,8 @@ $line-height-xmedium: 40px;
 
     &-link {
       color: $color-white !important; // Navbar linklerinin rengi
-      font-size: $body01-size;
-      line-height: $line-height-xxsmall;
+      font-size: $heading-medium-size;
+      line-height: $line-height-small;
       font-family: $font-family-inter;
 
       &:hover {
@@ -89,7 +83,7 @@ $line-height-xmedium: 40px;
       }
     }
 
-    &-button {
+    &--button {
       width: 179px;   // Butonun genişliği
       height: 56px;   // Butonun yüksekliği
       padding: 16px 48px;  // İç boşluklar
@@ -115,14 +109,14 @@ $line-height-xmedium: 40px;
       &:hover {
         background-color: darken($color-white, 10%);
       }
-
+    }
       &-text {
         color: $color-dark-gray; // Yazı rengini beyaz yap
-        font-size: $heading-h6-size;
+        font-size: $heading-large-size;
         font-family: $font-family-primary;
-        line-height: $line-height-xxxsmall;
+        line-height: $line-height-xsmall;
       }
-    }
+    
   }
 
   &__hero {
@@ -150,7 +144,7 @@ $line-height-xmedium: 40px;
       width: 804px; // Genişlik
       height: 400px; // Yükseklik
       padding-left: 81px;
-      font-size:$display-size;
+      font-size:56px;
       line-height: $line-height-large;
       font-family:$font-family-primary;
     }
@@ -158,25 +152,25 @@ $line-height-xmedium: 40px;
     &-category {
       margin-bottom: 10px;
       //font-weight: bold;
-      font-size: $body01-size;
-      line-height: $heading-h5-size;
+      font-size: $heading-medium-size;
+      line-height: $line-height-xxsmall;
       font-family: $font-family-inter;
       letter-spacing: 3px;
       font-weight: 600;
 
-      &-highlight {
+      &--highlight {
         font-weight: bold;
         color: $color-white;
         font-family: $font-family-inter;
-        font-size: $body01-size;
-        line-height: $heading-h5-size;
+        font-size: $heading-medium-size;
+        line-height: $line-height-xxsmall;
         letter-spacing: 3px;
         font-weight: 900;
       }
     }
 
     &-title {
-      font-size: $display-size;
+      font-size: 56px;
       font-weight: 700;
       width: 803px; 
       height: 128px; 
@@ -187,24 +181,24 @@ $line-height-xmedium: 40px;
     }
 
     &-author {
-      font-size: $body01-size;
+      font-size: $heading-medium-size;
       margin-bottom: 10px;
-      line-height: $line-height-xxsmall;
+      line-height: $line-height-small;
       font-family: $font-family-inter;
       font-weight: 400;
 
       &-name {
         color: $color-yellow;
         font-family: $font-family-inter;
-        line-height: $line-height-xxsmall;   
+        line-height: $line-height-small;   
         font-weight: 400;
       }
     }
 
     &-description {
       margin-bottom: 30px;
-      font-size: $body01-size;
-      line-height:$line-height-xxsmall;
+      font-size: $heading-medium-size;
+      line-height:$line-height-small;
       width: 599px; 
       height: 56px;
       font-family: $font-family-inter;
@@ -212,7 +206,7 @@ $line-height-xmedium: 40px;
       
     }
 
-    &-button {
+    &--button {
       background-color: $color-yellow;
       border: none;
       width: 204px;
@@ -226,8 +220,8 @@ $line-height-xmedium: 40px;
       color: $color-dark-gray;
       font-family: $font-family-primary;
       font-weight: 700;
-      font-size: $heading-h6-size; 
-      line-height: $line-height-xxxsmall;
+      font-size: $heading-large-size; 
+      line-height: $line-height-xsmall;
       text-align: center;
       cursor: pointer;
       display: flex;
@@ -258,30 +252,38 @@ $line-height-xmedium: 40px;
     &-featured {
       width: 733px;
       height: 804px;
+      margin-left: 80px;
+      margin-bottom: 128px;
+      margin-right: 32px;
 
       &-image-container {
         position: relative;
       }
-      
+      &-title {
+        font-size: 36px;
+        font-weight:bold;
+        font-family: $font-family-primary;
+        line-height: $line-height-medium;
+        padding-bottom: 32px;
+        letter-spacing: -2px;
+        }
+      &-content{
+        padding-top: 32px;
+        border-radius: 1px;
+        text-align: center;
+        background-color: $color-white;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Soluk gri çerçeve */
+        flex-direction: column;
+        align-items: center;
 
       &-image {
         padding-left: 32px;
-        padding-top: 64px;
-      }
-
-      &-label {
-      font-size: $heading-h2-size;
-      font-weight:bold;
-      font-family: $font-family-primary;
-      line-height: $line-height-medium;
-      padding-bottom: 32px;
-      letter-spacing: -2px;
       }
 
       &-meta {
-        font-size: $body02-size;
+        font-size: $heading-small-size;
         color: $color-gray;
-        line-height: $line-height-label;
+        line-height: $line-height-xxsmall;
         padding-top: 32px;
         padding-left: 32px;
         padding-bottom: 16px;
@@ -291,25 +293,26 @@ $line-height-xmedium: 40px;
         color:#5A4999
        }
       }
+
       &-title {
-        font-size: $heading-h3-size;
+        font-size: 28px;
         font-weight: bold;
         padding-left: 32px;
         font-family: $font-family-primary;
-        line-height: $line-height-xmedium;
+        line-height: 40px;
         letter-spacing: -1px;
       }
 
       &-description {
-        font-size: $body01-size;
-        line-height: $line-height-xxsmall;
+        font-size: $heading-medium-size;
+        line-height: $line-height-small;
         color: $color-dark-gray;
         padding-left: 32px;
         padding-top: 16px;
         width: 551px;
       }
 
-      &-button {
+      &--button {
         background-color: $color-yellow;
         border: none;
         width: 204px;
@@ -322,8 +325,8 @@ $line-height-xmedium: 40px;
         color: $color-dark-gray;
         font-family: $font-family-primary;
         font-weight: 700;
-        font-size: $heading-h6-size; 
-        line-height: $line-height-xxxsmall;
+        font-size: $heading-large-size; 
+        line-height: $line-height-xsmall;
         text-align: center;
         cursor: pointer;
         display: flex;
@@ -340,17 +343,19 @@ $line-height-xmedium: 40px;
         }
       }
     }
+  }
 
     &-list {
       //width: 100%;  // Tüm genişliği kaplar
       position: relative; 
-      padding-right: 78px;
-      padding-left: 32px;
+      margin-right: 78px;
+      margin-left: 32px;
+      margin-bottom: 128px;
       height: 804px;
       width: 517px;
 
       &-title {
-        font-size: $heading-h2-size;
+        font-size: 36px;
         font-weight: bold;
         font-family: $font-family-primary;
         line-height: $line-height-medium;
@@ -362,10 +367,10 @@ $line-height-xmedium: 40px;
         position: absolute;
         top: 0;
         right: 0;
-        font-size: $body01-size;
+        font-size: $heading-medium-size;
         color: $color-purple;
         text-decoration: none;
-        line-height: $line-height-xxsmall;
+        line-height: $line-height-small;
 
         &:hover {
           text-decoration: underline;
@@ -375,59 +380,49 @@ $line-height-xmedium: 40px;
       &-items {
         list-style: none;
 
-        &-item {
-          
-          padding-bottom: 15px;
-          background-color: $color-lightest-gray;
-          border-radius: 8px;
-          padding: 15px;
-          background-color: #fff; /* Beyaz arka plan */
-          border: 1px solid $color-light-gray; /* Hafif gri kenarlık */
-          transition: background-color 0.3s;
-          font-weight: bold;
+        &-item {     
+          width: 517px;
+          height: 181px;
 
-          &:hover {
-            background-color: $color-lightest-gray; /* Hover'da arka planı değiştirme */
-          }
-        }
-        &-color{
-         width: 369px;
-         height: 96px;
-         font-size: $body01-size;
-         font-weight: bold;
-         color: $color-dark-gray;
-         line-height: $line-height-medium;
-         background-color:$color-light-yellow !important
-
-         }
-        &-meta {
-          font-size: $body02-size;
+          &-meta {
+          font-size: $heading-small-size;
           color: $color-gray;
-          line-height: $line-height-label;
-          margin-bottom: 5px;
+          line-height: $line-height-xxsmall;
           width: 199px;
           height: 20px;
+          padding-left: 32.1px;
+          white-space: nowrap; 
           
           &-author{
             color:#5A4999
-           } 
-        }
+            } 
+          }
 
-        &-text {
-          width: 369px;
+         &-text {
+          width: 369.18px;
           height: 96px;
-          font-size: $heading-h4-size;
+          font-size: 24px;
           font-weight: bold;
           color: $color-dark-gray;
-          line-height: $line-height-xsmall;
+          line-height: 32px;
+          padding-left: 32.1px;
+         }
+         &--highlighted {
+          background-color: $color-light-yellow; /* Lightest Yellow arka plan rengi */
+          border: 1px solid darken($color-light-yellow, 10%); /* Biraz daha koyu bir kenarlık */
+         }
         }
       }
-    }
   }
 
   &__footer {
-    background-color: $color-white;
-    padding-top: 200px;
+    background-color: $color-lightest-gray;
+    padding: 40px 0;
+    margin-top: 60px; /* Üstteki içerikten daha fazla boşluk bırakmak için */
+    clear: both; 
+    width: 100%; /* Footer'ın genişliğini tam olarak kaplaması için */
+    position: relative;
+    clear: both; 
 
     &-about {
       // About section style
@@ -438,15 +433,15 @@ $line-height-xmedium: 40px;
     }
 
     &-title {
-      font-size: $heading-h5-size;
+      font-size: 20px;
       font-weight: bold;
       font-family: $font-family-primary;
-      line-height: $line-height-xxsmall;
+      line-height: $line-height-small;
     }
 
     &-description {
-      font-size: $body01-size;
-      line-height: $line-height-xxsmall;
+      font-size: $heading-medium-size;
+      line-height: $line-height-small;
     }
 
     &-link {
@@ -457,4 +452,5 @@ $line-height-xmedium: 40px;
       }
     }
   }
+}
 }

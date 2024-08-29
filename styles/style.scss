@@ -11,8 +11,6 @@ $color-navbar-bg: #232536; //siyah
 $color-light-yellow:#fbf6ea; //açık sarı
 $color-light-lavender:#f4f0f8; //lavender
 
-
-
 // Font Ailesi
 $font-family-primary: 'Sen', sans-serif;
 $font-family-inter: 'Inter', sans-serif;
@@ -36,87 +34,74 @@ $line-height-xxsmall: 20px;
   }
 
   &__navbar {
-    position: fixed; // Bu, navbarın sayfa kaydırıldığında sabit kalmasını sağlar
+    position: fixed;
     top: 0;
-    left: 50;
-    width: 1440px;
-    width: 100%;  
-    height: 80px;   
-    z-index: 1000; // Navbarın diğer içeriklerin üzerinde kalmasını sağlar
-    background-color: #232536 !important;    gap: 0px;
-    opacity: 1;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    background-color: #232536 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // Brand ve diğer linkler arasında boşluk bırakır
 
-      &-brand {
-       font-size: 24px;
-       font-family: $font-family-primary;
-       font-weight: bold;
-       color: $color-white !important;
-       margin-left: 83px; 
-     }
-
-      &-toggler {
-      
-      }
-
-      &-collapse {
-      }
+    &-brand {
+      font-size: 24px;
+      font-family: $font-family-primary;
+      font-weight: bold;
+      color: $color-white !important;
+      margin-left: 83px;
+    }
 
     &-nav {
       display: flex;
       align-items: center;
-      height: 100%;
-      margin-right: 291px;
+      margin-right: 80px;
     }
 
     &-item {
-     margin: 0 10px;
+      margin: 0 10px;
     }
 
     &-link {
-      color: $color-white !important; // Navbar linklerinin rengi
+      color: $color-white !important;
       font-size: $heading-medium-size;
       line-height: $line-height-small;
       font-family: $font-family-inter;
 
       &:hover {
-        color: $color-white; // Linklerin üzerine gelinceki rengi
+        color: $color-white;
       }
     }
 
     &--button {
-      width: 179px;   // Butonun genişliği
-      height: 56px;   // Butonun yüksekliği
-      padding: 16px 48px;  // İç boşluklar
-      margin-left: auto;   // Sola hizalama
       display: flex;
-      align-items: center; // Dikeyde ortalama
-      justify-content: center; // Yatayda ortalama
+      align-items: center;
+      justify-content: center;
       background-color: $color-white;
+      width: 179px;
+      height: 56px;
+      padding: 16px 48px;
       border: none;
       cursor: pointer;
       opacity: 1;
       text-align: center;
-      border-radius: 0px;
-     
-
-      position: absolute;
-      right: 80px; // Sağdan 80px
-      left: 1181px; // Soldan 1181px
-      top: 12px; // Yukarıdan 12px
-
-      margin-right: 32px; 
+      border-radius: 0;
+      position: relative;
+      right: 0;
+      margin-left: 32px; 
 
       &:hover {
         background-color: darken($color-white, 10%);
       }
     }
-      &-text {
-        color: $color-dark-gray; // Yazı rengini beyaz yap
-        font-size: $heading-large-size;
-        font-family: $font-family-primary;
-        line-height: $line-height-xsmall;
-      }
-    
+
+    &-text {
+      color: $color-dark-gray;
+      font-size: $heading-large-size;
+      font-family: $font-family-primary;
+      line-height: $line-height-xsmall;
+    }
   }
 
   &__hero {
@@ -124,192 +109,77 @@ $line-height-xxsmall: 20px;
     width: 100%;
     height: 720px;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
 
     &-image {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 10;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      //opacity: 3;
+      z-index: -1;
     }
 
     &-content {
-      position: relative;
-      top: 50%;
-      left: 20%;
-      transform: translate(-50%, -50%);
+      max-width: 804px;
+      margin-left: 81px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; 
       color: $color-white;
-      width: 804px; // Genişlik
-      height: 400px; // Yükseklik
-      padding-left: 81px;
-      font-size:56px;
-      line-height: $line-height-large;
-      font-family:$font-family-primary;
-    }
+      z-index: 10;
+      position: relative;
 
-    &-category {
-      margin-bottom: 10px;
-      //font-weight: bold;
-      font-size: $heading-medium-size;
-      line-height: $line-height-xxsmall;
-      font-family: $font-family-inter;
-      letter-spacing: 3px;
-      font-weight: 600;
-
-      &--highlight {
+      &-category {
         font-weight: bold;
-        color: $color-white;
-        font-family: $font-family-inter;
         font-size: $heading-medium-size;
         line-height: $line-height-xxsmall;
+        font-family: $font-family-inter;
         letter-spacing: 3px;
-        font-weight: 900;
-      }
-    }
-
-    &-title {
-      font-size: 56px;
-      font-weight: 700;
-      width: 803px; 
-      height: 128px; 
-      line-height: $line-height-large;
-      letter-spacing: -2px;
-      margin-bottom: 20px;
-      font-family: $font-family-primary;
-    }
-
-    &-author {
-      font-size: $heading-medium-size;
-      margin-bottom: 10px;
-      line-height: $line-height-small;
-      font-family: $font-family-inter;
-      font-weight: 400;
-
-      &-name {
-        color: $color-yellow;
-        font-family: $font-family-inter;
-        line-height: $line-height-small;   
-        font-weight: 400;
-      }
-    }
-
-    &-description {
-      margin-bottom: 30px;
-      font-size: $heading-medium-size;
-      line-height:$line-height-small;
-      width: 599px; 
-      height: 56px;
-      font-family: $font-family-inter;
-      font-weight: 400;
-      
-    }
-
-    &--button {
-      background-color: $color-yellow;
-      border: none;
-      width: 204px;
-      height: 56px;
-      padding: 16px 48px;
-      margin-top: -1px;  
-      position: relative;
-      left: 0;  
-      gap: 12px;
-      opacity: 1;  
-      color: $color-dark-gray;
-      font-family: $font-family-primary;
-      font-weight: 700;
-      font-size: $heading-large-size; 
-      line-height: $line-height-xsmall;
-      text-align: center;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 0;  
-
-      &:hover {
-        background-color: darken($color-yellow, 10%);
+        font-weight: 600;
+        color: $color-white;
       }
 
-      &-text {
-        white-space: nowrap;  // Yazıyı tek satırda tutar
-      }
-    }
-  }
-
-  &__posts {
-    display: flex; 
-    width: 1282px;
-    height: 804px;
-    padding-left: 80px;
-    padding-bottom: 128px;
-    padding-top: 128px;
-    //padding-right: 78px;
-
-
-    &-featured {
-      width: 733px;
-      height: 804px;
-      margin-left: 80px;
-      margin-bottom: 128px;
-      margin-right: 32px;
-
-      &-image-container {
-        position: relative;
-      }
       &-title {
-        font-size: 36px;
-        font-weight:bold;
-        font-family: $font-family-primary;
-        line-height: $line-height-medium;
-        padding-bottom: 32px;
+        font-size: 56px;
+        font-weight: 700;
+        width: 803px;
+        height: 128px;
+        line-height: $line-height-large;
         letter-spacing: -2px;
-        }
-      &-content{
-        padding-top: 32px;
-        border-radius: 1px;
-        text-align: center;
-        background-color: $color-white;
-        border: 1px solid rgba(0, 0, 0, 0.1); /* Soluk gri çerçeve */
-        flex-direction: column;
-        align-items: center;
-
-      &-image {
-        padding-left: 32px;
-      }
-
-      &-meta {
-        font-size: $heading-small-size;
-        color: $color-gray;
-        line-height: $line-height-xxsmall;
-        padding-top: 32px;
-        padding-left: 32px;
-        padding-bottom: 16px;
-        font-family: $font-family-inter;
-      
-        &-author{
-        color:#5A4999
-       }
-      }
-
-      &-title {
-        font-size: 28px;
-        font-weight: bold;
-        padding-left: 32px;
+        margin-bottom: 20px;
         font-family: $font-family-primary;
-        line-height: 40px;
-        letter-spacing: -1px;
+        color: $color-white;
+        font-size: 3vw;
+        line-height: 1.2;
+      }
+
+      &-author {
+        font-size: $heading-medium-size;
+        margin-bottom: 10px;
+        line-height: $line-height-small;
+        font-family: $font-family-inter;
+        font-weight: 400;
+
+        &--name {
+          color: $color-yellow;
+        }
       }
 
       &-description {
         font-size: $heading-medium-size;
         line-height: $line-height-small;
-        color: $color-dark-gray;
-        padding-left: 32px;
-        padding-top: 16px;
-        width: 551px;
+        width: 100%;
+        max-width: 599px;
+        height: auto;
+        font-family: $font-family-inter;
+        font-weight: 400;
+        font-size: 0.86vw;
+        margin-bottom: 48px;
       }
 
       &--button {
@@ -317,60 +187,145 @@ $line-height-xxsmall: 20px;
         border: none;
         width: 204px;
         height: 56px;
-        padding: 16px 48px; 
+        padding: 16px 48px;
         position: relative;
-        left: 32px;  
         gap: 12px;
-        opacity: 1;  
+        opacity: 1;
         color: $color-dark-gray;
         font-family: $font-family-primary;
         font-weight: 700;
-        font-size: $heading-large-size; 
+        font-size: $heading-large-size;
         line-height: $line-height-xsmall;
         text-align: center;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0;  
+        border-radius: 0;
 
         &:hover {
           background-color: darken($color-yellow, 10%);
-        }
-  
-        &-text {
-          white-space: nowrap;  
         }
       }
     }
   }
 
-    &-list {
-      //width: 100%;  // Tüm genişliği kaplar
-      position: relative; 
-      margin-right: 78px;
-      margin-left: 32px;
-      margin-bottom: 128px;
-      height: 804px;
-      width: 517px;
+  &__posts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1282px;
+    margin: 0 auto; 
+    padding: 128px 20px; 
 
+    &-featured {
+      flex: 1 1 60%;
+      margin-right: 32px;
+
+      &-image-container {
+        position: relative;
+      }
+
+      &-title{
+        font-size: 36px;
+        font-weight: bold;
+        font-family: $font-family-primary;
+        line-height: $line-height-medium;
+        margin-bottom: 32px;
+      }
+
+      &-content {
+        padding: 32px;
+        border-radius: 1px;
+        background-color: $color-white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-meta {
+          font-size: $heading-small-size;
+          color: $color-gray;
+          line-height: $line-height-xxsmall;
+          font-family: $font-family-inter;
+          margin-bottom: 16px;
+          margin-top: 32px;
+
+          &--author {
+            font-family: $font-family-inter;
+            color: $color-purple !important;
+            font-size: $heading-small-size;
+            line-height: $line-height-xxsmall;
+          }
+        }
+
+        &-title {
+          font-size: 28px;
+          font-weight: bold;
+          font-family: $font-family-primary;
+          line-height: 40px;
+          margin-bottom: 16px;
+        }
+
+        &-description {
+          font-size: $heading-medium-size;
+          line-height: $line-height-small;
+          color: $color-dark-gray;
+          margin-bottom: 32px;
+        }
+
+        &--button {
+          background-color: $color-yellow;
+          border: none;
+          width: 204px;
+          height: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0;
+          font-family: $font-family-primary;
+          color: $color-dark-gray;
+          font-weight: 700;
+          font-size: $heading-large-size;
+          line-height: $line-height-xsmall;
+          left: 0; // Sola hizalamayı sağlamak için left: 0 ekliyoruz
+          text-align: left; // Metin hizasını sola çeker
+
+          &:hover {
+            background-color: darken($color-yellow, 10%);
+          }
+        }
+      }
+    }
+
+    &-list {
+      flex: 1 1 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      
       &-title {
         font-size: 36px;
         font-weight: bold;
         font-family: $font-family-primary;
         line-height: $line-height-medium;
-        padding-bottom: 32px;
-        letter-spacing: -2px;
+        margin-bottom: 32px;
       }
 
       &-view-all {
-        position: absolute;
-        top: 0;
-        right: 0;
         font-size: $heading-medium-size;
         color: $color-purple;
         text-decoration: none;
         line-height: $line-height-small;
+        align-self: flex-end; // Sağ tarafa hizalar
+        position: absolute;
+        margin-top: 11px;
+        top: 20;
+        right: 0;
+        cursor: pointer;
 
         &:hover {
           text-decoration: underline;
@@ -379,78 +334,196 @@ $line-height-xxsmall: 20px;
 
       &-items {
         list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
 
-        &-item {     
-          width: 517px;
-          height: 181px;
+        &-item {
+          background-color: $color-white;
+          position: relative; 
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start; 
+          border-radius: 0;  
 
-          &-meta {
-          font-size: $heading-small-size;
-          color: $color-gray;
-          line-height: $line-height-xxsmall;
-          width: 199px;
-          height: 20px;
-          padding-left: 32.1px;
-          white-space: nowrap; 
-          
-          &-author{
-            color:#5A4999
-            } 
+          &--highlighted {
+            background-color: $color-light-yellow;
+  
+            &::before {
+              content: "";
+              top: -10px;
+              left: -10px;
+              right: -10px;
+              bottom: -10px;
+              background-color: $color-light-yellow;
+              z-index: -1; // Çerçeve içeriğin arkasında kalacak
+            }
           }
 
-         &-text {
-          width: 369.18px;
-          height: 96px;
-          font-size: 24px;
-          font-weight: bold;
-          color: $color-dark-gray;
-          line-height: 32px;
-          padding-left: 32.1px;
-         }
-         &--highlighted {
-          background-color: $color-light-yellow; /* Lightest Yellow arka plan rengi */
-          border: 1px solid darken($color-light-yellow, 0%); /* Biraz daha koyu bir kenarlık */
-         }
+          &-meta {
+            font-size: $heading-small-size;
+            color: $color-gray;
+            line-height: $line-height-xxsmall;
+            font-family: $font-family-inter;
+            margin-bottom: 8px;
+            margin-left: 32px;
+            margin-top: 32px;
+
+            &-author {
+              color: $color-purple;
+            }
+          }
+
+          &-text {
+            width: 360px;
+            height: 96px;
+            font-size: 24px;
+            font-weight: bold;
+            color: $color-dark-gray;
+            line-height: 32px;
+            font-family: $font-family-primary;
+            margin-left: 32px;
+            padding-top: 4px;    
+            padding-bottom: 4px;  
+          }
         }
       }
+    }
   }
-
-  &__footer {
-    background-color: $color-lightest-gray;
-    padding: 40px 0;
-    margin-top: 60px; /* Üstteki içerikten daha fazla boşluk bırakmak için */
-    clear: both; 
-    width: 100%; /* Footer'ın genişliğini tam olarak kaplaması için */
+   
+  &__about {
+    padding: 40px 20px;
+    margin-top: 60px;
+    width: 100%;
     position: relative;
-    clear: both; 
-
-    &-about {
-      // About section style
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;  
+      left: 56%; 
+      transform: translateX(-56%); 
+      height: 23px;
+      width: 80%;
+      max-width: 1061px;
+      background: linear-gradient(to right, $color-yellow 70%, $color-purple 30%);
     }
 
+    .container {
+      max-width: 1280px;
+      max-height: 500px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &-container-wrapper {
+      max-width: 1280px; 
+      height: 500px; 
+      margin: 0 auto; 
+      padding: 40px; 
+      position: relative;
+      top: -20px; 
+      z-index: 0; 
+      background-color: $color-light-lavender;
+
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &-section {
+      width: 48%;
+
+      &-title {
+        font-size: $heading-medium-size;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: $color-dark-gray;
+        margin-bottom: 24px;
+        font-family: $font-family-inter;
+        margin-top: 60px;
+        line-height: $line-height-xxsmall;
+      }
+
+      &-subtitle {
+        font-size: 36px;
+        font-weight: bold;
+        color: $color-dark-gray;
+        font-family: $font-family-primary;
+        line-height: $line-height-medium;
+        width: 494px;
+        height: 144px;
+      }
+
+      &-description {
+        font-size: $heading-medium-size;
+        color: $color-medium-gray;
+        line-height: $line-height-small;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        font-family: $font-family-inter;
+        width: 515px;
+        height: 56px;
+      }
+
+      &-link {
+        font-size: $heading-large-size;
+        color: $color-purple;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 32px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
     &-mission {
-      // Mission section style
-    }
 
-    &-title {
-      font-size: 20px;
-      font-weight: bold;
-      font-family: $font-family-primary;
-      line-height: $line-height-small;
-    }
-
-    &-description {
-      font-size: $heading-medium-size;
-      line-height: $line-height-small;
-    }
-
-    &-link {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
+      &-section  {
+        width: 48%;
+  
+        &-title {
+          font-size: $heading-medium-size;
+          font-weight: 600;
+          letter-spacing: 3px;
+          color: $color-dark-gray;
+          margin-bottom: 24px;
+          font-family: $font-family-inter;
+          margin-top: 60px;
+          line-height: $line-height-xxsmall;
+        }
+  
+        &-subtitle {
+          font-size: 28px;
+          font-weight: bold;
+          color: $color-dark-gray;
+          font-family: $font-family-primary;
+          line-height: 40px;
+          width: 481px;
+          height: 80px;
+          letter-spacing: -1px;
+        }
+  
+        &-description {
+          font-size: $heading-medium-size;
+          color: $color-medium-gray;
+          line-height: $line-height-small;
+          margin-bottom: 16px;
+          margin-top: 16px;
+          font-family: $font-family-inter;
+          width: 516px;
+          height: 108.73px;
+        }
       }
     }
   }
-}
-}
+} 

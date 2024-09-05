@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="home__header">
+    <nav class="home__navbar navbar navbar-expand-lg navbar-light bg-light">
+      <a class="home__navbar-brand" href="#">
+        <span class="home__navbar-brand-bracket">{</span>
+        <span class="home__navbar-brand-name">Finsweet</span>
+      </a>
+
+      <button class="home__navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="home__navbar-collapse collapse navbar-collapse" id="navbarNav">
+        <ul class="home__navbar-nav navbar-nav ml-auto">
+          <li class="home__navbar-item nav-item">
+            <a class="home__navbar-link nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="home__navbar-item nav-item active">
+            <a class="home__navbar-link nav-link" href="blog.html">Blog</a>
+          </li>
+
+          <li class="home__navbar-item nav-item">
+            <a class="home__navbar-link nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="home__navbar-item nav-item">
+            <a class="home__navbar-link nav-link" href="contact.html">Contact us</a>
+          </li>
+
+          <li class="home__navbar-item home__navbar--button">
+            <a class="home__navbar-link home__navbar-link--button" href="#">
+              <span class="home__navbar-text">Subscribe</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="blog__hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 blog__hero-content">
+          <h3 class="blog__hero-content-featured">FEATURED POST</h3>
+          <h1 class="blog__hero-content-title">Step-by-step guide to choosing great font pairs</h1>
+          <p class="blog__hero-content-meta">By <span class="blog__hero-content-meta--author">John Doe</span> | May 23, 2022</p>
+          
+          <p class="blog__hero-content-description">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+          <a href="#" class="blog__hero-content-button btn btn-warning">Read More ></a>
+        </div>
+        <div class="col-md-5 blog__hero-image">
+          <img src="images\Blog-Hero.png" alt="Blog-Hero" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="blog__posts">
+    <div class="container">
+      <h2 class="blog__posts-title">All posts</h2>
+      <hr class="blog__posts-divider">
+      <div class="blog__posts-list">
+          <!-- First Post -->
+          <div class="col-md-6 blog__posts-list-item">
+            <img src="images/Blog-Startup.png" alt="Post Image" class="blog__posts-list-item-image">
+            <div class="blog__posts-list-item-content">
+              <p class="blog__posts-list-item-content-category">STARTUP</p>
+              <h3 class="blog__posts-list-item-content-title">Design tips for designers that cover everything you need</h3>
+              
+              <p class="blog__posts-list-item-content-description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Second Post -->
+          <div class="col-md-6 blog__posts-list-item">
+            <img src="images/Blog-Business.png" alt="Post Image" class="blog__posts-list-item-image">
+            <div class="blog__posts-list-item-content">
+              <p class="blog__posts-list-item-content-category">BUSINESS</p>
+              <h3 class="blog__posts-list-item-content-title">How to build rapport with your web design clients</h3>
+              
+              <p class="blog__posts-list-item-content-description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Third Post -->
+          <div class="col-md-6 blog__posts-list-item">
+            <img src="images/Blog-Startup-second.png" alt="Post Image" class="blog__posts-list-item-image">
+            <div class="blog__posts-list-item-content">
+              <p class="blog__posts-list-item-content-category">STARTUP</p>
+              <h3 class="blog__posts-list-item-content-title">Logo design trends to avoid in 2022</h3>
+              
+              <p class="blog__posts-list-item-content-description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Fourth Post -->
+          <div class="col-md-6 blog__posts-list-item">
+            <img src="images/Blog-Technology.png" alt="Post Image" class="blog__posts-list-item-image">
+            <div class="blog__posts-list-item-content">
+              <p class="blog__posts-list-item-content-category">TECHNOLOGY</p>
+              <h3 class="blog__posts-list-item-content-title">8 Figma design systems you can download for free today</h3>
+              
+              <p class="blog__posts-list-item-content-description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Fifth Post -->
+          <div class="col-md-6 blog__posts-list-item">
+            <img src="images/Blog-Startup.png" alt="Post Image" class="blog__posts-list-item-image">
+            <div class="blog__posts-list-item-content">
+              <p class="blog__posts-list-item-content-category">ECONOMY</p>
+              <h3 class="blog__posts-list-item-content-title">Font sizes in UI design: The complete guide to follow</h3>
+              
+              <p class="blog__posts-list-item-content-description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="blog__posts-pagination">
+        <a href="#" class="blog__posts-pagination-prev">&lt; Prev</a>
+        <a href="#" class="blog__posts-pagination-next">Next &gt;</a>
+      </div>
+    </div>
+  </section>
+  
+  <section class="blog__about">
+  
+    <div class="blog__about-category">
+      <h2 class="blog__about-category-title">All Categories</h2>
+      <div class="blog__about-category-wrapper">
+        <div class="blog__about-category-item">
+          <div class="blog__about-category-item-icon">
+            <img src="images/Icon background.png" alt="Business Background" class="blog__about-category-item-icon--background">
+            <img src="images/business.png" alt="Business Icon" class="blog__about-category-item-icon--background-img blog__about-category-item-icon--large">
+          </div>
+  
+          <h3 class="blog__about-category-item-title">Business</h3>
+          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+  
+        <div class="blog__about-category-item blog__about-category-item--highlighted">
+          <div class="blog__about-category-item-icon">
+            <img src="images/Icon background.png" alt="Startup Background" class="blog__about-category-item-icon--background">
+            <img src="images/Startup.png" alt="Startup Icon" class="blog__about-category-item-icon--background-img">
+          </div>
+      
+          <h3 class="blog__about-category-item-title">Startup</h3>
+          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+  
+        <div class="blog__about-category-item">
+          <div class="blog__about-category-item-icon">
+            <img src="images/Icon background.png" alt="Economy Background" class="blog__about-category-item-icon--background">
+            <img src="images/Economy.png" alt="Economy Icon" class="blog__about-category-item-icon--background-img">
+          </div>
+          
+          <h3 class="blog__about-category-item-title">Economy</h3>
+          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+  
+        <div class="blog__about-category-item">
+          <div class="blog__about-category-item-icon">
+            <img src="images/Icon background.png" alt="Technology Background" class="blog__about-category-item-icon--background">
+            <img src="images/Technology.png" alt="Technology Icon" class="blog__about-category-item-icon--background-img">
+          </div>
+  
+          <h3 class="blog__about-category-item-title">Technology</h3>
+          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="blog__about-join">
+      <div class="blog__about-join-content">
+        <div class="blog__about-join-title">
+          Join our team to be a part of our story
+        </div>
+  
+        <div class="blog__about-join-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </div>
+  
+        <div class="blog__about-join-button">
+          <a href="#" class="blog__about-join-button-link">Join Now</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="blog__about-newsletter">
+      <div class="blog__about-newsletter-header">
+          <span class="blog__about-newsletter-header-bracket">{</span>
+          <span class="blog__about-newsletter-header-name">Finsweet</span>
+          <nav class="blog__about-newsletter-header-nav">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy Policy</a>
+          </nav>
+       </div>
+
+      <div class="blog__about-newsletter-content">
+          <p class="blog__about-newsletter-content-title">
+            Subscribe to our news letter to get latest updates and news
+          </p>
+  
+          <form class="blog__about-newsletter-content-form">
+            <input type="email" placeholder="Enter Your Email" class="blog__about-newsletter-content-form-input">
+            <button type="submit" class="blog__about-newsletter-content-form-button">Subscribe</button>
+          </form>
+      </div>
+    
+      <div class="blog__about-newsletter-footer">
+        <p class="blog__about-newsletter-footer-address">Finstreet 118 2561 Fintown</p>
+        <p class="blog__about-newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
+        
+        <div class="blog__about-newsletter-footer-social">
+          <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/Twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="images/Instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+     </div>
+   </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<button id="scrollUpBtn" class="scroll-up-btn">▲</button>
+<script src="index.js"></script>
+
+</html>

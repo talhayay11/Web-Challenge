@@ -1,17 +1,19 @@
 // Renkler
-$color-yellow: #F3C84B; // Sarı
-$color-purple: #5A4999; // Mor
-$color-dark-gray: #333333; // Koyu Gri
-$color-footer-gray: #4c4c4c7e;
-$color-gray: #6B6B6B; // Orta Gri
-$color-light-gray: #D1D1D1; // Açık Gri
-$color-lightest-gray: #F1F0ED; // Çok Açık Gri
-$color-medium-gray: #6d6e76;
-$color-white: #FFFFFF; // Beyaz
-$color-navbar-bg: #232536; //siyah
-$color-light-yellow:#fbf6ea; //açık sarı
-$color-light-lavender:#f4f0f8; //lavender
-$color-light-border:#00000011;
+$eyelash-viper: #f3c84b; // Sarı
+$liberty: #5a4999; // Mor  
+$carbon: #333333; // Koyu Gri   
+$shady-character: #4c4c4c7e; //footer Gri
+$boat-anchor: #6b6b6b; // Orta Gri
+$clouded-vision: #d1d1d1; // Açık Gri
+$white-shoulders: #f1f0ed; // Çok Açık Gri
+$granite-canyon: #6d6e76; //Medium Gri
+$white: #FFFFFF; // Beyaz
+$cold-steel: #232536; //siyah
+$clear-moon: #fbf6ea; //açık sarı
+$alpine-goat: #f4f0f8; //lavender
+$black: #00000011; //siyah
+$christmas-silver: #e0e0e0; //Gümüş 
+
 // Font Ailesi
 $font-family-primary: 'Sen', sans-serif;
 $font-family-inter: 'Inter', sans-serif;
@@ -30,8 +32,8 @@ $line-height-xxsmall: 20px;
 
 .home {
   &__header {
-    background-color: $color-navbar-bg;
-    color: $color-white;
+    background-color: $cold-steel;
+    color: $white;
   }
 
   &__navbar {
@@ -41,16 +43,16 @@ $line-height-xxsmall: 20px;
     width: 100%;
     height: 80px;
     z-index: 1000;
-    background-color: #232536 !important;
+    background-color: $cold-steel !important;
     display: flex;
     align-items: center;
-    justify-content: space-between; // Brand ve diğer linkler arasında boşluk bırakır
+    justify-content: space-between; 
 
     &-brand {
       font-size: 24px;
       font-family: $font-family-primary;
       font-weight: bold;
-      color: $color-white;
+      color: $white;
       margin-left: 83px;
       display: flex;
       align-items: center;
@@ -79,13 +81,13 @@ $line-height-xxsmall: 20px;
     }
 
     &-link {
-      color: $color-white !important;
+      color: $white !important;
       font-size: $heading-medium-size;
       line-height: $line-height-small;
       font-family: $font-family-inter;
 
       &:hover {
-        color: $color-white;
+        color: $white;
       }
     }
 
@@ -93,7 +95,7 @@ $line-height-xxsmall: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: $color-white;
+      background-color: $white;
       width: 179px;
       height: 56px;
       padding: 16px 48px;
@@ -107,12 +109,12 @@ $line-height-xxsmall: 20px;
       margin-left: 32px; 
 
       &:hover {
-        background-color: darken($color-white, 10%);
+        background-color: darken($white, 10%);
       }
     }
 
     &-text {
-      color: $color-dark-gray;
+      color: $carbon;
       font-size: $heading-large-size;
       font-family: $font-family-primary;
       line-height: $line-height-xsmall;
@@ -145,7 +147,7 @@ $line-height-xxsmall: 20px;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start; 
-      color: $color-white;
+      color: $white;
       z-index: 10;
       position: relative;
 
@@ -155,7 +157,7 @@ $line-height-xxsmall: 20px;
         font-family: $font-family-inter;
         letter-spacing: 3px;
         font-weight: 600;
-        color: $color-white;
+        color: $white;
       
        &--highlight{
         font-weight: bold;
@@ -164,9 +166,10 @@ $line-height-xxsmall: 20px;
         font-family: $font-family-inter;
         letter-spacing: 3px;
         font-weight: 600;
-        color: $color-white;
+        color: $white;
        }
       }
+
       &-title {
         font-size: 56px;
         font-weight: 700;
@@ -176,7 +179,7 @@ $line-height-xxsmall: 20px;
         letter-spacing: -2px;
         margin-bottom: 20px;
         font-family: $font-family-primary;
-        color: $color-white;
+        color: $white;
         font-size: 3vw;
         line-height: 1.2;
       }
@@ -189,7 +192,7 @@ $line-height-xxsmall: 20px;
         font-weight: 400;
 
         &--color {
-          color: $color-yellow; 
+          color: $eyelash-viper; 
         } 
       }
 
@@ -203,7 +206,7 @@ $line-height-xxsmall: 20px;
       }
 
       &--button {
-        background-color: $color-yellow;
+        background-color: $eyelash-viper;
         border: none;
         width: 204px;
         height: 56px;
@@ -211,7 +214,7 @@ $line-height-xxsmall: 20px;
         position: relative;
         gap: 12px;
         opacity: 1;
-        color: $color-dark-gray;
+        color: $carbon;
         font-family: $font-family-primary;
         font-weight: 700;
         font-size: $heading-large-size;
@@ -224,7 +227,7 @@ $line-height-xxsmall: 20px;
         border-radius: 0;
 
         &:hover {
-          background-color: darken($color-yellow, 10%);
+          background-color: darken($eyelash-viper, 10%);
         }
       }
     }
@@ -259,8 +262,8 @@ $line-height-xxsmall: 20px;
       &-content {
         padding: 32px;
         border-radius: 1px;
-        background-color: $color-white;
-        border: 1px solid $color-light-border;
+        background-color: $white;
+        border: 1px solid $black;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -271,7 +274,7 @@ $line-height-xxsmall: 20px;
 
         &-meta {
           font-size: $heading-small-size;
-          color: $color-gray;
+          color: $boat-anchor;
           line-height: $line-height-xxsmall;
           font-family: $font-family-inter;
           margin-bottom: 16px;
@@ -279,7 +282,7 @@ $line-height-xxsmall: 20px;
 
           &--author {
             font-family: $font-family-inter;
-            color: $color-purple !important;
+            color: $liberty !important;
             font-size: $heading-small-size;
             line-height: $line-height-xxsmall;
           }
@@ -296,14 +299,14 @@ $line-height-xxsmall: 20px;
         &-description {
           font-size: $heading-medium-size;
           line-height: $line-height-small;
-          color: $color-dark-gray;
+          color: $carbon;
           margin-bottom: 32px;
           width: 551px;
           height: 56px;
         }
 
         &--button {
-          background-color: $color-yellow;
+          background-color: $eyelash-viper;
           border: none;
           width: 204px;
           height: 56px;
@@ -312,15 +315,15 @@ $line-height-xxsmall: 20px;
           justify-content: center;
           border-radius: 0;
           font-family: $font-family-primary;
-          color: $color-dark-gray;
+          color: $carbon;
           font-weight: 700;
           font-size: $heading-large-size;
           line-height: $line-height-xsmall;
-          left: 0; // Sola hizalamayı sağlamak için left: 0 ekliyoruz
-          text-align: left; // Metin hizasını sola çeker
+          left: 0;
+          text-align: left; 
 
           &:hover {
-            background-color: darken($color-yellow, 10%);
+            background-color: darken($eyelash-viper, 10%);
           }
         }
       }
@@ -343,10 +346,10 @@ $line-height-xxsmall: 20px;
 
       &-view-all {
         font-size: $heading-medium-size;
-        color: $color-purple;
+        color: $liberty;
         text-decoration: none;
         line-height: $line-height-small;
-        align-self: flex-end; // Sağ tarafa hizalar
+        align-self: flex-end; 
         position: absolute;
         margin-top: 11px;
         top: 20;
@@ -366,7 +369,7 @@ $line-height-xxsmall: 20px;
         flex-direction: column;
 
         &-item {
-          background-color: $color-white;
+          background-color: $white;
           position: relative; 
           display: flex;
           flex-direction: column;
@@ -375,12 +378,12 @@ $line-height-xxsmall: 20px;
           transition: background-color 0.3s ease;
 
           &:hover {
-            background-color: $color-light-yellow; // Fare ile üzerine gelindiğinde sarı
+            background-color: $clear-moon; 
           }
 
           &-meta {
             font-size: $heading-small-size;
-            color: $color-gray;
+            color: $boat-anchor;
             line-height: $line-height-xxsmall;
             font-family: $font-family-inter;
             margin-bottom: 8px;
@@ -388,7 +391,7 @@ $line-height-xxsmall: 20px;
             margin-top: 32px;
 
             &-author {
-              color: $color-purple;
+              color: $liberty;
             }
           }
 
@@ -397,7 +400,7 @@ $line-height-xxsmall: 20px;
             height: 96px;
             font-size: 24px;
             font-weight: bold;
-            color: $color-dark-gray;
+            color: $carbon;
             line-height: 32px;
             font-family: $font-family-primary;
             margin-left: 32px;
@@ -427,7 +430,7 @@ $line-height-xxsmall: 20px;
       height: 23px;
       width: 70%;
       max-width: 900px;
-      background: linear-gradient(to right, $color-yellow 70%, $color-purple 30%);
+      background: linear-gradient(to right, $eyelash-viper 70%, $liberty 30%);
     }
 
     .container {
@@ -438,6 +441,7 @@ $line-height-xxsmall: 20px;
       justify-content: space-between;
       align-items: flex-start;
     }
+
     &-container-wrapper {
       max-width: 1280px; 
       height: 500px; 
@@ -446,8 +450,7 @@ $line-height-xxsmall: 20px;
       position: relative;
       top: -20px; 
       z-index: 0; 
-      background-color: $color-light-lavender;
-
+      background-color: $alpine-goat;
     }
 
     .row {
@@ -463,7 +466,7 @@ $line-height-xxsmall: 20px;
         font-size: $heading-medium-size;
         font-weight: 600;
         letter-spacing: 3px;
-        color: $color-dark-gray;
+        color: $carbon;
         margin-bottom: 24px;
         font-family: $font-family-inter;
         margin-top: 60px;
@@ -473,7 +476,7 @@ $line-height-xxsmall: 20px;
       &-subtitle {
         font-size: 36px;
         font-weight: bold;
-        color: $color-dark-gray;
+        color: $carbon;
         font-family: $font-family-primary;
         line-height: $line-height-medium;
         width: 494px;
@@ -482,7 +485,7 @@ $line-height-xxsmall: 20px;
 
       &-description {
         font-size: $heading-medium-size;
-        color: $color-medium-gray;
+        color: $granite-canyon;
         line-height: $line-height-small;
         margin-bottom: 16px;
         margin-top: 16px;
@@ -493,7 +496,7 @@ $line-height-xxsmall: 20px;
 
       &-link {
         font-size: $heading-large-size;
-        color: $color-purple;
+        color: $liberty;
         text-decoration: none;
         font-weight: bold;
         line-height: 32px;
@@ -503,6 +506,7 @@ $line-height-xxsmall: 20px;
         }
       }
     }
+
     &-mission {
 
       &-section  {
@@ -512,7 +516,7 @@ $line-height-xxsmall: 20px;
           font-size: $heading-medium-size;
           font-weight: 600;
           letter-spacing: 3px;
-          color: $color-dark-gray;
+          color: $carbon;
           margin-bottom: 24px;
           font-family: $font-family-inter;
           margin-top: 60px;
@@ -522,7 +526,7 @@ $line-height-xxsmall: 20px;
         &-subtitle {
           font-size: 28px;
           font-weight: bold;
-          color: $color-dark-gray;
+          color: $carbon;
           font-family: $font-family-primary;
           line-height: 40px;
           width: 481px;
@@ -532,7 +536,7 @@ $line-height-xxsmall: 20px;
   
         &-description {
           font-size: $heading-medium-size;
-          color: $color-medium-gray;
+          color: $granite-canyon;
           line-height: $line-height-small;
           margin-bottom: 16px;
           margin-top: 16px;
@@ -544,7 +548,7 @@ $line-height-xxsmall: 20px;
     }
   
 
-  &__category {
+  &-category {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -556,7 +560,6 @@ $line-height-xxsmall: 20px;
       margin-bottom: 30px;
       text-align: center;
       padding-bottom: 48px;
-
     }
   
     &-wrapper {
@@ -571,7 +574,7 @@ $line-height-xxsmall: 20px;
       flex: 1;
       position: relative;
       padding: 20px;
-      border: 1px solid $color-light-gray;
+      border: 1px solid $clouded-vision;
       transition: background-color 0.3s ease;
       text-align: left;
       display: flex;
@@ -581,10 +584,9 @@ $line-height-xxsmall: 20px;
       margin-left: 32px;
      
       &:hover {
-        background-color: $color-yellow; // Fare ile üzerine gelindiğinde sarı
+        background-color: $eyelash-viper; 
       }
     
-      
      &-icon{ 
 
       &--background { 
@@ -596,7 +598,6 @@ $line-height-xxsmall: 20px;
         top: 20%;  
         left: 20%;  
 
-  
        &-img { 
         width: 23px;  
         position: absolute;  
@@ -606,13 +607,18 @@ $line-height-xxsmall: 20px;
         left: 18%;  
         } 
        } 
+
+       &--large {
+        width: 40px;
+        height: 70px;
+       }
       } 
   
       &-title { 
         font-size: 28px; 
         font-weight: bold; 
         margin-bottom: 1px; 
-        color: $color-dark-gray;  
+        color: $carbon;  
         text-align: left; 
         padding: 10px;  
         font-family: $font-family-primary;  
@@ -622,17 +628,16 @@ $line-height-xxsmall: 20px;
   
       &-description {  
         font-size: $heading-medium-size;  
-        color: $color-gray;  
+        color: $boat-anchor;  
         text-align: left;  
         padding-left: 10px;
         font-family: $font-family-inter;
         line-height: $line-height-small;
-
        }
       }
-    } 
+     } 
 
-  &__story{
+  &-story{
     position: relative;
     padding: 60px 0;
   
@@ -654,7 +659,7 @@ $line-height-xxsmall: 20px;
       flex: 1;
       position: absolute;
       z-index: 2; 
-      background: white; 
+      background: $white; 
       padding: 100px;
       max-width: 706px;
       bottom: -450px;
@@ -663,7 +668,7 @@ $line-height-xxsmall: 20px;
   
       &-title {
         font-size: 16px;
-        color: $color-dark-gray;
+        color: $carbon;
         font-weight: bold;
         margin-bottom: 10px;
         font-family: $font-family-inter;
@@ -674,7 +679,7 @@ $line-height-xxsmall: 20px;
         font-size: 46px;
         font-family: $font-family-primary;
         line-height: $line-height-large;
-        color: $color-dark-gray;
+        color: $carbon;
         font-weight: bold;
         margin-bottom: 10px;
         max-width: 546px;
@@ -682,7 +687,7 @@ $line-height-xxsmall: 20px;
   
       &-description {
         font-size: $heading-medium-size;
-        color: $color-gray;
+        color: $boat-anchor;
         margin-bottom: 20px;
         font-family: $font-family-inter;
         line-height: $line-height-small;
@@ -690,8 +695,8 @@ $line-height-xxsmall: 20px;
       }
   
       &-button {
-        background-color: $color-yellow;
-        color: $color-dark-gray;
+        background-color: $eyelash-viper;
+        color: $carbon;
         font-size: $heading-large-size;
         font-weight: bold;
         padding: 12px 24px;
@@ -700,14 +705,14 @@ $line-height-xxsmall: 20px;
         line-height: $line-height-xsmall;
   
         &:hover {
-          background-color: darken($color-yellow, 10%);
-          color: $color-dark-gray;
+          background-color: darken($eyelash-viper, 10%);
+          color: $carbon;
         }
       }
     }
   }
 
-  &__authors {
+  &-authors {
     padding-top: 500px;
     text-align: center;
   
@@ -718,7 +723,7 @@ $line-height-xxsmall: 20px;
     }
   
     &-item {
-      background-color: $color-lightest-gray;
+      background-color: $white-shoulders;
       padding: 50px;
       margin-bottom: 10px;
       text-align: center;
@@ -726,9 +731,9 @@ $line-height-xxsmall: 20px;
       max-width: 296px;
       max-height: 324px;
         
-        &:hover {
-           background-color: $color-light-yellow; 
-          }
+      &:hover {
+       background-color: $clear-moon; 
+      }
 
       &-img {
         width: 128px;
@@ -750,7 +755,7 @@ $line-height-xxsmall: 20px;
       &-title {
         font-size: 16px;
         text-overflow: ellipsis;
-        white-space: nowrap; //aynı satıra sokar
+        white-space: nowrap; 
       }
   
       &-social {
@@ -766,31 +771,31 @@ $line-height-xxsmall: 20px;
     }
   }
   
-  &__featured {
+  &-featured {
     padding: 80px 0;
-    background-color: $color-white; 
-    text-align: left; // Align the text to the left 
+    background-color: $white; 
+    text-align: left; 
   
     &-title { 
       display: flex; 
-      flex-direction: column; // Stack the text vertically 
+      flex-direction: column; 
       font-size: 24px; 
-      align-items: flex-start; // Align items to the start of the flex container 
-      padding-left: 320px; // Adjust this value to move the text to the right 
+      align-items: flex-start; 
+      padding-left: 320px; 
   
-      &-line-1 { 
+      &-line-first { 
         padding-top: 10px; 
         font-size: 14px;   
         line-height: 20px;    
         font-family: $font-family-inter;   
-        color: $color-medium-gray;   
+        color: $granite-canyon;   
       } 
   
-      &-line-2 {  
+      &-line-second {  
         font-size: 24px; 
         line-height: 32px; 
         font-family: $font-family-primary; 
-        color: $color-medium-gray;
+        color: $granite-canyon;
       } 
      } 
   
@@ -804,8 +809,8 @@ $line-height-xxsmall: 20px;
       img { 
         width: auto; 
         height: 32px; 
-        opacity: 0.7; // Fades the color of the logos to 70% opacity
-        filter: grayscale(50%); // Adds a grayscale filter to make the colors appear more muted
+        opacity: 0.7; 
+        filter: grayscale(50%); 
         transition: opacity 0.3s ease, filter 0.3s ease;
   
         &:hover {
@@ -816,11 +821,11 @@ $line-height-xxsmall: 20px;
     }
    }
   
-  &__testimonials {
+  &-testimonials {
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 150px;
-    background-color: $color-light-yellow;
+    background-color: $clear-moon;
     width: 1280px;
     height: 464px;
   
@@ -834,10 +839,10 @@ $line-height-xxsmall: 20px;
         position: absolute;
         opacity: 0.3;
         top: -10px;
-        right: 10px; // Çizginin sağ tarafa yapışmasını sağlar
+        right: 10px; 
         height: 310px;
-        width: 0.2px; // Çizginin kalınlığı
-        background-color: $color-medium-gray // Çizginin rengi
+        width: 0.2px; 
+        background-color: $granite-canyon; 
       }
 
       h3 {  
@@ -860,7 +865,7 @@ $line-height-xxsmall: 20px;
   
       p {
         font-size: 16px;
-        color: $color-gray;
+        color: $boat-anchor;
         line-height: 28px;
         font-family: $font-family-inter;
         width: 349px;
@@ -873,12 +878,11 @@ $line-height-xxsmall: 20px;
 
       &-intro {
         font-size: 19px;
-        color: $color-dark-gray;
+        color: $carbon;
         max-width: 469px;
         max-height: 128px;
         font-weight: bold;
         line-height: 32px;
-
       }
     
      &-nav {
@@ -888,7 +892,7 @@ $line-height-xxsmall: 20px;
         margin-left: 10px;
         
       &-prev {
-       background-color: #000000;  // Siyah arkaplan
+       background-color: $black;  // Siyah arkaplan
        border: none;
        border-radius: 50%;  // Yuvarlak buton
        width: 40px;
@@ -902,14 +906,15 @@ $line-height-xxsmall: 20px;
           img {
             filter: brightness(0) invert(1);  
             width: 60%;
-          }
+            }
       
           &:hover {
-            background-color: darken(#00000038, 100%);  
+            background-color: darken($black, 100%);  
           }
         }
+
       &-next {
-       background-color: #ffffff;  // Beyaz arkaplan
+       background-color: $white;  // Beyaz arkaplan
        border: none;
        border-radius: 50%;  // Yuvarlak buton
        width: 40px;
@@ -926,7 +931,7 @@ $line-height-xxsmall: 20px;
          }
         
        &:hover {
-         background-color: lighten(#ffffff, 10%);  
+         background-color: lighten($white, 10%);  
         }
        }
     
@@ -942,11 +947,11 @@ $line-height-xxsmall: 20px;
     
         &-name {
           font-weight: bold;
-          color: $color-dark-gray;
+          color: $carbon;
         }
     
         &-location {
-          color: $color-gray;
+          color: $boat-anchor;
           font-size: 14px;
         }
       }
@@ -954,14 +959,14 @@ $line-height-xxsmall: 20px;
     }
    } 
    
-   &__join {
+   &-join {
     padding: 128px 0;
-    background-color: $color-white; // Beyaz arka plan rengi
+    background-color: $white; 
     max-width: 414px;
-    margin: 0 auto; // Ortalar
+    margin: 0 auto; 
     text-align: center;
     display: flex;
-    flex-direction: column; // Alt alta sıralamak için
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
   
@@ -969,16 +974,16 @@ $line-height-xxsmall: 20px;
       font-size: 32px;
       font-weight: bold;
       font-family: $font-family-primary;
-      color: $color-dark-gray; // Koyu gri yazı rengi
+      color: $carbon; 
       margin-bottom: 24px;
       flex-direction: column;
       max-height: 96px;
     }
   
     &-text {
-      font-size: 16px;
-      color: $color-medium-gray;
-      line-height: 28px;
+      font-size: $heading-medium-size;
+      color: $granite-canyon;
+      line-height: $line-height-small;
       font-family: $font-family-inter;
       margin-bottom: 32px;
       flex-direction: column;
@@ -990,10 +995,9 @@ $line-height-xxsmall: 20px;
       margin: 0 auto;
       height: 56px;
 
-
       &-link {
-        background-color: $color-yellow;
-        color: $color-dark-gray;
+        background-color: $eyelash-viper;
+        color: $carbon;
         padding: 12px 24px;
         text-decoration: none;
         font-size: 16px;
@@ -1004,17 +1008,17 @@ $line-height-xxsmall: 20px;
         line-height: 24px;
   
         &:hover {
-          background-color: darken($color-yellow, 0%);
-          color: $color-dark-gray;
+          background-color: darken($eyelash-viper, 0%);
+          color: $carbon;
         }
       }
     }
    }
 
-   &__newsletter {
-    background-color: $color-navbar-bg;
+   &-newsletter {
+    background-color: $cold-steel;
     padding: 40px 20px;
-    color: $color-white;
+    color: $white;
     position: relative; 
     width: 1440px;
     height: 560px;
@@ -1029,7 +1033,7 @@ $line-height-xxsmall: 20px;
   
         &-bracket {
           font-size: 28px;
-          color: $color-white;
+          color: $white;
           left: 170px;
           position: relative;
           top: -3px; 
@@ -1038,10 +1042,9 @@ $line-height-xxsmall: 20px;
         &-name {
           font-size: 24px;
           font-weight: bold;
-          color: $color-white;
+          color: $white;
           margin-left: -765px;
         }
-      
   
       &-nav {
         display: flex;
@@ -1049,7 +1052,7 @@ $line-height-xxsmall: 20px;
         margin-right: 190px; 
   
         a {
-          color: $color-white;
+          color: $white;
           text-decoration: none;
           font-size: 16px;
           font-family: $font-family-inter;
@@ -1063,13 +1066,13 @@ $line-height-xxsmall: 20px;
     }
   
     &-content {
-      background-color: $color-footer-gray;
+      background-color: $shady-character;
       padding: 0px 80px;
       width: 1280px;
       height: 256px;
-      display: flex; // İçerikleri yan yana dizmek için flex kullanıyoruz
-      justify-content: space-between; // İçeriklerin aralarında boşluk bırakmak için
-      align-items: center; // İçerikleri dikey olarak ortalar
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
       flex-wrap: wrap;
       margin-left: 170px;
       width: 80%;
@@ -1090,24 +1093,24 @@ $line-height-xxsmall: 20px;
   
           &-input {
             padding: 15px;
-            border: 1px solid $color-medium-gray;
+            border: 1px solid $granite-canyon;
             border-radius: 0px;
             width: 300px;
-            color: $color-dark-gray;
-            background-color: $color-footer-gray;
+            color: $carbon;
+            background-color: $shady-character;
           }
   
           &-button {
-            background-color: $color-yellow;
+            background-color: $eyelash-viper;
             border: none;
             padding: 15px 30px;
-            color: $color-dark-gray;
+            color: $carbon;
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s ease;
   
             &:hover {
-              background-color: darken($color-yellow, 10%);
+              background-color: darken($eyelash-viper, 10%);
             }
           }
         }
@@ -1116,7 +1119,7 @@ $line-height-xxsmall: 20px;
   
     &-footer {
       position: relative;
-      color: $color-light-gray;
+      color: $clouded-vision;
   
       &-address{
         position: absolute;
@@ -1163,6 +1166,504 @@ $line-height-xxsmall: 20px;
   }    
  }        
 
+ .blog {
+
+  &__hero {
+    background-color: $alpine-goat; 
+    padding: 80px 0;
+
+    .container {
+      max-height: 400px;
+      max-width: 1440px;
+      margin: 94px auto;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $carbon; 
+
+      &-featured {
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 3px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: $boat-anchor; 
+      }
+
+      &-title {
+        font-size: 34px;
+        font-weight: bold;
+        font-family: $font-family-primary;
+        line-height: 48px;
+        margin-bottom: 15px;
+        color: $cold-steel; 
+        max-width: 624px;
+        max-height: 96px;
+      }
+
+      &-meta {
+        font-size: 14px;
+        color: $boat-anchor; 
+        margin-bottom: 16px;
+        line-height: 20px;
+        font-family: $font-family-inter;
+
+        &--author {
+          color: $liberty; 
+        }
+      }
+
+      &-description {
+        font-size: $heading-medium-size;
+        font-family: $font-family-inter;
+        color: $boat-anchor; 
+        margin-bottom: 25px;
+        max-width: 624px;
+        max-height: 56px;
+        line-height: 28px;
+      }
+
+      &-button {
+        background-color: $eyelash-viper;
+        color: $cold-steel;
+        font-weight: bold;
+        padding: 12px 24px;
+        border-radius: 0;
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 204px;
+        max-height: 56px;
+
+        &:hover {
+          background-color: darken($eyelash-viper, 10%);
+        }
+      }
+    }
+
+    &-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__posts {
+    padding: 60px 0;
+
+    &-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      font-family: $font-family-primary;
+      margin-left: 10px;
+    }
+
+    &-divider {
+      border: none;           
+      height: 1px;                
+      background-color: $christmas-silver;  
+      margin-bottom: 64px; 
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; 
+
+      &-item {
+        display: flex;
+        align-items: flex-start; 
+        max-width: 1146px;
+        max-height: 318px;
+        margin-bottom: 20px;
+
+        &-image {
+          width: 40%;
+          height: auto;
+          margin-right: 32px;
+        }
+
+        &-content {
+          margin-top: 55px;
+          width: 100%;
+
+          &-category {
+            font-size: 16px;
+            font-weight: bold;
+            color: $liberty; 
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-family: $font-family-inter;
+            line-height: 20px;
+          }
+
+          &-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: $cold-steel;
+            margin-bottom: 12px;
+            line-height: 48px;
+            font-family: $font-family-primary;
+            max-width: 602px;
+            max-height: 96px;
+          }
+
+          &-description {
+            font-size: 15px;
+            line-height: 28px;
+            color: $boat-anchor;
+            font-family: $font-family-inter;
+            max-width: 624px;
+            max-height: 56px;
+          }
+        }
+      }
+    }
+
+    &-pagination {
+      text-align: center;
+      margin-top: 40px;
+
+      &-prev{
+        color: $granite-canyon; 
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $font-family-primary;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &-next {
+        color: $cold-steel; 
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 10px;
+        font-size: 28px;
+        line-height: 40px;
+        font-family: $font-family-primary;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__about {
+    padding: 40px 20px;
+    margin-top: -20px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+  &-category {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+  
+    &-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: left;
+      padding-bottom: 48px;
+      padding-left: 330px;
+    }
+  
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  
+    &-item {
+      flex: 1;
+      position: relative;
+      padding: 20px;
+      border: 1px solid $clouded-vision;
+      transition: background-color 0.3s ease;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start; 
+      margin-left: 32px;
+     
+      &:hover {
+        background-color: $eyelash-viper; 
+      }
+      
+     &-icon{ 
+
+      &--background { 
+        height: 48px; 
+        display: flex; 
+        align-items: flex-start; 
+        justify-content: flex-start; 
+        position: relative; 
+        top: 21%;  
+        left: 20%;  
+  
+       &-img { 
+        width: 23px;  
+        position: absolute;  
+        transform: translate(-50%, -50%);  
+        height: auto; 
+        padding-bottom: 35px; 
+        left: 18%;  
+        } 
+       } 
+
+       &--large {
+        width: 40px;
+        height: 70px;
+       }
+      } 
+  
+      &-title { 
+        font-size: 28px; 
+        font-weight: bold; 
+        margin-bottom: 1px; 
+        color: $carbon;  
+        text-align: left; 
+        padding: 10px;  
+        font-family: $font-family-primary;  
+        padding-left: 10px;
+        line-height: 40px;
+       } 
+  
+      &-description {  
+        font-size: $heading-medium-size;  
+        color: $boat-anchor;  
+        text-align: left;  
+        padding-left: 10px;
+        font-family: $font-family-inter;
+        line-height: $line-height-small;
+       }
+      }
+    } 
+
+   &-join {
+    padding: 128px 0;
+    background-color: $white; 
+    max-width: 414px;
+    margin: 0 auto; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  
+    &-title {
+      font-size: 32px;
+      font-weight: bold;
+      font-family: $font-family-primary;
+      color: $carbon; 
+      margin-bottom: 24px;
+      flex-direction: column;
+      max-height: 96px;
+    }
+  
+    &-text {
+      font-size: 16px;
+      color: $granite-canyon;
+      line-height: 28px;
+      font-family: $font-family-inter;
+      margin-bottom: 32px;
+      flex-direction: column;
+    }
+  
+    &-button {
+      padding: 10px;
+      width: 174px;
+      margin: 0 auto;
+      height: 56px;
+
+      &-link {
+        background-color: $eyelash-viper;
+        color: $carbon;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 0;
+        transition: background-color 0.3s ease;
+        flex-direction: column;
+        line-height: 24px;
+  
+        &:hover {
+          background-color: darken($eyelash-viper, 0%);
+          color: $carbon;
+        }
+      }
+    }
+   }
+
+   &-newsletter {
+    background-color: $cold-steel;
+    padding: 40px 20px;
+    color: $white;
+    position: relative; 
+    width: 1440px;
+    height: 560px;
+    width: 100%;
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      margin-bottom: 54px;
+  
+        &-bracket {
+          font-size: 28px;
+          color: $white;
+          left: 170px;
+          position: relative;
+          top: -3px; 
+        }
+  
+        &-name {
+          font-size: 24px;
+          font-weight: bold;
+          color: $white;
+          margin-left: -765px;
+        }
+  
+      &-nav {
+        display: flex;
+        gap: 20px;
+        margin-right: 190px; 
+  
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 16px;
+          font-family: $font-family-inter;
+          line-height: 28px;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    &-content {
+      background-color: $shady-character;
+      padding: 0px 80px;
+      width: 1280px;
+      height: 256px;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      flex-wrap: wrap;
+      margin-left: 170px;
+      width: 80%;
+  
+        &-title {
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: -2px;
+          font-weight: bold;
+          max-width: 562px;
+          max-height: 96px;
+        }
+  
+        &-form {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+  
+          &-input {
+            padding: 15px;
+            border: 1px solid $granite-canyon;
+            border-radius: 0px;
+            width: 300px;
+            color: $carbon;
+            background-color: $shady-character;
+          }
+  
+          &-button {
+            background-color: $eyelash-viper;
+            border: none;
+            padding: 15px 30px;
+            color: $carbon;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: darken($eyelash-viper, 10%);
+            }
+          }
+        }
+      }
+    
+  
+    &-footer {
+      position: relative;
+      color: $clouded-vision;
+  
+      &-address{
+        position: absolute;
+        left: 170px; 
+        bottom: -80px; 
+        flex-direction: column;
+        font-family: $font-family-inter;
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      &-contact {
+        position: absolute;
+        left: 170px; 
+        bottom: -110px; 
+        flex-direction: column;
+        font-family: $font-family-inter;
+        font-size: 16px;
+        line-height: 28px;
+      }
+  
+      &-social {
+        position: absolute;
+        right: 175px; 
+        bottom: -80px; 
+        display: flex;
+        gap: 26px;
+        margin-right: 20px;
+  
+        a img {
+          width: 16px;
+          height: 16px;
+          filter: brightness(0) invert(1); 
+          opacity: 0.7; 
+          transition: filter 0.3s ease, opacity 0.3s ease;
+  
+          &:hover {
+            filter: brightness(0) invert(1);
+          }
+         }
+       }
+     }
+    }
+  }    
+}
 
 .scroll-up-btn {
   display: none; 
@@ -1171,8 +1672,8 @@ $line-height-xxsmall: 20px;
   right: 30px; 
   z-index: 99;
   font-size: 18px;
-  background-color: #333;
-  color: white;
+  background-color: $carbon;
+  color: $white;
   border: none;
   outline: none;
   cursor: pointer;

@@ -35,6 +35,7 @@ $line-height-xsmall: 24px;
 $line-height-xxsmall: 20px;
 
 .home {
+
  &__header {
     background-color: $cold-steel;
     color: $white;
@@ -467,6 +468,7 @@ $line-height-xxsmall: 20px;
 
     &-section {
       width: 48%;
+      text-align: left;
 
       &-title {
         font-size: $heading-small-size;
@@ -1671,6 +1673,114 @@ $line-height-xxsmall: 20px;
   }
 }
 
+.about{
+
+&__hero {
+  position: relative;
+  background-color: $white;
+  color: $cold-steel;
+  padding: 200px 0;
+  text-align: center;
+
+  .row{
+    max-width: 1133px;
+    max-height: 356px;
+  }
+
+  &-content {
+    z-index: 2;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    width: 624px;
+    height: 356px;
+    top: 18%;
+    padding: 40px 40px;
+
+    &-title{
+      font-size: $heading-small-size;
+      font-family: $font-family-inter;
+      line-height: $line-height-xxsmall;
+      text-align: left;
+      display: flex;
+      padding-left: 20px;
+    }
+
+    &-description{
+      font-family: $font-family-primary;
+      font-size: 48px;
+      line-height: 64px;
+      display: flex;
+      text-align: left;
+      font-weight: bold;
+      max-width: 496px;
+      max-height: 192px;
+      padding-left: 20px;
+      letter-spacing: -2px;
+    }
+  }
+
+  &-description {
+    width: 477px;
+    height: 112px;
+    margin-left: 100px;
+    padding-top: 150px;
+
+    &-text{
+      font-size: $heading-small-size;
+      font-family: $font-family-inter;
+      line-height: $line-height-small;
+      text-align: left;
+      display: inline-block;
+    }
+  }
+
+  &-image {
+    width: 200%;
+    max-width: none;
+    object-fit: cover;
+    position: relative;
+    z-index: 0; 
+    width: 1280px;
+    height: 444px;
+    object-fit: cover;
+    left: -10%;
+  }
+
+  &-item{
+    
+  &-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: $cold-steel;
+  }
+
+  &-item-text {
+    font-size: 16px;
+    color: $cold-steel;
+  }
+ }
+}
+
+&__mission-vision {
+  background-color: $clear-moon;
+  color: $carbon;
+
+  &-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+ }
+}
+
 .scroll-up-btn {
   display: none; 
   position: fixed;
@@ -1696,5 +1806,3 @@ $line-height-xxsmall: 20px;
 .scroll-up-btn:hover {
   opacity: 1; 
 }
-
- 

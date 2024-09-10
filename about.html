@@ -10,38 +10,39 @@
 </head>
 
 <body>
-  <header class="home__header">
-    <nav class="home__navbar navbar navbar-expand-lg navbar-light bg-light">
-      <a class="home__navbar-brand" href="#">
-        <span class="home__navbar-brand-bracket">{</span>
-        <span class="home__navbar-brand-name">Finsweet</span>
+  <header class="page__header">
+    <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
+      <a class="page__navbar-brand" href="#">
+        <span class="page__navbar-brand-bracket">{</span>
+        <span class="page__navbar-brand-name">Finsweet</span>
       </a>
 
-      <button class="home__navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="page__navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="page-toggler-icon"></span>
       </button>
-      
-      <div class="home__navbar-collapse collapse navbar-collapse" id="navbarNav">
-        <ul class="home__navbar-nav navbar-nav ml-auto">
-          <li class="home__navbar-item nav-item">
-            <a class="home__navbar-link nav-link" href="index.html">Home</a>
+
+      <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
+        <ul class="page__navbar-nav navbar-nav ml-auto">
+          <li class="page__navbar-item nav-item">
+            <a class="page__navbar-link nav-link" href="index.html">Home</a>
           </li>
 
-          <li class="home__navbar-item nav-item">
-            <a class="home__navbar-link nav-link" href="blog.html">Blog</a>
+          <li class="page__navbar-item nav-item active">
+            <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
           </li>
 
-          <li class="home__navbar-item nav-item">
-            <a class="home__navbar-link nav-link" href="about.html">About Us</a>
+          <li class="page__navbar-item nav-item">
+            <a class="page__navbar-link nav-link" href="about.html">About Us</a>
           </li>
 
-          <li class="home__navbar-item nav-item">
-            <a class="home__navbar-link nav-link" href="contact.html">Contact us</a>
+          <li class="page__navbar-item nav-item">
+            <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
           </li>
 
-          <li class="home__navbar-item home__navbar--button">
-            <a class="home__navbar-link home__navbar-link--button" href="#">
-              <span class="home__navbar-text">Subscribe</span>
+          <li class="page__navbar-item page__navbar-button">
+            <a class="page__navbar-link page__navbar-link-button" href="#">
+              <span class="page__navbar-text">Subscribe</span>
             </a>
           </li>
         </ul>
@@ -68,45 +69,61 @@
          </div>
        </div>
 
-       <!-- Stats Section -->
-       <div class="row text-center mt-4">
-        <div class="col-md-4">
-          <h2 class="about__hero-item-number">12+</h2>
-          <p class="about__hero-item-text">Blogs Published</p>
-      </div>
+        <div class="row text-center mt-4 position-relative">
+            <img src="images/friends-about.png" alt="Team Image" class="about__hero-image img-fluid">
+              
+            <!-- Stats Section -->
+            <div class="about__stats">
+              <div class="about__stats-item">
+                <h2 class="about__stats-number">12+</h2>
+                <p class="about__stats-text">Blogs Published</p>
+              </div>
 
-        <div class="col-md-4">
-          <h2 class="about__hero-item-number">18K+</h2>
-          <p class="about__hero-item-text">Views on Finsweet</p>
+              <div class="about__stats-item">
+                <h2 class="about__stats-number">18K+</h2>
+                <p class="about__stats-text">Views on Finsweet</p>
+              </div>
+
+              <div class="about__stats-item">
+                <h2 class="about__stats-number">30K+</h2>
+                <p class="about__stats-text">Total active Users</p>
+              </div>
+            </div>       
+          </div>
         </div>
+      </section>
 
-        <div class="col-md-4">
-          <h2 class="about__hero-item-number">30K+</h2>
-          <p class="about__hero-item-text">Total active Users</p>
-        </div>
-    </div>
-
-          <img src="images/friends-about.png" alt="Team Image" class="about__hero-image img-fluid">
-      </div>
-  
-
-
-
-    <div class="home__about-container-wrapper"> 
+   <section class="about__posts">
+    <div class="about__posts-container-wrapper"> 
       <div class="container">
         <div class="row">
-          <div class="col-md-6 home__about-section">
-            <h3 class="home__about-section-title">OUR MISSION</h3>
-            <p class="home__about-section-subtitle">Creating valuable content for creatives all around the world</p>
-            <p class="home__about-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
-              <a href="#" class="home__about-section-link">Read More ></a>
+          <div class="col-md-6 about__posts-section">
+            <h3 class="about__posts-section-title">OUR MISSION</h3>
+            <p class="about__posts-section-subtitle">Creating valuable content for creatives all around the world</p>
+            <p class="about__posts-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
             </div>
             
-            <div class="col-md-6 home__about-mission-section">
-              <h3 class="home__about-mission-section-title">OUR MISSION</h3>
-              <h2 class="home__about-mission-section-subtitle">Creating valuable content for creatives all around the world</h2>
-              <p class="home__about-mission-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="col-md-6 about__posts-mission-section">
+              <h3 class="about__posts-mission-section-title">OUR VISION</h3>
+              <h2 class="about__posts-mission-section-subtitle">A platform that empowers individuals to improve</h2>
+              <p class="about__posts-mission-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__team">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 about__team-content">
+            <h3 class="about__team-title">Our team of creatives</h3>
+            <p class="about__team-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <p class="about__team-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+          </div>
+
+          <div class="col-md-6 about__team-image-wrapper">
+            <img src="images/holding-hands.png" alt="Holding Hands" class="about__team-image img-fluid">
+            <div class="about__team-decorator"></div>
           </div>
         </div>
       </div>
@@ -115,6 +132,43 @@
   
 
  
+  <div class="page__newsletter">
+    <div class="page__newsletter-header">
+        <span class="page__newsletter-header-bracket">{</span>
+        <span class="page__newsletter-header-name">Finsweet</span>
+        <nav class="page__newsletter-header-nav">
+          <a href="index.html" class="page__newsletter-header-nav-link">Home</a>
+          <a href="blog.html" class="page__newsletter-header-nav-link">Blog</a>
+          <a href="about.html" class="page__newsletter-header-nav-link">About us</a>
+          <a href="contact.html" class="page__newsletter-header-nav-link">Contact us</a>
+          <a href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</a>
+        </nav>
+     </div>
+
+    <div class="page__newsletter-content">
+        <p class="page__newsletter-content-title">
+          Subscribe to our news letter to get latest updates and news
+        </p>
+
+        <form class="page__newsletter-content-form">
+          <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input">
+          <button type="submit" class="page__newsletter-content-form-button">Subscribe</button>
+        </form>
+    </div>
+  
+    <div class="page__newsletter-footer">
+      <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
+      <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
+      <div class="page__newsletter-footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
+      </div>
+    </div>
+   </div>
+
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

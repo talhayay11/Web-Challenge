@@ -19,3 +19,9 @@ scrollToTopButton.addEventListener('click', function() {
   document.body.scrollTop = 0; // Safari için
   document.documentElement.scrollTop = 0; // Diğer tarayıcılar için
 });
+
+
+document.getElementById('darkModeToggle').addEventListener('click', function () {
+  document.body.classList.toggle('dark-mode'); // Body'e dark-mode class'ını ekle/çıkar
+});
+

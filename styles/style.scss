@@ -2,6 +2,7 @@
 $eyelash-viper: #f3c84b; // Sarı
 $liberty: #5a4999; // Mor  
 $carbon: #333333; // Koyu Gri   
+$carbon-333: #333;
 $shady-character: #4c4c4c7e; //footer Gri
 $boat-anchor: #6b6b6b; // Orta Gri
 $clouded-vision: #d1d1d1; // Açık Gri
@@ -12,9 +13,16 @@ $cold-steel: #232536; //siyah
 $clear-moon: #fbf6ea; //açık sarı
 $alpine-goat: #f4f0f8; //lavender
 $black: #00000011; //siyah
+$black-50:#00000080; 
+$black-80: #000000cc; //siyah 80
 $christmas-silver: #e0e0e0; //Gümüş 
 $royalty: #592ea9;
 $river-styx: #161722;
+$dark-tone-ink: #121212; // Koyu arka plan
+$umbra: #1f1f1f; // Header arka plan
+$shoe-wax: #2c2c2c; // Buton ve border
+$atlantic-charter: #2c2d40ff;
+$knighthood: #3b3c53;
 
 // Font Ailesi
 $font-family-primary: 'Sen', sans-serif;
@@ -199,7 +207,6 @@ $line-height-xxsmall: 20px;
         font-size: $heading-xlarge-size;
         font-weight: bold; 
         margin-bottom: 1px; 
-        color: $carbon;  
         text-align: left; 
         padding: 10px;  
         font-family: $font-family-primary;  
@@ -292,7 +299,6 @@ $line-height-xxsmall: 20px;
       font-size: 32px;
       font-weight: bold;
       font-family: $font-family-primary;
-      color: $carbon; 
       margin-bottom: 24px;
       flex-direction: column;
       max-height: 96px;
@@ -502,6 +508,7 @@ $line-height-xxsmall: 20px;
       height: 100%;
       object-fit: cover;
       z-index: -1;
+      filter: brightness(0.5); 
     }
 
     &-content {
@@ -661,13 +668,14 @@ $line-height-xxsmall: 20px;
         &-description {
           font-size: $heading-small-size;
           line-height: $line-height-small;
-          color: $carbon;
+          font-family: $font-family-inter;
+          color: $granite-canyon;
           margin-bottom: 32px;
           width: 551px;
           height: 56px;
         }
 
-        &--button {
+        &-button {
           background-color: $eyelash-viper;
           border: none;
           width: 204px;
@@ -762,7 +770,6 @@ $line-height-xxsmall: 20px;
             height: 96px;
             font-size: $heading-large-size;
             font-weight: bold;
-            color: $carbon;
             line-height: $line-height-medium;
             font-family: $font-family-primary;
             margin-left: 32px;
@@ -829,7 +836,6 @@ $line-height-xxsmall: 20px;
         font-size: $heading-small-size;
         font-weight: 600;
         letter-spacing: 3px;
-        color: $carbon;
         margin-bottom: 24px;
         font-family: $font-family-inter;
         margin-top: 60px;
@@ -837,13 +843,13 @@ $line-height-xxsmall: 20px;
       }
 
       &-subtitle {
-        font-size: $heading-xxlarge-size;
+        font-size: 35.5px;
         font-weight: bold;
-        color: $carbon;
         font-family: $font-family-primary;
         line-height: $line-height-xlarge;
-        width: 494px;
+        width: 496px;
         height: 144px;
+        letter-spacing: -1px;
       }
 
       &-description {
@@ -879,7 +885,6 @@ $line-height-xxsmall: 20px;
           font-size: $heading-small-size;
           font-weight: 600;
           letter-spacing: 3px;
-          color: $carbon;
           margin-bottom: 24px;
           font-family: $font-family-inter;
           margin-top: 60px;
@@ -889,10 +894,9 @@ $line-height-xxsmall: 20px;
         &-subtitle {
           font-size: $heading-xlarge-size;
           font-weight: bold;
-          color: $carbon;
           font-family: $font-family-primary;
           line-height: $line-height-large;
-          width: 481px;
+          width: 470px;
           height: 80px;
           letter-spacing: -1px;
         }
@@ -939,7 +943,6 @@ $line-height-xxsmall: 20px;
   
       &-title {
         font-size: $heading-small-size;
-        color: $carbon;
         font-weight: bold;
         margin-bottom: 10px;
         font-family: $font-family-inter;
@@ -950,7 +953,6 @@ $line-height-xxsmall: 20px;
         font-size: 46px;
         font-family: $font-family-primary;
         line-height: 64px;
-        color: $carbon;
         font-weight: bold;
         margin-bottom: 10px;
         max-width: 546px;
@@ -1020,7 +1022,7 @@ $line-height-xxsmall: 20px;
       &-img { 
         width: auto; 
         height: 32px; 
-        opacity: 0.7; 
+        opacity: 0.4; 
         filter: grayscale(50%); 
         transition: opacity 0.3s ease, filter 0.3s ease;
   
@@ -1089,7 +1091,6 @@ $line-height-xxsmall: 20px;
 
       &-intro {
         font-size: 19px;
-        color: $carbon;
         max-width: 469px;
         max-height: 128px;
         font-weight: bold;
@@ -1103,7 +1104,7 @@ $line-height-xxsmall: 20px;
         margin-left: 10px;
         
       &-prev {
-       background-color: $cold-steel;  
+       background-color: $dark-tone-ink;  
        border: none;
        border-radius: 50%;  
        width: 40px;
@@ -1158,7 +1159,6 @@ $line-height-xxsmall: 20px;
     
         &-name {
           font-weight: bold;
-          color: $carbon;
         }
     
         &-location {
@@ -1205,7 +1205,6 @@ $line-height-xxsmall: 20px;
         font-family: $font-family-primary;
         line-height: $line-height-xlarge;
         margin-bottom: 15px;
-        color: $cold-steel; 
         max-width: 624px;
         max-height: 96px;
       }
@@ -1314,7 +1313,6 @@ $line-height-xxsmall: 20px;
           &-title {
             font-size: 30px;
             font-weight: bold;
-            color: $cold-steel;
             margin-bottom: 12px;
             line-height: $line-height-xlarge;
             font-family: $font-family-primary;
@@ -1336,33 +1334,30 @@ $line-height-xxsmall: 20px;
 
     &-pagination {
       text-align: center;
+      align-items: center;
+      justify-content: center;
       margin-top: 40px;
-
+      margin-left: 800px;
+      display: inline-block;
+      
       &-prev {
+        display: inline;
         color: $granite-canyon; 
         text-decoration: none;
         margin: 0 10px;
         font-size: $heading-large-size;
         line-height: $line-height-medium;
         font-family: $font-family-primary;
-        
-        &:hover {
-          text-decoration: underline;
-        }
       }
 
       &-next {
-        color: $cold-steel; 
+        display: inline;
         text-decoration: none;
         font-weight: bold;
         margin: 0 10px;
         font-size: $heading-xlarge-size;
         line-height: $line-height-large;
         font-family: $font-family-primary;
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
   }
@@ -1446,7 +1441,6 @@ $line-height-xxsmall: 20px;
         font-size: $heading-xlarge-size;
         font-weight: bold; 
         margin-bottom: 1px; 
-        color: $carbon;  
         text-align: left; 
         padding: 10px;  
         font-family: $font-family-primary;  
@@ -1830,6 +1824,7 @@ $line-height-xxsmall: 20px;
 .contact {
 
   &__hero {
+    position: relative;
 
     .container {
       display: flex;
@@ -1915,6 +1910,75 @@ $line-height-xxsmall: 20px;
     max-width: 1280px;
     height: auto;
     margin-left: 300px;
+  }
+
+  &-indicators {
+    position: absolute;
+    bottom: -25px;
+    left: 35%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+
+    li {
+      width: 12px;
+      height: 12px;
+      background-color: $white;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+
+      &.active {
+        background-color: $carbon-333;
+      }
+    }
+  }
+
+  &-control-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: $black-50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 13.5%;
+    margin-bottom: -100px;
+
+    &:hover {
+      background-color: $black-80;
+    }
+
+    .contact__hero-control-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: $black-50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 14.6%;
+
+    &:hover {
+      background-color: $black-80;
+    }
+
+    .contact__hero-control-icon {
+      width: 20px;
+      height: 20px;
+    }
   }
  }
 
@@ -2035,7 +2099,6 @@ $line-height-xxsmall: 20px;
  }
 }
 
-
 .scroll-up-btn {
   display: none; 
   position: fixed;
@@ -2062,55 +2125,100 @@ $line-height-xxsmall: 20px;
   opacity: 1; 
 }
 
-:where(.dark-mode) {
-  $dark-bg: #1c1c1e;
-  $dark-text: #f1f1f1;
-  $dark-card-bg: #2c2c2e;
-  $dark-border: #444;
-
-  body {
-    background-color: $dark-bg !important;
-    color: $dark-text !important;
-  }
-
+@mixin dark-mode {
+  background-color: $atlantic-charter;
+  color: $white;
+  
   .page__header,
   .page__navbar {
-    background-color: $dark-bg !important;
-    color: $dark-text !important;
+    background-color: $umbra;
   }
 
-  .page__navbar-link {
-    color: $dark-text !important;
+  .btn,
+  .home__posts-featured-content-button {
+    background-color: $carbon;
+    color: $white;
+    border: 1px solid $shoe-wax;
+    white-space: nowrap;
+
     &:hover {
-      color: lighten($dark-text, 10%);
+      background-color: lighten($umbra, 10%);
     }
   }
 
-  .page__navbar-button {
-    background-color: $dark-card-bg;
-    color: $dark-text;
+  .home__posts-list-items-item,
+  .page__category-item,
+  .blog__about-category-item,
+  .page__authors-item {
+    background-color: $atlantic-charter;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($umbra, 10%);
+
+      .home__posts-list-items-item-text,
+      .page__category-item-title,
+      .blog__about-category-item-title {
+        color: $white; 
+      }
+    }   
   }
 
+  .page__authors-item {
+    background-color: $knighthood;
+    color: $white;
+
+    &:hover {
+      background-color: lighten($umbra, 10%);
+    }   
+  }
+
+ body.dark-mode, 
+ .page__join,
+ .home__posts-featured-content,
+ .home__about-featured,
+ .dark-mode-btn {
+  background-color: $atlantic-charter;
+  color: $white;
+  }
+
+  .home__about-container-wrapper,
+  .home__about-story-content,
+  .home__about-testimonials,
+  .blog__hero,
   .about__hero,
-  .about__posts,
-  .about__team,
-  .contact__hero {
-    background-color: $dark-bg;
-    color: $dark-text;
-  }
-
-  .about__stats {
-    background-color: $dark-card-bg;
-    border-color: $dark-border;
-  }
-
-  .about__posts-section {
-    background-color: $dark-card-bg;
-    border-color: $dark-border;
-  }
-
-  .about__posts-section-title,
-  .about__posts-section-description {
-    color: $dark-text;
+  .about__hero-content,
+  .about__posts-container-wrapper,
+  .contact__posts,
+  .contact__posts-list-text,
+  .blog__hero-content-title {
+    background-color: $cold-steel;
+    color: $white;
   }
 }
+
+body.dark-mode {
+  @include dark-mode;
+} 
+
+/* Butonun varsayılan hali (aydınlık mod) */
+.dark-mode-btn {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  background-color: $white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none; /* Odak çerçevesini kaldırır */
+}
+
+.dark-mode-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.dark-mode-btn:focus {
+  outline: none; 
+ }

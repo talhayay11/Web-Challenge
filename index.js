@@ -21,7 +21,29 @@ scrollToTopButton.addEventListener('click', function() {
 });
 
 
-document.getElementById('darkModeToggle').addEventListener('click', function () {
-  document.body.classList.toggle('dark-mode'); // Body'e dark-mode class'ını ekle/çıkar
-});
+const darkModeButton = document.getElementById('darkModeToggle');
+const darkModeIcon = document.getElementById('darkModeIcon');
 
+// Dark mode'u açıp kapatma fonksiyonu
+const toggleDarkMode = () => {
+  // Body'ye dark mode sınıfını ekleyip kaldırıyoruz
+  document.body.classList.toggle('dark-mode');
+  
+  // Dark mode aktifse ikonları değiştir
+  if (document.body.classList.contains('dark-mode')) {
+    darkModeIcon.src = 'images/moon-solid.png';  // Karanlık mod ikonu
+    darkModeIcon.alt = 'Dark Mode';
+  } else {
+    darkModeIcon.src = 'images/sun-regular.png'; // Aydınlık mod ikonu
+    darkModeIcon.alt = 'Light Mode';
+  }
+};
+// Butona tıklayınca dark mode'u değiştir
+darkModeButton.addEventListener('click', toggleDarkMode);
+
+
+// Bootstrap sliderı otomatik oynatma için interval belirle
+$('#contactHeroSlider').carousel({
+  interval: 3000, // 3 saniye
+  ride: 'carousel'
+});

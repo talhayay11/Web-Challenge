@@ -47,3 +47,17 @@ $('#contactHeroSlider').carousel({
   interval: 3000, // 3 saniye
   ride: 'carousel'
 });
+
+// Menü Açma Butonuna Tıklayınca Menü Açılır
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuOpen = document.getElementById('mobileMenuOpen');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+mobileMenuOpen.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+});
+
+// Menü Kapatma Butonuna Tıklayınca Menü Kapanır
+mobileMenuClose.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+});

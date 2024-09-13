@@ -231,26 +231,25 @@
   flex-direction: column;
 }
 .page__join-button {
-  padding: 10px;
+  padding: 16px;
   width: 174px;
-  margin: 0 auto;
   height: 56px;
-}
-.page__join-button-link {
-  background-color: #f3c84b;
-  color: #333333;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+  margin: 0 auto;
   border-radius: 0;
   transition: background-color 0.3s ease;
+  background-color: #f3c84b;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+.page__join-button:hover {
+  background-color: #f0b91b;
+}
+.page__join-button-link {
+  font-size: 16px;
+  font-weight: bold;
   flex-direction: column;
   line-height: 24px;
-}
-.page__join-button-link:hover {
-  background-color: #f3c84b;
-  color: #333333;
 }
 .page__newsletter {
   background-color: #232536;
@@ -386,25 +385,26 @@
   position: relative;
   width: 1440px;
   width: 100%;
-  height: 720px;
+  height: 1300px;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: -150px;
 }
 .home__hero-image {
   position: absolute;
-  top: 0;
-  left: 10;
+  top: 80px;
   width: 100%;
-  height: 100%;
+  height: 1000px;
   object-fit: cover;
   z-index: -1;
   filter: brightness(0.5);
 }
 .home__hero-content {
   max-width: 804px;
-  margin-left: 81px;
+  margin-left: 100px;
+  margin-top: -300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,6 +419,7 @@
   font-family: "Inter", sans-serif;
   letter-spacing: 3px;
   color: #FFFFFF;
+  padding-bottom: 30px;
 }
 .home__hero-content-category--highlight {
   font-weight: bold;
@@ -430,19 +431,18 @@
   color: #FFFFFF;
 }
 .home__hero-content-title {
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 700;
-  width: 803px;
+  width: 900px;
   height: 128px;
   line-height: 64px;
-  letter-spacing: -2px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: "Sen", sans-serif;
   color: #FFFFFF;
 }
 .home__hero-content-author {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   line-height: 28px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -453,12 +453,13 @@
 .home__hero-content-description {
   font-size: 16px;
   line-height: 28px;
-  width: 599px;
+  width: 610px;
   height: 56px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  margin-bottom: 40px;
 }
-.home__hero-content--button {
+.home__hero-content-button {
   background-color: #f3c84b;
   border: none;
   width: 204px;
@@ -479,7 +480,7 @@
   justify-content: center;
   border-radius: 0;
 }
-.home__hero-content--button:hover {
+.home__hero-content-button:hover {
   background-color: #f0b91b;
 }
 .home__posts {
@@ -525,7 +526,7 @@
   line-height: 20px;
   font-family: "Inter", sans-serif;
   margin-bottom: 16px;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 .home__posts-featured-content-meta--author {
   font-family: "Inter", sans-serif;
@@ -545,7 +546,7 @@
   line-height: 28px;
   font-family: "Inter", sans-serif;
   color: #6d6e76;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   width: 551px;
   height: 56px;
 }
@@ -652,12 +653,12 @@
 .home__about::before {
   content: "";
   position: absolute;
-  top: 255px;
+  top: 256px;
   left: 63%;
   transform: translateX(-63%);
   height: 23px;
   width: 70%;
-  max-width: 900px;
+  max-width: 1061px;
   background: linear-gradient(to right, #f3c84b 70%, #5a4999 30%);
 }
 .home__about .container {
@@ -669,7 +670,7 @@
   align-items: flex-start;
 }
 .home__about-container-wrapper {
-  max-width: 1280px;
+  width: 1280px;
   height: 500px;
   margin: 0 auto;
   padding: 40px;
@@ -852,8 +853,8 @@
 .home__about-featured-logos-img {
   width: auto;
   height: 32px;
-  opacity: 0.4;
-  filter: grayscale(50%);
+  opacity: 0.7;
+  filter: grayscale(30%);
   transition: opacity 0.3s ease, filter 0.3s ease;
 }
 .home__about-featured-logos-img:hover {
@@ -862,8 +863,7 @@
 }
 .home__about-testimonials {
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 150px;
+  padding-top: 70px;
   background-color: #fbf6ea;
   width: 1280px;
   height: 464px;
@@ -893,7 +893,7 @@
 .home__about-testimonials-text-subheading {
   font-size: 34px;
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-bottom: 12px;
   width: 345px;
   height: 96px;
   font-family: "Sen", sans-serif;
@@ -904,45 +904,51 @@
   color: #6b6b6b;
   line-height: 28px;
   font-family: "Inter", sans-serif;
+  margin-top: 20px;
   width: 349px;
   height: 56px;
 }
 .home__about-testimonials-item {
   margin-left: 100px;
+  height: 310px;
+  width: 532px;
 }
 .home__about-testimonials-item-intro {
-  font-size: 19px;
-  max-width: 469px;
-  max-height: 128px;
+  font-size: 24px;
+  font-family: "Sen", sans-serif;
+  width: 460px;
+  height: 128px;
   font-weight: bold;
   line-height: 32px;
 }
-.home__about-testimonials-item-nav {
+.home__about-testimonials-nav {
   display: flex;
   align-items: center;
-  margin-bottom: -50px;
+  margin-top: 100px;
   margin-left: 10px;
+  max-width: 518px;
+  max-height: 62px;
 }
-.home__about-testimonials-item-nav-prev {
+.home__about-testimonials-nav-prev {
   background-color: #121212;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   margin-right: 10px;
 }
-.home__about-testimonials-item-nav-prev-img {
+.home__about-testimonials-nav-prev-img {
   filter: brightness(0) invert(1);
   width: 60%;
 }
-.home__about-testimonials-item-nav-prev:hover {
+.home__about-testimonials-nav-prev:hover {
   background-color: black;
 }
-.home__about-testimonials-item-nav-next {
+.home__about-testimonials-nav-next {
   background-color: #FFFFFF;
   border: none;
   border-radius: 50%;
@@ -953,27 +959,28 @@
   justify-content: center;
   cursor: pointer;
   margin-right: 10px;
+  margin-left: 220px;
 }
-.home__about-testimonials-item-nav-next-img {
+.home__about-testimonials-nav-next-img {
   filter: brightness(0);
   width: 60%;
 }
-.home__about-testimonials-item-nav-next:hover {
+.home__about-testimonials-nav-next:hover {
   background-color: white;
 }
-.home__about-testimonials-item-nav-author {
+.home__about-testimonials-nav-author {
   display: flex;
   align-items: center;
-  margin-right: 20px;
 }
-.home__about-testimonials-item-nav-author-img {
+.home__about-testimonials-nav-author-img {
   border-radius: 50%;
   margin-right: 10px;
 }
-.home__about-testimonials-item-nav-author-name {
+.home__about-testimonials-nav-author-name {
   font-weight: bold;
+  white-space: nowrap;
 }
-.home__about-testimonials-item-nav-author-location {
+.home__about-testimonials-nav-author-location {
   color: #6b6b6b;
   font-size: 14px;
 }
@@ -1366,7 +1373,6 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #333333;
   margin-bottom: 24px;
   font-family: "Inter", sans-serif;
   margin-top: 60px;
@@ -1375,7 +1381,6 @@
 .about__posts-section-subtitle {
   font-size: 28px;
   font-weight: bold;
-  color: #333333;
   font-family: "Sen", sans-serif;
   line-height: 40px;
   width: 481px;
@@ -1397,7 +1402,6 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #333333;
   margin-bottom: 24px;
   font-family: "Inter", sans-serif;
   margin-top: 60px;
@@ -1406,7 +1410,6 @@
 .about__posts-mission-section-subtitle {
   font-size: 28px;
   font-weight: bold;
-  color: #333333;
   font-family: "Sen", sans-serif;
   line-height: 40px;
   width: 475px;
@@ -1433,7 +1436,6 @@
   font-family: "Sen", sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333333;
   text-align: left;
 }
 .about__team-subtitle {
@@ -1442,7 +1444,6 @@
   font-family: "Sen", sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #232536;
   text-align: left;
   max-width: 519px;
   max-height: 96px;
@@ -1451,7 +1452,6 @@
   font-size: 16px;
   line-height: 28px;
   font-family: "Inter", sans-serif;
-  color: #232536;
   text-align: left;
   max-width: 519px;
   max-height: 140px;
@@ -1513,7 +1513,6 @@
   line-height: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #232536;
   letter-spacing: -1px;
 }
 .about__talk-content-subtitle {
@@ -1522,7 +1521,6 @@
   line-height: 32px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #333333;
   max-width: 511px;
   max-height: 96px;
 }
@@ -1530,7 +1528,6 @@
   font-size: 16px;
   font-family: "Inter", sans-serif;
   line-height: 28px;
-  color: #232536;
   font-weight: 400;
   max-width: 519px;
   max-height: 140px;
@@ -1585,7 +1582,6 @@
   font-family: "Sen", sans-serif;
   line-height: 64px;
   font-weight: 700;
-  color: #232536;
   letter-spacing: -2px;
   max-width: 768px;
   max-height: 128px;
@@ -1595,7 +1591,6 @@
   font-size: 24px;
   line-height: 32px;
   font-family: "Sen", sans-serif;
-  color: #232536;
   white-space: nowrap;
   font-weight: 700;
   max-width: 88px;
@@ -1802,6 +1797,10 @@
   opacity: 1;
 }
 
+.scroll-up-btn:focus {
+  outline: none;
+}
+
 body.dark-mode {
   background-color: #2c2d40;
   color: #FFFFFF;
@@ -1811,6 +1810,8 @@ body.dark-mode .page__navbar {
   background-color: #1f1f1f;
 }
 body.dark-mode .btn,
+body.dark-mode .page__join-button,
+body.dark-mode .page__newsletter-content-form-button,
 body.dark-mode .home__posts-featured-content-button {
   background-color: #333333;
   color: #FFFFFF;
@@ -1818,6 +1819,8 @@ body.dark-mode .home__posts-featured-content-button {
   white-space: nowrap;
 }
 body.dark-mode .btn:hover,
+body.dark-mode .page__join-button:hover,
+body.dark-mode .page__newsletter-content-form-button:hover,
 body.dark-mode .home__posts-featured-content-button:hover {
   background-color: #393939;
 }
@@ -1859,9 +1862,15 @@ body.dark-mode body.dark-mode,
 body.dark-mode .page__join,
 body.dark-mode .home__posts-featured-content,
 body.dark-mode .home__about-featured,
+body.dark-mode .contact__posts,
+body.dark-mode .contact__posts-list-text,
 body.dark-mode .dark-mode-btn {
   background-color: #2c2d40;
   color: #FFFFFF;
+}
+body.dark-mode .home__about-featured-logos-img {
+  opacity: 0.9;
+  filter: brightness(2);
 }
 body.dark-mode .home__about-container-wrapper,
 body.dark-mode .home__about-story-content,
@@ -1870,18 +1879,17 @@ body.dark-mode .blog__hero,
 body.dark-mode .about__hero,
 body.dark-mode .about__hero-content,
 body.dark-mode .about__posts-container-wrapper,
-body.dark-mode .contact__posts,
-body.dark-mode .contact__posts-list-text,
 body.dark-mode .blog__hero-content-title {
   background-color: #232536;
   color: #FFFFFF;
 }
 
-/* Butonun varsayılan hali (aydınlık mod) */
 .dark-mode-btn {
   position: fixed;
-  top: 15px;
+  top: 20px;
   right: 10px;
+  width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
   border: none;
   cursor: pointer;
@@ -1891,8 +1899,9 @@ body.dark-mode .blog__hero-content-title {
 }
 
 .dark-mode-btn img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
 }
 
 .dark-mode-btn:focus {

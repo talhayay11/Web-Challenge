@@ -18,10 +18,32 @@
         <span class="page__navbar-brand-name">Finsweet</span>
       </a>
 
-      <button class="page__navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="page-toggler-icon"></span>
-      </button>
+      <!-- Menü Toggle Butonu (Hamburger Menu Icon) --> 
+    <button id="mobileMenuToggle" class="menu-toggle">
+      <span class="menu-toggle__icon"></span>
+      <span class="menu-toggle__icon"></span>
+      <span class="menu-toggle__icon"></span>
+    </button>
+
+    <!-- Mobil Menü Yapısı -->
+    <div id="mobileMenu" class="menu menu--mobile">
+    <button id="closeMenu" class="menu__close-btn">X</button>
+  
+    <nav class="menu__nav menu--mobile__nav">
+      <ul class="menu--mobile__list">
+       <li class="menu--mobile__item"><a href="index.html" class="menu--mobile__link">Home</a></li>
+       <li class="menu--mobile__item"><a href="blog.html" class="menu--mobile__link">Blog<a></li>
+       <li class="menu--mobile__item"><a href="about.html" class="menu--mobile__link">About</a></li>
+       <li class="menu--mobile__item"><a href="contact.html" class="menu--mobile__link">Contact</a></li>
+
+       <!-- Dark Mode Butonu Mobil Menüde -->
+       <li class="menu__item">
+        <button id="darkModeToggleMobile" class="menu--mobile__dark-mode-btn">Dark Mode</button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
 
       <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
         <ul class="page__navbar-nav navbar-nav ml-auto">

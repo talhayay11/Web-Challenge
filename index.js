@@ -48,16 +48,24 @@ $('#contactHeroSlider').carousel({
   ride: 'carousel'
 });
 
-// Menü Açma Butonuna Tıklayınca Menü Açılır
-const mobileMenu = document.getElementById('mobileMenu');
-const mobileMenuOpen = document.getElementById('mobileMenuOpen');
-const mobileMenuClose = document.getElementById('mobileMenuClose');
 
-mobileMenuOpen.addEventListener('click', () => {
-  mobileMenu.classList.add('active');
+// Mobil Menü Elemanları
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenuButton = document.getElementById('closeMenu');
+
+// Menü Açma/Kapatma
+mobileMenuToggle.addEventListener('click', () => {
+  mobileMenu.classList.add('active');  // Menüyü göster
 });
 
-// Menü Kapatma Butonuna Tıklayınca Menü Kapanır
-mobileMenuClose.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
+closeMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');  // Menüyü gizle
+});
+
+
+// Dark Mode fonksiyonu
+const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+darkModeToggleMobile.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 });

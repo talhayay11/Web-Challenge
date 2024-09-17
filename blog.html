@@ -18,43 +18,64 @@
         <span class="page__navbar-brand-name">Finsweet</span>
       </a>
 
-      <button class="page__navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="page-toggler-icon"></span>
-      </button>
+      <!-- Menü Toggle Butonu (Hamburger Menu Icon) --> 
+    <button id="mobileMenuToggle" class="menu-toggle">
+      <span class="menu-toggle-icon"></span>
+      <span class="menu-toggle-icon"></span>
+      <span class="menu-toggle-icon"></span>
+    </button>
+
+    <!-- Mobil Menü Yapısı -->
+    <div id="mobileMenu" class="menu menu-mobile">
+    <button id="closeMenu" class="menu-mobile-close-btn">X</button>
+  
+    <nav class="menu-nav menu-mobile-nav">
+      <ul class="menu-mobile-list">
+       <li class="menu-mobile-item"><a href="index.html" class="menu-mobile-link">Home</a></li>
+       <li class="menu-mobile-item"><a href="blog.html" class="menu-mobile-link">Blog<a></li>
+       <li class="menu-mobile-item"><a href="about.html" class="menu-mobile-link">About</a></li>
+       <li class="menu-mobile-item"><a href="contact.html" class="menu-mobile-link">Contact</a></li>
+
+       <!-- Dark Mode Butonu Mobil Menüde -->
+       <li class="menu__item">
+        <button id="darkModeToggleMobile" class="menu-mobile-dark-mode-btn">Dark Mode</button>
+      </li>
+    </ul>
+  </nav>
+</div>
 
       <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
-        <ul class="page__navbar-nav navbar-nav ml-auto">
-          <li class="page__navbar-item nav-item">
-            <a class="page__navbar-link nav-link" href="index.html">Home</a>
-          </li>
+       <ul class="page__navbar-nav navbar-nav ml-auto">
+        <li class="page__navbar-item nav-item">
+        <a class="page__navbar-link nav-link" href="index.html">Home</a>
+        </li>
 
-          <li class="page__navbar-item nav-item active">
-            <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
-          </li>
+        <li class="page__navbar-item nav-item active">
+        <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
+        </li>
 
-          <li class="page__navbar-item nav-item">
-            <a class="page__navbar-link nav-link" href="about.html">About Us</a>
-          </li>
+        <li class="page__navbar-item nav-item">
+        <a class="page__navbar-link nav-link" href="about.html">About Us</a>
+        </li>
 
-          <li class="page__navbar-item nav-item">
-            <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
-          </li>
+        <li class="page__navbar-item nav-item">
+        <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
+        </li>
 
-          <li class="page__navbar-item page__navbar-button">
-            <a class="page__navbar-link page__navbar-link-button" href="#">
-              <span class="page__navbar-text">Subscribe</span>
-            </a>
-          </li>
+        <li class="page__navbar-item page__navbar-button">
+        <a class="page__navbar-link page__navbar-link-button" href="#">
+          <span class="page__navbar-text">Subscribe</span>
+        </a>
+        </li>
 
-          <button id="darkModeToggle" class="dark-mode-btn">
-            <img src="images\sun-regular.png" alt="Light Mode" id="darkModeIcon">
-          </button>    
-        </ul>
+        <button id="darkModeToggle" class="dark-mode-btn">
+          <img src="images\sun-regular.png" alt="Light Mode" class="dark-mode-btn-img" id="darkModeIcon">
+        </button>                  
+       </ul>
       </div>
     </nav>
   </header>
-
+  
   <section class="blog__hero">
     <div class="container">
       <div class="row">

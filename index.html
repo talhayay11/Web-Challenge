@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finsweet</title>
+  <title>Home | Finsweet</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
@@ -86,23 +86,23 @@
       <p class="home__hero-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
       
-        <a href="#" class="home__hero-content-button">Read More ></a>
+        <p href="#" class="home__hero-content-button">Read More ></p>
     </div>
   </section>
 
   <section class="home__posts">
-    <div class="home__posts-featured">
+    <div class="col-md-6 home__posts-featured">
       <h3 class="home__posts-featured-title">Featured Post</h3>
       <div class="home__posts-featured-content">
         <img src="images/house.png" alt="Featured Image" class="home__posts-featured-content-image">
         <p class="home__posts-featured-content-meta">By <span class="home__posts-featured-content-meta--author">John Doe</span> | May 23, 2022</p>
         <h2 class="home__posts-featured-content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
         <p class="home__posts-featured-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        <a href="#" class="home__posts-featured-content-button btn btn-warning">Read More ></a>
+        <p href="#" class="home__posts-featured-content-button">Read More ></p>
       </div>
     </div>
 
-    <div class="home__posts-list">
+    <div class="col-md-6 home__posts-list">
       <h3 class="home__posts-list-title">All Posts</h3>
       <a href="#" class="home__posts-list-view-all">View All</a>
       <ul class="home__posts-list-items"> 
@@ -132,9 +132,8 @@
   </section>
 
 <section class="home__about">
-  <div class="home__about-container-wrapper"> 
     <div class="container">
-      <div class="row">
+     <div class="home__about-container-wrapper"> 
         <div class="col-md-6 home__about-section">
           <h3 class="home__about-section-title">ABOUT US</h3>
           <p class="home__about-section-subtitle">We are a community of content writers who share their learnings</p>
@@ -150,7 +149,6 @@
             <p class="home__about-mission-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-      </div>
     </div>
   </div>
 
@@ -209,7 +207,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
           </p>
           
-          <a href="#" class="home__about-story-content-button">Discover our story ></a>
+          <p href="#" class="home__about-story-content-button">Discover our story ></p>
         </div>
       </div>
    </div>
@@ -217,7 +215,6 @@
   <div class="page__authors">
    <h2 class="page__authors-title">List of Authors</h2>
     <div class="container">
-      <div class="row">
         <div class="col-md-3">
           <div class="page__authors-item">
             <img src="images/floyd.png" alt="Author 1" class="page__authors-item-img">
@@ -266,7 +263,7 @@
         <div class="col-md-3">
           <div class="page__authors-item">
             <img src="images/leslie.png" alt="Author 4" class="page__authors-item-img">
-            <h3 class="page__authors-item-name">Leslie Alexander</h3>
+            <h3 class="page__authors-item-name--position">Leslie Alexander</h3>
             <p class="page__authors-item-title">Content Writer @Company</p>
             
             <div class="page__authors-item-social"> 
@@ -277,7 +274,6 @@
             </div>
         </div>
       </div>
-    </div>
   </div>
 </div>
   
@@ -347,7 +343,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
       </div>
 
-      <div class="page__join-button btn btn-warning">
+      <div class="page__join-button">
         <p class="page__join-button-link">Join Now</p>
       </div>
     </div>
@@ -356,14 +352,15 @@
 
   <div class="page__newsletter">
     <div class="page__newsletter-header">
-        <span class="page__newsletter-header-bracket">{</span>
-        <span class="page__newsletter-header-name">Finsweet</span>
+        <p class="page__newsletter-header-bracket">{
+          <span class="page__newsletter-header-name">Finsweet</span></p>
+
         <nav class="page__newsletter-header-nav">
-          <a href="index.html" class="page__newsletter-header-nav-link">Home</a>
-          <a href="blog.html" class="page__newsletter-header-nav-link">Blog</a>
-          <a href="about.html" class="page__newsletter-header-nav-link">About us</a>
-          <a href="contact.html" class="page__newsletter-header-nav-link">Contact us</a>
-          <a href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</a>
+          <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
+          <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>
+          <p href="about.html" class="page__newsletter-header-nav-link">About us</p>
+          <p href="contact.html" class="page__newsletter-header-nav-link">Contact us</p>
+          <p href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</p>
         </nav>
      </div>
 

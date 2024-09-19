@@ -20,15 +20,19 @@ scrollToTopButton.addEventListener('click', function() {
   document.documentElement.scrollTop = 0; // Diğer tarayıcılar için
 });
 
-
+// Masaüstü ve Mobil Dark Mode Butonları
 const darkModeButton = document.getElementById('darkModeToggle');
 const darkModeIcon = document.getElementById('darkModeIcon');
+const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
 
 // Dark mode'u açıp kapatma fonksiyonu
 const toggleDarkMode = () => {
   // Body'ye dark mode sınıfını ekleyip kaldırıyoruz
   document.body.classList.toggle('dark-mode');
+  updateIcons();  // İkonları güncelle
+};
   
+const updateIcons = () => {
   // Dark mode aktifse ikonları değiştir
   if (document.body.classList.contains('dark-mode')) {
     darkModeIcon.src = 'images/moon-solid.png';  // Karanlık mod ikonu
@@ -38,16 +42,19 @@ const toggleDarkMode = () => {
     darkModeIcon.alt = 'Light Mode';
   }
 };
-// Butona tıklayınca dark mode'u değiştir
-darkModeButton.addEventListener('click', toggleDarkMode);
 
+// Hem masaüstü hem de mobil butona tıklanıldığında dark mode'u değiştir
+darkModeButton.addEventListener('click', toggleDarkMode);
+darkModeToggleMobile.addEventListener('click', (toggleDarkMode) => {
+  document.body.classList.toggle('dark-mode');
+  mobileMenu.classList.remove('active'); // Dark mode açıldığında mobil menüyü kapat
+});; // Mobil dark mode butonu
 
 // Bootstrap sliderı otomatik oynatma için interval belirle
 $('#contactHeroSlider').carousel({
   interval: 3000, // 3 saniye
   ride: 'carousel'
 });
-
 
 // Mobil Menü Elemanları
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
@@ -56,16 +63,24 @@ const closeMenuButton = document.getElementById('closeMenu');
 
 // Menü Açma/Kapatma
 mobileMenuToggle.addEventListener('click', () => {
-  mobileMenu.classList.add('active');  // Menüyü göster
+  if (mobileMenu.classList.contains('active')) {
+    // Eğer menü aktifse, menüyü gizle
+    mobileMenu.classList.remove('active');
+  } else {
+    // Eğer menü aktif değilse, menüyü göster
+    mobileMenu.classList.add('active');
+  }
 });
 
-closeMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');  // Menüyü gizle
-});
+window.addEventListener('load', updateIcons);
 
-
-// Dark Mode fonksiyonu
-const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
-darkModeToggleMobile.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
+// Pencere boyutunu dinleme
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1000) {
+    mobileMenu.classList.remove('active');  // Pencere genişliği 1000px'den fazla ise menüyü kapat
+    mobileMenuToggle.style.display = 'none'; // Mobil menü butonunu gizle
+  } else {
+    mobileMenuToggle.style.display = 'flex'; // Mobil modda butonu tekrar göster
+  }
+  updateIcons();
 });

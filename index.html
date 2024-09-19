@@ -11,24 +11,20 @@
 </head>
 
 <body>
-  <header class="page__header">
+<header class="page__header">
     <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
-      <a class="page__navbar-brand" href="#">
+      <p class="page__navbar-brand" href="#">
         <span class="page__navbar-brand-bracket">{</span>
         <span class="page__navbar-brand-name">Finsweet</span>
-      </a>
+        </p>
 
-      <!-- Menü Toggle Butonu (Hamburger Menu Icon) --> 
     <button id="mobileMenuToggle" class="menu-toggle">
       <span class="menu-toggle-icon"></span>
       <span class="menu-toggle-icon"></span>
       <span class="menu-toggle-icon"></span>
     </button>
 
-    <!-- Mobil Menü Yapısı -->
     <div id="mobileMenu" class="menu menu-mobile">
-    <button id="closeMenu" class="menu-mobile-close-btn">X</button>
-  
     <nav class="menu-nav menu-mobile-nav">
       <ul class="menu-mobile-list">
        <li class="menu-mobile-item"><a href="index.html" class="menu-mobile-link">Home</a></li>
@@ -74,9 +70,9 @@
        </ul>
       </div>
     </nav>
-  </header>
+</header>
 
-  <section class="home__hero">
+<section class="home__hero">
     <img src="images/hero.png" alt="Hero Image" class="home__hero-image">
     <div class="home__hero-content">
       <p class="home__hero-content-category">POSTED ON 
@@ -88,9 +84,9 @@
       
         <p href="#" class="home__hero-content-button">Read More ></p>
     </div>
-  </section>
+</section>
 
-  <section class="home__posts">
+<section class="home__posts">
     <div class="col-md-6 home__posts-featured">
       <h3 class="home__posts-featured-title">Featured Post</h3>
       <div class="home__posts-featured-content">
@@ -107,29 +103,29 @@
       <a href="#" class="home__posts-list-view-all">View All</a>
       <ul class="home__posts-list-items"> 
         <li class="home__posts-list-items-item"> 
-          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta-author">John Deo</span> |  Aug 23, 2021</p>
+          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Deo</span> |  Aug 23, 2021</p>
          <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p>
         </li>
 
         <li class="home__posts-list-items-item"> 
-          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta-author">John Doe</span> | Aug 23, 2021</p>
+          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Doe</span> | Aug 23, 2021</p>
           <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p>     
         </li>
 
         <li class="home__posts-list-items-item">          
-          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta-author">John Deo</span> | Aug 23, 2021</p>
+          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Deo</span> | Aug 23, 2021</p>
           <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p> 
         </li>
 
         <li class="home__posts-list-items-item">
-          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta-author">John Deo</span> | Aug 23, 2021
+          <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Deo</span> | Aug 23, 2021
           </p>
           
           <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p>
         </li>
       </ul>
     </div>
-  </section>
+</section>
 
 <section class="home__about">
     <div class="container">
@@ -276,8 +272,9 @@
       </div>
   </div>
 </div>
-  
-  <div class="home__about-featured">
+
+<div class="container">
+ <div class="home__about-featured">
     <div class="home__about-featured-title">
       <span class="home__about-featured-title-line-first">We are</span>
       <span class="home__about-featured-title-line-second">Featured in</span>
@@ -291,16 +288,14 @@
        <img src="images/logo-five.png" alt="Logo 5" class="home__about-featured-logos-img">
       </div>
     </div>
+  </div>
   
   <div class="home__about-testimonials">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="home__about-testimonials-text">
+        <div class="col-md-6 home__about-testimonials-text">
             <h3 class="home__about-testimonials-text-heading">TESTIMONIALS</h3>
             <span class="home__about-testimonials-text-subheading">What people say about our blog</span>
             <p class="home__about-testimonials-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
         </div>
         
         <div class="col-md-6">
@@ -329,7 +324,6 @@
           </div>
         </div>
       </div>
-    </div>
    </div>
   </div>
 
@@ -350,7 +344,7 @@
   </div>
 </section>
 
-  <div class="page__newsletter">
+<div class="page__newsletter">
     <div class="page__newsletter-header">
         <p class="page__newsletter-header-bracket">{
           <span class="page__newsletter-header-name">Finsweet</span></p>
@@ -385,13 +379,13 @@
         <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
       </div>
     </div>
-   </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
-<button id="scrollUpBtn" class="scroll-up-btn">▲</button>
+<button><img src="images/up-arrow.png" id="scrollUpBtn" class="scroll-up-btn"></button>
 <script src="index.js"></script>
 </html>

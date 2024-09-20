@@ -2,271 +2,245 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Finsweet</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Blog | Finsweet</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <header class="page__header">
-    <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
-     <p class="page__navbar-brand" href="#">
-      <span class="page__navbar-brand-bracket">{</span>
-      <span class="page__navbar-brand-name">Finsweet</span>
-     </p>
+ <header class="page__header">
+  <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
+   <p class="page__navbar-brand" href="#">
+    <span class="page__navbar-brand-bracket">{</span>
+    <span class="page__navbar-brand-name">Finsweet</span>
+   </p>
   
-     <button id="mobileMenuToggle" class="menu-toggle">
-      <span class="menu-toggle-icon"></span>
-      <span class="menu-toggle-icon"></span>
-      <span class="menu-toggle-icon"></span>
-     </button>
+   <button id="mobileMenuToggle" class="menu-toggle">
+    <span class="menu-toggle-icon"></span>
+    <span class="menu-toggle-icon"></span>
+    <span class="menu-toggle-icon"></span>
+   </button>
   
-     <div id="mobileMenu" class="menu menu-mobile">
-      <nav class="menu-nav menu-mobile-nav">
-       <ul class="menu-mobile-list">
-        <li class="menu-mobile-item"><a href="index.html" class="menu-mobile-link">Home</a></li>
-        <li class="menu-mobile-item"><a href="blog.html" class="menu-mobile-link">Blog<a></li>
-        <li class="menu-mobile-item"><a href="about.html" class="menu-mobile-link">About</a></li>
-        <li class="menu-mobile-item"><a href="contact.html" class="menu-mobile-link">Contact</a></li>
-  
-        <li class="menu__item">
-         <button id="darkModeToggleMobile" class="menu-mobile-dark-mode-btn">Dark Mode</button>
-        </li>
-       </ul>
-      </nav>
-     </div>
-  
-     <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
-      <ul class="page__navbar-nav navbar-nav ml-auto">
-       <li class="page__navbar-item nav-item">
-        <a class="page__navbar-link nav-link" href="index.html">Home</a>
-       </li>
-  
-       <li class="page__navbar-item nav-item active">
-        <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
-       </li>
-  
-       <li class="page__navbar-item nav-item">
-        <a class="page__navbar-link nav-link" href="about.html">About Us</a>
-       </li>
-  
-       <li class="page__navbar-item nav-item">
-        <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
-       </li>
-  
-       <li class="page__navbar-item page__navbar-button">
-        <a class="page__navbar-link page__navbar-link-button" href="#">
-         <span class="page__navbar-text">Subscribe</span>
-        </a>
-       </li>
-  
-       <button id="darkModeToggle" class="dark-mode-btn">
-        <img src="images\sun-regular.png" alt="Light Mode" class="dark-mode-btn-img" id="darkModeIcon">
-       </button>                  
-      </ul>
-     </div>
-    </nav>
-  </header>
-  
-  <section class="blog__hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 blog__hero-content">
-          <h3 class="blog__hero-content-featured">FEATURED POST</h3>
-          <h1 class="blog__hero-content-title">Step-by-step guide to choosing great font pairs</h1>
-          <p class="blog__hero-content-meta">By <span class="blog__hero-content-meta--author">John Doe</span> | May 23, 2022</p>
-          <p class="blog__hero-content-description">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-          </p>
-          
-          <a href="#" class="blog__hero-content-button btn btn-warning">Read More ></a>
-        </div>
-        <div class="col-md-5 blog__hero-image">
-          <img src="images/blog-hero.png" alt="Blog-Hero" class="blog__hero-image-img">
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="blog__posts">
-    <h2 class="blog__posts-title">All posts</h2>
-      <hr class="blog__posts-divider">
-      <div class="blog__posts-list">
-          <!-- First Post -->
-          <div class="col-md-6 blog__posts-list-item">
-            <img src="images/blog-startup.png" alt="Post Image" class="blog__posts-list-item-image">
-            <div class="blog__posts-list-item-content">
-              <p class="blog__posts-list-item-content-category">STARTUP</p>
-              <h3 class="blog__posts-list-item-content-title">Design tips for designers that cover everything you need</h3>
-              <p class="blog__posts-list-item-content-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Second Post -->
-          <div class="col-md-6 blog__posts-list-item">
-            <img src="images/blog-business.png" alt="Post Image" class="blog__posts-list-item-image">
-            <div class="blog__posts-list-item-content">
-              <p class="blog__posts-list-item-content-category">BUSINESS</p>
-              <h3 class="blog__posts-list-item-content-title">How to build rapport with your web design clients</h3>
-              <p class="blog__posts-list-item-content-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Third Post -->
-          <div class="col-md-6 blog__posts-list-item">
-            <img src="images/blog-startup-second.png" alt="Post Image" class="blog__posts-list-item-image">
-            <div class="blog__posts-list-item-content">
-              <p class="blog__posts-list-item-content-category">STARTUP</p>
-              <h3 class="blog__posts-list-item-content-title">Logo design trends to avoid in 2022</h3>
-              <p class="blog__posts-list-item-content-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Fourth Post -->
-          <div class="col-md-6 blog__posts-list-item">
-            <img src="images/blog-technology.png" alt="Post Image" class="blog__posts-list-item-image">
-            <div class="blog__posts-list-item-content">
-              <p class="blog__posts-list-item-content-category">TECHNOLOGY</p>
-              <h3 class="blog__posts-list-item-content-title">8 Figma design systems you can download for free today</h3>
-              <p class="blog__posts-list-item-content-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Fifth Post -->
-          <div class="col-md-6 blog__posts-list-item">
-            <img src="images/blog-startup.png" alt="Post Image" class="blog__posts-list-item-image">
-            <div class="blog__posts-list-item-content">
-              <p class="blog__posts-list-item-content-category">ECONOMY</p>
-              <h3 class="blog__posts-list-item-content-title">Font sizes in UI design: The complete guide to follow</h3>
-              <p class="blog__posts-list-item-content-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-            </div>
-          </div>
-        </div>
-  
-      <div class="blog__posts-pagination">
-        <p class="blog__posts-pagination-prev">&lt; Prev</p>
-        <p class="blog__posts-pagination-next">Next &gt;</p>
-      </div>
-  </section>
-  
-  <section class="blog__about">
-    <div class="blog__about-category">
-      <h2 class="blog__about-category-title">All Categories</h2>
-       <div class="blog__about-category-wrapper">
-        <div class="blog__about-category-item">
-          <div class="blog__about-category-item-icon">
-            <img src="images/icon-background.png" alt="Business Background" class="blog__about-category-item-icon--background">
-            <img src="images/business.png" alt="Business Icon" class="blog__about-category-item-icon--background-img blog__about-category-item-icon--large">
-          </div>
-  
-          <h3 class="blog__about-category-item-title">Business</h3>
-          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-  
-        <div class="blog__about-category-item">
-          <div class="blog__about-category-item-icon">
-            <img src="images/icon-background.png" alt="Startup Background" class="blog__about-category-item-icon--background">
-            <img src="images/startup.png" alt="Startup Icon" class="blog__about-category-item-icon--background-img">
-          </div>
+   <div id="mobileMenu" class="menu menu-mobile">
+    <nav class="menu-nav menu-mobile-nav">
+     <ul class="menu-mobile-list">
+      <li class="menu-mobile-item"><a href="index.html" class="menu-mobile-link">Home</a></li>
+      <li class="menu-mobile-item"><a href="blog.html" class="menu-mobile-link">Blog<a></li>
+      <li class="menu-mobile-item"><a href="about.html" class="menu-mobile-link">About</a></li>
+      <li class="menu-mobile-item"><a href="contact.html" class="menu-mobile-link">Contact</a></li>
       
-          <h3 class="blog__about-category-item-title">Startup</h3>
-          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-  
-        <div class="blog__about-category-item">
-          <div class="blog__about-category-item-icon">
-            <img src="images/icon-background.png" alt="Economy Background" class="blog__about-category-item-icon--background">
-            <img src="images/Economy.png" alt="Economy Icon" class="blog__about-category-item-icon--background-img">
-          </div>
-          
-          <h3 class="blog__about-category-item-title">Economy</h3>
-          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-  
-        <div class="blog__about-category-item">
-          <div class="blog__about-category-item-icon">
-            <img src="images/icon-background.png" alt="Technology Background" class="blog__about-category-item-icon--background">
-            <img src="images/technology.png" alt="Technology Icon" class="blog__about-category-item-icon--background-img">
-          </div>
-  
-          <h3 class="blog__about-category-item-title">Technology</h3>
-          <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="page__join">
-      <div class="page__join-content">
-        <div class="page__join-content-title">
-          Join our team to be a part of our story
-        </div>
-  
-        <div class="page__join-content-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-        </div>
-  
-        <div class="page__join-content-button">
-          <p class="page__join-content-button-link">Join Now</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <li class="menu__item">
+       <button id="darkModeToggleMobile" class="menu-mobile-dark-mode-btn">Dark Mode</button>
+      </li>
+     </ul>
+    </nav>
+   </div>
 
-  <div class="page__newsletter">
-    <div class="page__newsletter-header">
-        <p class="page__newsletter-header-bracket">{
-          <span class="page__newsletter-header-name">Finsweet</span></p>
+   <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
+    <ul class="page__navbar-nav navbar-nav ml-auto">
+     <li class="page__navbar-item nav-item">
+      <a class="page__navbar-link nav-link" href="index.html">Home</a>
+     </li>
+  
+     <li class="page__navbar-item nav-item active">
+      <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
+     </li>
+  
+     <li class="page__navbar-item nav-item">
+      <a class="page__navbar-link nav-link" href="about.html">About Us</a>
+     </li>
+  
+     <li class="page__navbar-item nav-item">
+      <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
+     </li>
+  
+     <li class="page__navbar-item page__navbar-button">
+      <a class="page__navbar-link page__navbar-link-button" href="#">
+       <span class="page__navbar-text">Subscribe</span>
+      </a>
+     </li>
+  
+     <button id="darkModeToggle" class="dark-mode-btn">
+      <img src="images\sun-regular.png" alt="Light Mode" class="dark-mode-btn-img" id="darkModeIcon">
+     </button>                  
+    </ul>
+   </div>
+  </nav>
+ </header>
+  
+ <section class="blog__hero">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-7 blog__hero-content">
+     <h3 class="blog__hero-content-featured">FEATURED POST</h3>
+     <p class="blog__hero-content-title">Step-by-step guide to choosing great font pairs</p>
+     <p class="blog__hero-content-meta">By <span class="blog__hero-content-meta--author">John Doe</span> | May 23, 2022</p>
+     <p class="blog__hero-content-description">
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>  
+      <a href="#" class="blog__hero-content-button btn btn-warning">Read More ></a>
+    </div>
 
-        <nav class="page__newsletter-header-nav">
-          <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
-          <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>
-          <p href="about.html" class="page__newsletter-header-nav-link">About us</p>
-          <p href="contact.html" class="page__newsletter-header-nav-link">Contact us</p>
-          <p href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</p>
-        </nav>
+    <div class="col-md-5 blog__hero-image">
+     <img src="images/blog-hero.png" alt="Blog-Hero" class="blog__hero-image-img">
+    </div>
+   </div>
+  </div>
+ </section>
+  
+ <section class="blog__posts">
+  <h2 class="blog__posts-title">All posts</h2>
+  <hr class="blog__posts-divider">
+  <div class="blog__posts-list">
+   <div class="col-md-6 blog__posts-list-item">
+    <img src="images/blog-startup.png" alt="Post Image" class="blog__posts-list-item-image">
+    <div class="blog__posts-list-item-content">
+     <p class="blog__posts-list-item-content-category">STARTUP</p>
+     <h3 class="blog__posts-list-item-content-title">Design tips for designers that cover everything you need</h3>
+     <p class="blog__posts-list-item-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+   </div>
+  
+   <div class="col-md-6 blog__posts-list-item">
+    <img src="images/blog-business.png" alt="Post Image" class="blog__posts-list-item-image">
+    <div class="blog__posts-list-item-content">
+     <p class="blog__posts-list-item-content-category">BUSINESS</p>
+     <h3 class="blog__posts-list-item-content-title">How to build rapport with your web design clients</h3>
+     <p class="blog__posts-list-item-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+   </div>
+  
+   <div class="col-md-6 blog__posts-list-item">
+    <img src="images/blog-startup-second.png" alt="Post Image" class="blog__posts-list-item-image">
+    <div class="blog__posts-list-item-content">
+     <p class="blog__posts-list-item-content-category">STARTUP</p>
+     <h3 class="blog__posts-list-item-content-title">Logo design trends to avoid in 2022</h3>
+     <p class="blog__posts-list-item-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+   </div>
+  
+   <div class="col-md-6 blog__posts-list-item">
+    <img src="images/blog-technology.png" alt="Post Image" class="blog__posts-list-item-image">
+    <div class="blog__posts-list-item-content">
+     <p class="blog__posts-list-item-content-category">TECHNOLOGY</p>
+     <h3 class="blog__posts-list-item-content-title">8 Figma design systems you can download for free today</h3>
+     <p class="blog__posts-list-item-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+   </div>
+  
+   <div class="col-md-6 blog__posts-list-item">
+    <img src="images/blog-startup.png" alt="Post Image" class="blog__posts-list-item-image">
+    <div class="blog__posts-list-item-content">
+     <p class="blog__posts-list-item-content-category">ECONOMY</p>
+     <h3 class="blog__posts-list-item-content-title">Font sizes in UI design: The complete guide to follow</h3>
+     <p class="blog__posts-list-item-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+   </div>
+  </div>
+  
+  <div class="blog__posts-pagination">
+   <p class="blog__posts-pagination-prev">&lt; Prev</p>
+   <p class="blog__posts-pagination-next">Next &gt;</p>
+  </div>
+ </section>
+  
+ <section class="blog__about">
+  <div class="blog__about-category">
+   <h2 class="blog__about-category-title">All Categories</h2>
+   <div class="blog__about-category-wrapper">
+    <div class="blog__about-category-item">
+     <div class="blog__about-category-item-icon">
+      <img src="images/icon-background.png" alt="Business Background" class="blog__about-category-item-icon--background">
+      <img src="images/business.png" alt="Business Icon" class="blog__about-category-item-icon--background-img blog__about-category-item-icon--large">
      </div>
-
-    <div class="page__newsletter-content">
-        <p class="page__newsletter-content-title">
-          Subscribe to our news letter to get latest updates and news
-        </p>
-
-        <form class="page__newsletter-content-form">
-          <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input">
-          <button type="submit" class="page__newsletter-content-form-button">Subscribe</button>
-        </form>
+  
+     <h3 class="blog__about-category-item-title">Business</h3>
+     <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   
-    <div class="page__newsletter-footer">
-      <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
-      <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
-      <div class="page__newsletter-footer-social">
-        <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
-      </div>
+    <div class="blog__about-category-item">
+     <div class="blog__about-category-item-icon">
+      <img src="images/icon-background.png" alt="Startup Background" class="blog__about-category-item-icon--background">
+      <img src="images/startup.png" alt="Startup Icon" class="blog__about-category-item-icon--background-img">
+     </div>
+      
+     <h3 class="blog__about-category-item-title">Startup</h3>
+     <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
+  
+    <div class="blog__about-category-item">
+     <div class="blog__about-category-item-icon">
+      <img src="images/icon-background.png" alt="Economy Background" class="blog__about-category-item-icon--background">
+      <img src="images/Economy.png" alt="Economy Icon" class="blog__about-category-item-icon--background-img">
+     </div>
+          
+     <h3 class="blog__about-category-item-title">Economy</h3>
+     <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  
+    <div class="blog__about-category-item">
+     <div class="blog__about-category-item-icon">
+      <img src="images/icon-background.png" alt="Technology Background" class="blog__about-category-item-icon--background">
+      <img src="images/technology.png" alt="Technology Icon" class="blog__about-category-item-icon--background-img">
+     </div>
+  
+     <h3 class="blog__about-category-item-title">Technology</h3>
+     <p class="blog__about-category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+   </div>
+  </div>
+    
+  <div class="page__join">
+   <div class="page__join-content">
+    <div class="page__join-content-title">Join our team to be a part of our story</div>
+    <div class="page__join-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="page__join-content-button">
+     <p class="page__join-content-button-link">Join Now</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <div class="page__newsletter">
+  <div class="page__newsletter-header">
+   <p class="page__newsletter-header-bracket">{
+   <span class="page__newsletter-header-name">Finsweet</span></p>
+   <nav class="page__newsletter-header-nav">
+    <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
+    <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>
+    <p href="about.html" class="page__newsletter-header-nav-link">About us</p>
+    <p href="contact.html" class="page__newsletter-header-nav-link">Contact us</p>
+    <p href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</p>
+   </nav>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="page__newsletter-content">
+   <p class="page__newsletter-content-title">Subscribe to our news letter to get latest updates and news</p>
+   <form class="page__newsletter-content-form">
+    <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input">
+    <button type="submit" class="page__newsletter-content-form-button">Subscribe</button>
+   </form>
+  </div>
+  
+  <div class="page__newsletter-footer">
+   <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
+   <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
+   <div class="page__newsletter-footer-social">
+    <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></a>
+    <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></a>
+    <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
+   </div>
+  </div>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
-<button><img src="images/up-arrow.png" id="scrollUpBtn" class="scroll-up-btn"></button>
-<script src="index.js"></script>
+ <button><img src="images/up-arrow.png" id="scrollUpBtn" class="scroll-up-btn"></button>
+ <script src="index.js"></script>
 </html>

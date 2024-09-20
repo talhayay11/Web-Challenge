@@ -10,242 +10,226 @@
 </head>
 
 <body>
-  <header class="page__header">
-    <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
-     <p class="page__navbar-brand" href="#">
-      <span class="page__navbar-brand-bracket">{</span>
-      <span class="page__navbar-brand-name">Finsweet</span>
-     </p>
+ <header class="page__header">
+  <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
+   <p class="page__navbar-brand" href="#">
+   <span class="page__navbar-brand-bracket">{</span>
+   <span class="page__navbar-brand-name">Finsweet</span>
+   </p>
   
-     <button id="mobileMenuToggle" class="menu-toggle">
-      <span class="menu-toggle-icon"></span>
-      <span class="menu-toggle-icon"></span>
-      <span class="menu-toggle-icon"></span>
-     </button>
+   <button id="mobileMenuToggle" class="menu-toggle">
+    <span class="menu-toggle-icon"></span>
+    <span class="menu-toggle-icon"></span>
+    <span class="menu-toggle-icon"></span>
+   </button>
   
-     <div id="mobileMenu" class="menu menu-mobile">
-      <nav class="menu-nav menu-mobile-nav">
-       <ul class="menu-mobile-list">
-        <li class="menu-mobile-item"><a href="index.html" class="menu-mobile-link">Home</a></li>
-        <li class="menu-mobile-item"><a href="blog.html" class="menu-mobile-link">Blog<a></li>
-        <li class="menu-mobile-item"><a href="about.html" class="menu-mobile-link">About</a></li>
-        <li class="menu-mobile-item"><a href="contact.html" class="menu-mobile-link">Contact</a></li>
+   <div id="mobileMenu" class="menu menu-mobile">
+    <nav class="menu-nav menu-mobile-nav">
+     <ul class="menu-mobile-list">
+      <li class="menu-mobile-item"><a href="index.html" class="menu-mobile-link">Home</a></li>
+      <li class="menu-mobile-item"><a href="blog.html" class="menu-mobile-link">Blog<a></li>
+      <li class="menu-mobile-item"><a href="about.html" class="menu-mobile-link">About</a></li>
+      <li class="menu-mobile-item"><a href="contact.html" class="menu-mobile-link">Contact</a></li>
   
-        <li class="menu__item">
-         <button id="darkModeToggleMobile" class="menu-mobile-dark-mode-btn">Dark Mode</button>
-        </li>
-       </ul>
-      </nav>
-     </div>
-  
-     <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
-      <ul class="page__navbar-nav navbar-nav ml-auto">
-       <li class="page__navbar-item nav-item">
-        <a class="page__navbar-link nav-link" href="index.html">Home</a>
-       </li>
-  
-       <li class="page__navbar-item nav-item active">
-        <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
-       </li>
-  
-       <li class="page__navbar-item nav-item">
-        <a class="page__navbar-link nav-link" href="about.html">About Us</a>
-       </li>
-  
-       <li class="page__navbar-item nav-item">
-        <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
-       </li>
-  
-       <li class="page__navbar-item page__navbar-button">
-        <a class="page__navbar-link page__navbar-link-button" href="#">
-         <span class="page__navbar-text">Subscribe</span>
-        </a>
-       </li>
-  
-       <button id="darkModeToggle" class="dark-mode-btn">
-        <img src="images\sun-regular.png" alt="Light Mode" class="dark-mode-btn-img" id="darkModeIcon">
-       </button>                  
-      </ul>
-     </div>
+      <li class="menu__item">
+       <button id="darkModeToggleMobile" class="menu-mobile-dark-mode-btn">Dark Mode</button>
+      </li>
+     </ul>
     </nav>
-  </header>
-
-<section class="contact__hero">
-    <div class="container">
-      <div class="row">
-          <div class="contact__hero-content">
-            <img src="images\andrew.png" alt="Andrew Jonson" class="contact__hero-content-image">
-            <h1 class="contact__hero-content-title">Andrew Jonson</h1>
-            <p class="contact__hero-content-date">Posted on 27th January 2022</p>
-            <h2 class="contact__hero-content-subtitle">Step-by-step guide to choosing great font pairs</h2>
-            <p class="contact__hero-content-tag">
-            <img src="images/startup.png" alt="Startup Icon" class="contact__hero-content-tag-icon">
-             Startup</p>
-          </div>
-      </div>
-    </div>
-
-    <div id="contactHeroSlider" class="carousel slide contact__hero" data-ride="carousel">
-      <!-- Slider göstergeleri -->
-      <ol class="carousel-indicators contact__hero-indicators">
-        <li data-target="#contactHeroSlider" data-slide-to="0" class="active"></li>
-        <li data-target="#contactHeroSlider" data-slide-to="1"></li>
-        <li data-target="#contactHeroSlider" data-slide-to="2"></li>
-      </ol>
-    
-      <!-- Slider içerikleri -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/woman.png" alt="Woman" class="contact__hero-image-main">
-        </div>
-
-        <div class="carousel-item">
-          <img src="images/woman.png" alt="Woman" class="contact__hero-image-main">
-        </div>
-
-        <div class="carousel-item">
-          <img src="images/woman.png" alt="Woman" class="contact__hero-image-main">
-        </div>
-      </div>
-    
-      <!-- Slider kontrol düğmeleri -->
-      <a class="carousel-control-prev contact__hero-control-prev" href="#contactHeroSlider" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon contact__hero-control-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-
-      <a class="carousel-control-next contact__hero-control-next" href="#contactHeroSlider" role="button" data-slide="next">
-        <span class="carousel-control-next-icon contact__hero-control-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-</section>
-
-<section class="contact__posts">
-    <div class="container">
-      <div class="contact__posts-item">
-        <h2 class="contact__posts-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
-        <p class="contact__posts-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
-        </p>
-      </div>
-
-        <h2 class="contact__posts-title--space-36">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
-        <p class="contact__posts-text--space-37">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
-        </p>
-      
-      <p class="contact__posts-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
-      </p>
-
-        <ul class="contact__posts-list">
-          <li class="contact__posts-list-text">Lorem ipsum dolor sit amet</li>
-          <li class="contact__posts-list-text">Non blandit massa enim nec scelerisque</li>
-          <li class="contact__posts-list-text">Neque egestas congue quisque egestas</li>
-        </ul>
-
-      <p class="contact__posts-text--space-36">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
-      </p>
+   </div>
   
-      <div class="contact__posts-item">
-        <h2 class="contact__posts-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
-        <p class="contact__posts-text--space-37">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
-        </p>
-      </div>
-    </div>
-</section>
+   <div class="page__navbar-collapse collapse navbar-collapse" id="navbarNav">
+    <ul class="page__navbar-nav navbar-nav ml-auto">
+     <li class="page__navbar-item nav-item">
+      <a class="page__navbar-link nav-link" href="index.html">Home</a>
+     </li>
+  
+     <li class="page__navbar-item nav-item active">
+      <a class="page__navbar-link nav-link" href="blog.html">Blog</a>
+     </li>
+  
+     <li class="page__navbar-item nav-item">
+      <a class="page__navbar-link nav-link" href="about.html">About Us</a>
+     </li>
+  
+     <li class="page__navbar-item nav-item">
+      <a class="page__navbar-link nav-link" href="contact.html">Contact us</a>
+     </li>
+  
+     <li class="page__navbar-item page__navbar-button">
+      <a class="page__navbar-link page__navbar-link-button" href="#">
+       <span class="page__navbar-text">Subscribe</span>
+      </a>
+     </li>
+  
+     <button id="darkModeToggle" class="dark-mode-btn">
+      <img src="images\sun-regular.png" alt="Light Mode" class="dark-mode-btn-img" id="darkModeIcon">
+     </button>                  
+    </ul>
+   </div>
+  </nav>
+ </header>
 
-<div class="contact__read-next">
-        <h2 class="contact__read-next-title">What to read next</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="contact__read-next-card">
-              <img src="images/post-1.png" alt="Post 1" class="contact__read-next-image">
-              <div class="contact__read-next-content">
-                <p class="contact__read-next-author">By <span class="contact__read-next-author--highlight"> John Doe</span> | Aug 23, 2021</p>                <h3 class="contact__read-next-post-title">A UX Case Study Creating a Studious Environment for Students:</h3>
-                <p class="contact__read-next-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4">
-            <div class="contact__read-next-card">
-              <img src="images/post-2.png" alt="Post 2" class="contact__read-next-image">
-              <div class="contact__read-next-content">
-                <p class="contact__read-next-author">By <span class="contact__read-next-author--highlight"> John Doe</span> | Aug 23, 2021</p>
-                <h3 class="contact__read-next-post-title">A UX Case Study Creating a Studious Environment for Students:</h3>
-                <p class="contact__read-next-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-md-4">
-            <div class="contact__read-next-card">
-              <img src="images/post-3.png" alt="Post 3" class="contact__read-next-image">
-              <div class="contact__read-next-content">
-                <p class="contact__read-next-author">By <span class="contact__read-next-author--highlight"> John Doe</span> | Aug 23, 2021</p>                <h3 class="contact__read-next-post-title">A UX Case Study Creating a Studious Environment for Students:</h3>
-                <p class="contact__read-next-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-   </div>  
-    
-<div class="page__join">
-  <div class="page__join-content">
-    <div class="page__join-content-title">
-      Join our team to be a part of our story
+ <section class="contact__hero">
+  <div class="container">
+   <div class="row">
+    <div class="contact__hero-content">
+     <img src="images\andrew.png" alt="Andrew Jonson" class="contact__hero-content-image">
+     <h1 class="contact__hero-content-title">Andrew Jonson</h1>
+     <p class="contact__hero-content-date">Posted on 27th January 2022</p>
+     <h2 class="contact__hero-content-subtitle">Step-by-step guide to choosing great font pairs</h2>
+     <p class="contact__hero-content-tag">
+      <img src="images/startup.png" alt="Startup Icon" class="contact__hero-content-tag-icon">Startup
+     </p>
     </div>
-
-    <div class="page__join-content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-    </div>
-
-    <div class="page__join-content-button">
-      <p class="page__join-content-button-link">Join Now</p>
-    </div>
+   </div>
   </div>
-</div>
-  
-<div class="page__newsletter">
-      <div class="page__newsletter-header">
-          <p class="page__newsletter-header-bracket">{
-            <span class="page__newsletter-header-name">Finsweet</span></p>
-  
-          <nav class="page__newsletter-header-nav">
-            <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
-            <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>
-            <p href="about.html" class="page__newsletter-header-nav-link">About us</p>
-            <p href="contact.html" class="page__newsletter-header-nav-link">Contact us</p>
-            <p href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</p>
-          </nav>
-       </div>
-  
-      <div class="page__newsletter-content">
-          <p class="page__newsletter-content-title">
-            Subscribe to our news letter to get latest updates and news
-          </p>
-  
-          <form class="page__newsletter-content-form">
-            <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input">
-            <button type="submit" class="page__newsletter-content-form-button">Subscribe</button>
-          </form>
-      </div>
+
+  <div id="contactHeroSlider" class="carousel slide contact__hero" data-ride="carousel">
+   <ol class="carousel-indicators contact__hero-indicators">
+    <li data-target="#contactHeroSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#contactHeroSlider" data-slide-to="1"></li>
+    <li data-target="#contactHeroSlider" data-slide-to="2"></li>
+   </ol>
     
-      <div class="page__newsletter-footer">
-        <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
-        <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
-        <div class="page__newsletter-footer-social">
-          <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></a>
-          <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></a>
-          <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></a>
-          <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
-        </div>
-      </div>
-</div>
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+     <img src="images/woman.png" alt="Woman" class="contact__hero-image-main">
+    </div>
+
+    <div class="carousel-item">
+     <img src="images/woman.png" alt="Woman" class="contact__hero-image-main">
+    </div>
+
+    <div class="carousel-item">
+     <img src="images/woman.png" alt="Woman" class="contact__hero-image-main">
+    </div>
+   </div>
+    
+   <a class="carousel-control-prev contact__hero-control-prev" href="#contactHeroSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon contact__hero-control-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+   </a>
+
+   <a class="carousel-control-next contact__hero-control-next" href="#contactHeroSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon contact__hero-control-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+   </a>
+  </div>
+ </section>
+
+ <section class="contact__posts">
+  <div class="container">
+   <div class="contact__posts-item">
+    <h2 class="contact__posts-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+    <p class="contact__posts-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+    </p>
+   </div>
+
+   <h2 class="contact__posts-title--space-36">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+   <p class="contact__posts-text--space-37">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+   </p>
+      
+   <p class="contact__posts-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+   </p>
+
+   <ul class="contact__posts-list">
+    <li class="contact__posts-list-text">Lorem ipsum dolor sit amet</li>
+    <li class="contact__posts-list-text">Non blandit massa enim nec scelerisque</li>
+    <li class="contact__posts-list-text">Neque egestas congue quisque egestas</li>
+   </ul>
+
+   <p class="contact__posts-text--space-36">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+   </p>
+  
+   <div class="contact__posts-item">
+    <h2 class="contact__posts-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+    <p class="contact__posts-text--space-37">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.
+    </p>
+   </div>
+  </div>
+ </section>
+
+ <div class="contact__read-next">
+  <h2 class="contact__read-next-title">What to read next</h2>
+  <div class="row">
+   <div class="col-md-4">
+    <div class="contact__read-next-card">
+     <img src="images/post-1.png" alt="Post 1" class="contact__read-next-image">
+     <div class="contact__read-next-content">
+      <p class="contact__read-next-author">By <span class="contact__read-next-author--highlight"> John Doe</span> | Aug 23, 2021</p>
+      <h3 class="contact__read-next-post-title">A UX Case Study Creating a Studious Environment for Students:</h3>
+      <p class="contact__read-next-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+     </div>
+    </div>
+   </div>
+          
+   <div class="col-md-4">
+    <div class="contact__read-next-card">
+     <img src="images/post-2.png" alt="Post 2" class="contact__read-next-image">
+     <div class="contact__read-next-content">
+      <p class="contact__read-next-author">By <span class="contact__read-next-author--highlight"> John Doe</span> | Aug 23, 2021</p>
+      <h3 class="contact__read-next-post-title">A UX Case Study Creating a Studious Environment for Students:</h3>
+      <p class="contact__read-next-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+     </div>
+    </div>
+   </div>
+    
+   <div class="col-md-4">
+    <div class="contact__read-next-card">
+     <img src="images/post-3.png" alt="Post 3" class="contact__read-next-image">
+     <div class="contact__read-next-content">
+      <p class="contact__read-next-author">By <span class="contact__read-next-author--highlight"> John Doe</span> | Aug 23, 2021</p>
+      <h3 class="contact__read-next-post-title">A UX Case Study Creating a Studious Environment for Students:</h3>
+      <p class="contact__read-next-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>  
+    
+ <div class="page__join">
+  <div class="page__join-content">
+   <div class="page__join-content-title">Join our team to be a part of our story</div>
+   <div class="page__join-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+   <div class="page__join-content-button">
+    <p class="page__join-content-button-link">Join Now</p>
+   </div>
+  </div>
+ </div>
+  
+ <div class="page__newsletter">
+  <div class="page__newsletter-header">
+   <p class="page__newsletter-header-bracket">{
+   <span class="page__newsletter-header-name">Finsweet</span></p>
+   <nav class="page__newsletter-header-nav">
+    <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
+    <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>
+    <p href="about.html" class="page__newsletter-header-nav-link">About us</p>
+    <p href="contact.html" class="page__newsletter-header-nav-link">Contact us</p>
+    <p href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</p>
+   </nav>
+  </div>
+
+  <div class="page__newsletter-content">
+   <p class="page__newsletter-content-title">Subscribe to our news letter to get latest updates and news</p>
+   <form class="page__newsletter-content-form">
+    <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input">
+    <button type="submit" class="page__newsletter-content-form-button">Subscribe</button>
+   </form>
+  </div>
+  
+  <div class="page__newsletter-footer">
+   <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
+   <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
+   <div class="page__newsletter-footer-social">
+    <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></a>
+    <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></a>
+    <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
+   </div>
+  </div>
+ </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

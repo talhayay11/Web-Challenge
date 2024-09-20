@@ -1053,6 +1053,9 @@
 .blog__hero .container {
   margin: 94px auto;
 }
+.blog__hero .row {
+  min-width: 1280px;
+}
 .blog__hero-content {
   display: flex;
   flex-direction: column;
@@ -1060,7 +1063,8 @@
   color: #333333;
   max-width: 624px;
   max-height: 332px;
-  margin-right: 132px;
+  margin-right: 100px;
+  margin-top: 20px;
 }
 .blog__hero-content-featured {
   font-size: 16px;
@@ -1118,11 +1122,11 @@
 }
 .blog__hero-image {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: end;
 }
 .blog__hero-image-img {
-  max-width: 100%;
+  min-width: 515px;
   height: auto;
 }
 .blog__posts {

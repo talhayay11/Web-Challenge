@@ -1,29 +1,30 @@
 // Renkler
-$eyelash-viper: #f3c84b; // Sarı
-$liberty: #5a4999; // Mor  
-$carbon: #333333; // Koyu Gri   
-$carbon-333: #333;
-$shady-character: #4c4c4c7e; //footer Gri
-$boat-anchor: #6b6b6b; // Orta Gri
-$clouded-vision: #d1d1d1; // Açık Gri
-$white-shoulders: #f1f0ed; // Çok Açık Gri
-$granite-canyon: #6d6e76; //Medium Gri
 $white: #FFFFFF; // Beyaz
 $white-20: #cccccc;
-$cold-steel: #232536; //siyah
-$clear-moon: #fbf6ea; //açık sarı
-$alpine-goat: #f4f0f8; //lavender
 $black: #00000011; //siyah
 $black-50:#00000080; 
 $black-80: #000000cc; //siyah 80
-$christmas-silver: #e0e0e0; //Gümüş 
-$royalty: #592ea9;
-$river-styx: #161722;
-$dark-tone-ink: #121212; // Koyu arka plan
 $umbra: #1f1f1f; // Header arka plan
+$carbon: #333333; // Koyu Gri   
+$carbon-333: #333;
+$liberty: #5a4999; // Mor  
+$royalty: #592ea9;
 $shoe-wax: #2c2c2c; // Buton ve border
-$atlantic-charter: #2c2d40ff;
+$cold-steel: #232536; //siyah
+$river-styx: #161722;
+$clear-moon: #fbf6ea; //açık sarı
 $knighthood: #3b3c53;
+$alpine-goat: #f4f0f8; //lavender
+$boat-anchor: #6b6b6b; // Orta Gri
+$alpine-goat: #f4f0f8; //lavender
+$dark-tone-ink: #121212; // Koyu arka plan
+$eyelash-viper: #f3c84b; // Sarı
+$clouded-vision: #d1d1d1; // Açık Gri
+$granite-canyon: #6d6e76; //Medium Gri
+$white-shoulders: #f1f0ed; // Çok Açık Gri
+$shady-character: #4c4c4c7e; //footer Gri
+$christmas-silver: #e0e0e0; //Gümüş 
+$atlantic-charter: #2c2d40ff;
 
 // Font Ailesi
 $font-family-primary: 'Sen', sans-serif;
@@ -33,9 +34,17 @@ $font-family-inter: 'Inter', sans-serif;
 $font-size-14: 14px;
 $font-size-16: 16px;
 $font-size-18: 18px;
+$font-size-20: 20px;
 $font-size-24: 24px;
+$font-size-26: 26px;
 $font-size-28: 28px;
+$font-size-30: 30px;
+$font-size-32: 32px;
 $font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-46: 46px;
+$font-size-48: 48px;
+$font-size-56: 56px;
 
 // Line Heights
 $line-height-20: 20px;
@@ -44,8 +53,9 @@ $line-height-28: 28px;
 $line-height-32: 32px;
 $line-height-40: 40px;
 $line-height-48: 48px;
+$line-height-64: 64px;
 
-.page{
+.page {
 
  &__header {
   background-color: $cold-steel;
@@ -56,7 +66,6 @@ $line-height-48: 48px;
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 1440px;
   width: 100%;
   min-height: 80px;
   z-index: 10;
@@ -83,7 +92,6 @@ $line-height-48: 48px;
     
    &-name {
     font-size: $font-size-24;
-    font-weight: bold;
     padding-left: 2px;
    }
   }
@@ -111,7 +119,6 @@ $line-height-48: 48px;
 
   &-button {
    display: flex;
-   align-items: center;
    justify-content: center;
    background-color: $white;
    min-width: 179px;
@@ -120,10 +127,8 @@ $line-height-48: 48px;
    border: none;
    cursor: pointer;
    opacity: 1;
-   text-align: center;
    border-radius: 0;
    position: relative;
-   right: 0;
    margin-left: 32px; 
 
    &:hover {
@@ -132,6 +137,7 @@ $line-height-48: 48px;
   }
 
   &-text {
+    font-weight: 700;
    color: $carbon;
    font-size: $font-size-18;
    font-family: $font-family-primary;
@@ -143,28 +149,27 @@ $line-height-48: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 128px 0;
   max-width: 1280px;
   max-height: 324px;
-  margin-left: 270px;
+  margin-left: 312px;
+  margin-bottom: 128px;
   
   &-title {
    font-size: $font-size-36;
    font-weight: bold;
    text-align: center;
-   padding-bottom: 30px;
+   padding-bottom: 48px;
   }
   
   &-wrapper {
    display: flex;
-   justify-content: space-between;
    width: 100%;
-   max-width: 1280px;
+   min-width: 1280px;
    margin: 0 auto;
   }
   
   &-item {
-   flex: 1;
    position: relative;
    padding: 20px;
    border: 1px solid $clouded-vision;
@@ -174,11 +179,26 @@ $line-height-48: 48px;
    flex-direction: column;
    align-items: flex-start; 
    margin-left: 32px;
+   min-width: 296px;
+   min-height: 228px;
      
    &:hover {
     background-color: $eyelash-viper; 
    }
     
+   &--left {
+    position: relative;
+    padding: 20px;
+    border: 1px solid $clouded-vision;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    min-width: 296px;
+    min-height: 228px;
+   }
+
    &-icon { 
 
     &--background { 
@@ -212,8 +232,12 @@ $line-height-48: 48px;
     margin-bottom: 1px; 
     text-align: left; 
     padding: 10px;  
-    font-family: $font-family-primary;  
+    font-family: $font-family-primary;
+    max-width: 107px;
+    max-height: 40px;
     padding-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 4px;
     line-height: $line-height-40;
    } 
   
@@ -222,6 +246,7 @@ $line-height-48: 48px;
     color: $boat-anchor;  
     text-align: left;  
     padding-left: 10px;
+    max-width: 232px;
     font-family: $font-family-inter;
     line-height: $line-height-28;
    }
@@ -229,19 +254,18 @@ $line-height-48: 48px;
  } 
 
  &__authors {
-  padding-top: 100px;
+  padding-top: 128px;
   text-align: center;
+  max-width: 1280px;
+  max-height: 420px;
+  margin-left: 300px;
+  justify-content: space-around;
+  margin-bottom: 96px;
   
   &-title {
-   font-size: 32px;
+   font-size: $font-size-32;
    font-weight: bold;
-   margin-bottom: 40px;
-  }
-
-  .container {
-   max-width: 1280px;
-   max-height: 420px;
-   justify-content: space-between;
+   margin-bottom: 48px;
   }
   
   &-item {
@@ -272,7 +296,7 @@ $line-height-48: 48px;
     font-family: $font-family-primary;
     white-space: nowrap; 
 
-    &--position{
+    &--position {
      margin-left: -10px;
      margin-bottom: 10px;
      line-height: $line-height-40;
@@ -320,10 +344,9 @@ $line-height-48: 48px;
 
   &-content {
    max-height: 256px;
-    
-  
+
    &-title {
-    font-size: 32px;
+    font-size: $font-size-32;
     font-weight: bold;
     font-family: $font-family-primary;
     margin-bottom: 24px;
@@ -382,13 +405,12 @@ $line-height-48: 48px;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 20px 0;
    margin-bottom: 54px;
   
    &-bracket {
     font-size: $font-size-28;
     color: $white;
-    left: 10.4%;
+    margin-left: 170px;
     position: relative;
     font-weight: bold;
     min-width: 140px;
@@ -399,6 +421,7 @@ $line-height-48: 48px;
     font-size: $font-size-24;
     font-weight: bold;
     color: $white;
+    margin-left: -5px;
    }
   
    &-nav {
@@ -407,6 +430,7 @@ $line-height-48: 48px;
     margin-right: 190px; 
     min-width: 434px;
     max-height: 28.65px;
+    padding: 10px 10px;
   
     &-link {
      color: $white;
@@ -414,10 +438,6 @@ $line-height-48: 48px;
      font-size: $font-size-16;
      font-family: $font-family-inter;
      line-height: $line-height-28;
-  
-     &:hover {
-      text-decoration: underline;
-     }
     }
    }
   }
@@ -532,7 +552,6 @@ $line-height-48: 48px;
   position: relative;
   width: 100%;
   height: 1300px;
-  overflow: hidden;
   display: flex;
   justify-content: flex-start; 
   align-items: center;
@@ -584,10 +603,10 @@ $line-height-48: 48px;
    }
 
    &-title {
-    font-size: 56px;
+    font-size: $font-size-56;
     font-weight: 700;
     min-width: 803px;
-    line-height: 64px;
+    line-height: $line-height-64;
     margin-bottom: 24px;
     font-family: $font-family-primary;
     color: $white;
@@ -621,8 +640,6 @@ $line-height-48: 48px;
     min-width: 204px;
     padding: 16px 48px;
     position: relative;
-    gap: 12px;
-    opacity: 1;
     color: $carbon;
     font-family: $font-family-primary;
     font-weight: 700;
@@ -650,14 +667,14 @@ $line-height-48: 48px;
   width: 100%;
   max-width: 1282px;
   padding: 78px;
-  padding-left: 250px; 
+  padding-left: 298px; 
   max-height: 804px;
-  margin-bottom: 40px;
+  margin-bottom: 128px;
 
   &-featured {
    max-width: 733px;
    min-height: 804px;
-   margin-right: 50px;
+   margin-right: 32px;
 
    &-image-container {
     position: relative;
@@ -758,14 +775,12 @@ $line-height-48: 48px;
    position: relative;
    min-width: 517px;
    min-height: 804px;
-   margin-bottom: 50px;
 
    &-title {
     font-size: $font-size-36;
     font-weight: bold;
     font-family: $font-family-primary;
     line-height: $line-height-48;
-    padding-bottom: 32px;
     max-width: 133px;
     max-height: 48px;
     white-space: nowrap;
@@ -781,15 +796,12 @@ $line-height-48: 48px;
     margin-top: 11px;
     cursor: pointer;
     min-width: 60px;
-
-    &:hover {
-     text-decoration: underline;
-    }
    }
 
    &-items {
     list-style: none;
     padding: 0;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
 
@@ -840,7 +852,7 @@ $line-height-48: 48px;
  }
    
  &__about {
-  padding-top: 300px;
+  padding-top: 160px;
   width: 100%;
   position: relative;
   display: flex;
@@ -850,9 +862,9 @@ $line-height-48: 48px;
   &::before {
    content: "";
    position: absolute;
-   top: 296px;  
-   left: 61%; 
-   transform: translateX(-61%); 
+   top: 136px;  
+   left: 53.5%; 
+   transform: translateX(-50%);
    height: 23px;
    width: 100%;
    max-width: 1061px;
@@ -860,16 +872,17 @@ $line-height-48: 48px;
   }
 
   .container {
-   padding-top: 20px;
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
+   min-width: 1280px;
+   margin-right: 270px;
   }
 
   &-container-wrapper {
    min-width: 1280px; 
    min-height: 500px; 
-   margin-left: -100px;
+   margin-left: -55px;
    padding: 96px 61px 96px 80px; 
    position: relative;
    background-color: $alpine-goat;
@@ -885,9 +898,9 @@ $line-height-48: 48px;
   }
 
   &-section {
-   text-align: left;
    max-width: 515px;
    max-height: 308px;
+   margin-left: -50px;
 
    &-title {
     font-size: $font-size-16;
@@ -923,7 +936,6 @@ $line-height-48: 48px;
    &-link {
     font-size: $font-size-18;
     color: $liberty;
-    text-decoration: none;
     font-weight: bold;
     line-height: $line-height-32;
     width: 108px;
@@ -969,7 +981,6 @@ $line-height-48: 48px;
    position: relative;
    padding: 200px 0;
    margin-bottom: -150px;
-
   
    .container {
     position: relative;
@@ -979,10 +990,10 @@ $line-height-48: 48px;
    }
   
    &-image {
-    width: 75%; 
+    min-width: 949px; 
+    margin-left: -55px;
     height: auto; 
     z-index: 1;
-    right:90px;
    }
   
    &-content {
@@ -990,10 +1001,10 @@ $line-height-48: 48px;
     z-index: 2; 
     background: $white; 
     padding: 80px;
-    min-width: 706px;
+    max-width: 706px;
     max-height: 584px;
-    bottom: -11px;
-    right: -10px;
+    bottom: 0;
+    right: 40px;
     padding-left: 50px;
   
     &-title {
@@ -1006,9 +1017,9 @@ $line-height-48: 48px;
     }
   
     &-subtitle {
-     font-size: 46px;
+     font-size: $font-size-46;
      font-family: $font-family-primary;
-     line-height: 64px;
+     line-height: $line-height-64;
      font-weight: bold;
      margin-bottom: 16px;
      max-width: 546px;
@@ -1031,11 +1042,12 @@ $line-height-48: 48px;
      font-weight: bold;
      max-width: 269px;
      min-height: 56px;
-     padding: 12px 24px;
+     padding: 16px 48px;
      text-align: center;
      border-radius: 0;
      line-height: $line-height-24;
      cursor: pointer;
+     margin-top: 32px;
   
      &:hover {
       background-color: darken($eyelash-viper, 10%);
@@ -1051,19 +1063,20 @@ $line-height-48: 48px;
    min-width: 1237px;
    max-height: 52px;
    padding: 96px 0 96px 0;
-   margin-left: -20px;
+   margin-left: 0;
   
    &-title { 
     display: flex; 
     flex-direction: column; 
     font-size: $font-size-24;
     align-items: flex-start; 
+    margin-top: -10px;
     margin-left: -20px;
     max-width: 136px;
     max-height: 52px;
   
     &-line-first { 
-     padding-top: 10px; 
+     padding-top: 5px; 
      font-size: $font-size-14;   
      line-height: $line-height-20;
      font-family: $font-family-inter;   
@@ -1102,22 +1115,30 @@ $line-height-48: 48px;
   
   &-testimonials {
    margin: 0 auto;
+   margin-top: 96px;
    padding-top: 92px;
    background-color: $clear-moon;
-   min-width: 1280px;
+   max-width: 1280px;
    min-height: 464px;
   
+   &-img {
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 121px;
+   }
+   
    &-text {
     max-width: 349px;
     max-height: 200px;
-    margin-left: 80px;
+    margin-left: 20px;
+    margin-top: -20px;
 
     &::after {
      content: "";
      position: absolute;
      opacity: 0.3;
-     top: -10px;
-     right: -84px; 
+     top: -5px;
+     right: -96px; 
      height: 310px;
      width: 0.2px; 
      background-color: $granite-canyon; 
@@ -1147,14 +1168,13 @@ $line-height-48: 48px;
      color: $boat-anchor;
      line-height: $line-height-28;
      font-family: $font-family-inter;
-     margin-top: 20px; 
      min-width: 349px;
      max-height: 56px;
     }
    }
 
    &-item {
-    margin-left: 100px;
+    margin-left: 10px;
     height: 310px;
     width: 532px;
 
@@ -1163,6 +1183,7 @@ $line-height-48: 48px;
      font-family: $font-family-primary;
      max-width: 460px;
      min-height: 128px;
+     margin-top: -30px;
      font-weight: bold;
      line-height: $line-height-32;
     }
@@ -1171,10 +1192,8 @@ $line-height-48: 48px;
    &-nav {
     display: flex;
     align-items: center;
-    margin-top: 100px;
-    margin-left: 10px;
-    max-width: 518px;
-    max-height: 62px;
+    margin-top: -55px;
+    margin-left: 200px;
         
     &-prev {
      background-color: $dark-tone-ink;  
@@ -1220,25 +1239,38 @@ $line-height-48: 48px;
       background-color: lighten($white, 10%);  
      }
     }
+   }
 
-    &-author {
-     display: flex;
-     align-items: center;
+   &-author {
+    display: flex;
+    align-items: start;
+    max-height: 60px;
+    max-width: 257px;
+    margin-top: -8px;
+    flex-direction: column;
     
-     &-img {
-      border-radius: 50%;
-      margin-right: 10px;
-     }
+    &-name {
+     font-weight: bold;
+     white-space: nowrap;
+     font-family: $font-family-primary;
+     font-size: $font-size-24;
+     line-height: $line-height-32;
+     min-width: 193px;
+     margin-left: 60px;
+     margin-top: -50px;
+    }
     
-     &-name {
-      font-weight: bold;
-      white-space: nowrap;
-     }
-    
-     &-location {
-      color: $boat-anchor;
-      font-size: $font-size-14;
-     }
+    &-location {
+     color: $boat-anchor;
+     font-weight: 400;
+     margin-left: 60px;
+     margin-top: -15px;
+     max-width: 114px;
+     min-height: 28px;
+     white-space: nowrap;
+     font-family: $font-family-inter;
+     font-size: $font-size-16;
+     line-height: $line-height-28;
     }
    }
   } 
@@ -1347,8 +1379,8 @@ $line-height-48: 48px;
   padding: 60px 0;
 
   &-title {
-   font-size: 48px;
-   line-height: 64px;
+   font-size: $font-size-48;
+   line-height: $line-height-64;
    letter-spacing: -2px;
    font-weight: bold;
    font-family: $font-family-primary;
@@ -1488,7 +1520,6 @@ $line-height-48: 48px;
    }
   
    &-item {
-    flex: 1;
     position: relative;
     padding: 20px;
     border: 1px solid $clouded-vision;
@@ -1561,7 +1592,7 @@ $line-height-48: 48px;
  }
 }
 
-.about{
+.about {
 
  &__hero {
   position: relative;
@@ -1584,8 +1615,9 @@ $line-height-48: 48px;
    flex-direction: column;
    min-width: 624px;
    min-height: 356px;
-   top: 18%;
+   top: 25%;
    padding: 40px 40px;
+   margin-left: 23px;
 
    &-title {
     font-size: $font-size-16;
@@ -1598,8 +1630,8 @@ $line-height-48: 48px;
 
    &-description {
     font-family: $font-family-primary;
-    font-size: 48px;
-    line-height: 64px;
+    font-size: $font-size-48;
+    line-height: $line-height-64;
     display: flex;
     text-align: left;
     font-weight: bold;
@@ -1613,8 +1645,8 @@ $line-height-48: 48px;
   &-description {
    min-width: 477px;
    min-height: 112px;
-   margin-left: 100px;
-   padding-top: 150px;
+   margin-left: 120px;
+   padding-top: 175px;
 
    &-text {
     font-size: $font-size-16;
@@ -1641,7 +1673,7 @@ $line-height-48: 48px;
  &__stats {
   position: absolute;
   bottom: -65px; 
-  left: 31%;
+  left: 31.5%;
   transform: translateX(-50%);
   background-color: $eyelash-viper; 
   min-width: 630px;
@@ -1653,16 +1685,18 @@ $line-height-48: 48px;
   padding: 35px;
   box-sizing: border-box;
  
-  &-item{
+  &-item {
    min-width: 136px;
    max-height: 92px;
     
    &-number {
-    font-size: 56px; 
+    font-size: $font-size-56; 
     color: $carbon-333; 
     font-weight: bold;
     text-align: left;
-    line-height: 64px;
+    line-height: $line-height-64;
+    max-width: 126.59px;
+    margin-bottom: 0;
     font-family: $font-family-primary;
    }
 
@@ -1670,7 +1704,7 @@ $line-height-48: 48px;
     font-size: $font-size-16;
     color: $carbon; 
     font-family: $font-family-inter;
-    line-height: $font-size-28;
+    line-height: $line-height-28;
    }
   }
  }
@@ -1681,11 +1715,11 @@ $line-height-48: 48px;
    content: "";
    position: absolute;
    top: 108.8%;  
-   left: 52%; 
-   transform: translateX(-63%); 
+   left: 44.9%; 
+   transform: translateX(-50%); 
    height: 23px;
    width: 70%;
-   max-width: 900px;
+   max-width: 861.91px;
    background: linear-gradient(to left, $eyelash-viper 70%, $liberty 30%);
    z-index: 2;
   }
@@ -1710,9 +1744,9 @@ $line-height-48: 48px;
   }
 
   .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
   }
 
   &-section {
@@ -1720,6 +1754,8 @@ $line-height-48: 48px;
    max-height: 249px;
    text-align: left;
    margin-right: 32px;
+   margin-top: 60px;
+   margin-left: 80px;
 
    &-title {
     font-size: $font-size-16;
@@ -1727,7 +1763,6 @@ $line-height-48: 48px;
     letter-spacing: 3px;
     margin-bottom: 24px;
     font-family: $font-family-inter;
-    margin-top: 60px;
     line-height: $line-height-20;
     max-width: 124px;
     white-space: nowrap;
@@ -1746,7 +1781,6 @@ $line-height-48: 48px;
     font-size: $font-size-16;
     color: $granite-canyon;
     line-height: $line-height-28;
-    margin-top: 40px;
     font-family: $font-family-inter;
     min-width: 516px;
     max-height: 109px;
@@ -1754,16 +1788,15 @@ $line-height-48: 48px;
   } 
 
   &-mission-section {
-   max-width: 516px;
-   max-height: 249px;
-
+    margin-top: 60px;
+    max-width: 516px;
+    
    &-title {
     font-size: $font-size-16;
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 24px;
     font-family: $font-family-inter;
-    margin-top: 60px;
     line-height: $line-height-20;
     max-width: 121px;
     white-space: nowrap;
@@ -1782,7 +1815,6 @@ $line-height-48: 48px;
     font-size: $font-size-16;
     color: $granite-canyon;
     line-height: $line-height-28;
-    margin-top: 40px;
     font-family: $font-family-inter;
     min-width: 516px;
     max-height: 109px;
@@ -1931,7 +1963,7 @@ $line-height-48: 48px;
    padding: 200px;
   }
 
-  .row{
+  .row {
    align-items: center;
    justify-content: center;
    min-width: 768px;
@@ -1970,9 +2002,9 @@ $line-height-48: 48px;
    }
 
    &-subtitle {
-    font-size: 48px;
+    font-size: $font-size-48;
     font-family: $font-family-primary;
-    line-height: 64px;
+    line-height: $line-height-64;
     font-weight: 700;
     letter-spacing: -2px;
     max-width: 768px;
@@ -2002,7 +2034,7 @@ $line-height-48: 48px;
    }
   }
 
-  &-image-main{
+  &-image-main {
    width: 100%;
    max-width: 1280px;
    height: auto;
@@ -2018,7 +2050,7 @@ $line-height-48: 48px;
    justify-content: center;
   }
 
-  &-control{
+  &-control {
 
    &-prev {
     position: absolute;
@@ -2063,7 +2095,7 @@ $line-height-48: 48px;
   }
  }
 
- &__posts{
+ &__posts {
   padding: 40px 20px;
   background-color: $white;
   margin-bottom: 128px;
@@ -2097,7 +2129,7 @@ $line-height-48: 48px;
    min-width: 843px;
    max-height: 112px;
 
-   &--space-36{
+   &--space-36 {
     margin-top: 24px;
     min-width: 836px;
     min-height: 112px;
@@ -2107,7 +2139,7 @@ $line-height-48: 48px;
     line-height: $line-height-28;
    }
 
-   &--space-37{
+   &--space-37 {
     margin-top: 24px;
     min-width: 837px;
     min-height: 112px;
@@ -2145,7 +2177,7 @@ $line-height-48: 48px;
   }
  }
 
- &__read-next{
+ &__read-next {
   max-width: 1280px;
   min-height: 782px;
   align-items: center;  
@@ -2186,10 +2218,14 @@ $line-height-48: 48px;
    color: $boat-anchor;
    margin-bottom: 10px;
    max-width: 199px;
+
+   &--highlight {
+    color: $liberty;
+   }
   }
 
   &-post-title {
-   font-size: 26px;
+   font-size: $font-size-26;
    font-family: $font-family-primary;
    font-weight: bold;
    margin-bottom: 10px;
@@ -2283,7 +2319,7 @@ $line-height-48: 48px;
   background: transparent;
   border: none;
   color: $white;
-  font-size: 30px;
+  font-size: $font-size-30;
   cursor: pointer;
         
   &:focus {
@@ -2308,7 +2344,7 @@ $line-height-48: 48px;
  &-link {
   color: $white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: $font-size-20;
   transition: color 0.3s ease;
 
   &:hover {

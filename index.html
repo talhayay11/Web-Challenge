@@ -148,13 +148,13 @@
   <div class="page__category">
    <h2 class="page__category-title">Choose A Category</h2>
    <div class="page__category-wrapper">
-    <div class="page__category-item">
+    <div class="page__category-item--left">
      <div class="page__category-item-icon">
       <img src="images/icon-background.png" alt="Business Background" class="page__category-item-icon--background">
       <img src="images/business.png" alt="Business Icon" class="page__category-item-icon--background-img page__category-item-icon--large">
      </div>
 
-     <p class="page__category-item-title">Business</p>
+     <h3 class="page__category-item-title">Business</h3>
      <p class="page__category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
@@ -194,10 +194,10 @@
    <div class="container">
     <img src="images/friends.png" alt="Story Image" class="home__about-story-image">
     <div class="home__about-story-content">
-     <h2 class="home__about-story-content-title">WHY WE STARTED</h2>
-     <h3 class="home__about-story-content-subtitle">It started out as a simple idea and evolved into our passion</h3>
-     <p class="home__about-story-content-description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+     <h3 class="home__about-story-content-title">WHY WE STARTED</h3>
+     <p class="home__about-story-content-subtitle">It started out as a simple idea and evolved into our passion</p>
+     <span class="home__about-story-content-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span>
           
      <p href="#" class="home__about-story-content-button">Discover our story ></p>
     </div>
@@ -207,12 +207,11 @@
   <div class="page__authors">
    <h2 class="page__authors-title">List of Authors</h2>
    <div class="container">
-    <div class="col-md-3">
+    <div class="col-lg-3">
      <div class="page__authors-item">
       <img src="images/floyd.png" alt="Author 1" class="page__authors-item-img">
       <h3 class="page__authors-item-name">Floyd Miles</h3>
       <p class="page__authors-item-title">Content Writer @Company</p>
-            
       <div class="page__authors-item-social"> 
        <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></a>
        <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></a>
@@ -222,7 +221,7 @@
      </div>
     </div>
         
-    <div class="col-md-3">
+    <div class="col-lg-3">
      <div class="page__authors-item">
       <img src="images/dianne.png" alt="Author 2" class="page__authors-item-img">
       <h3 class="page__authors-item-name">Dianne Russell</h3>
@@ -236,7 +235,7 @@
      </div>
     </div>
         
-    <div class="col-md-3">
+    <div class="col-lg-3">
      <div class="page__authors-item">
       <img src="images/jenny.png" alt="Author 3" class="page__authors-item-img">
       <h3 class="page__authors-item-name">Jenny Wilson</h3>
@@ -250,7 +249,7 @@
      </div>
     </div>
         
-    <div class="col-md-3">
+    <div class="col-lg-3">
      <div class="page__authors-item">
       <img src="images/leslie.png" alt="Author 4" class="page__authors-item-img">
       <h3 class="page__authors-item-name--position">Leslie Alexander</h3>
@@ -287,23 +286,20 @@
    <div class="container">
     <div class="col-md-6 home__about-testimonials-text">
      <h3 class="home__about-testimonials-text-heading">TESTIMONIALS</h3>
-      <span class="home__about-testimonials-text-subheading">What people say about our blog</span>
-      <p class="home__about-testimonials-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <p class="home__about-testimonials-text-subheading">What people say about our blog</p>
+      <span class="home__about-testimonials-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
     </div>
         
     <div class="col-md-6">
      <div class="home__about-testimonials-item">
       <p class="home__about-testimonials-item-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-       <div class="home__about-testimonials-nav">
-        <div class="home__about-testimonials-nav-author">
-         <img src="images/jonathan.png" alt="Author" class="home__about-testimonials-nav-author-img">
-
-         <div>
-          <p class="home__about-testimonials-nav-author-name">Jonathan Vallem</p>
-          <p class="home__about-testimonials-nav-author-location">New York, USA</p>
-         </div>
+        <img src="images/jonathan.png" alt="Author" class="home__about-testimonials-img">
+        <div class="home__about-testimonials-author">
+         <p class="home__about-testimonials-author-name">Jonathan Vallem</p>
+         <span class="home__about-testimonials-author-location">New York, USA</span>
         </div>
 
+       <div class="home__about-testimonials-nav">
         <button class="home__about-testimonials-nav-next">
          <img src="images/right-arrow.png" alt="Right Arrow" class="home__about-testimonials-nav-next-img">
         </button>
@@ -329,10 +325,10 @@
  </section>
 
  <div class="page__newsletter">
-  <div class="page__newsletter-header">
-   <p class="page__newsletter-header-bracket">{
-   <span class="page__newsletter-header-name">Finsweet</span></p>
-
+  <div class="page__newsletter-header" href="#">
+   <span class="page__newsletter-header-bracket">{
+   <span class="page__newsletter-header-name">Finsweet</span></span>
+    
    <nav class="page__newsletter-header-nav">
     <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
     <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>

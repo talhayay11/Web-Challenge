@@ -20,6 +20,12 @@ scrollToTopButton.addEventListener('click', function() {
   document.documentElement.scrollTop = 0; // Diğer tarayıcılar için
 });
 
+// Bootstrap sliderı otomatik oynatma için interval belirle
+$('#contactHeroSlider').carousel({
+  interval: 3000, // 3 saniye
+  ride: 'carousel'
+});
+
 // Masaüstü ve Mobil Dark Mode Butonları
 const darkModeButton = document.getElementById('darkModeToggle');
 const darkModeIcon = document.getElementById('darkModeIcon');
@@ -49,12 +55,6 @@ darkModeToggleMobile.addEventListener('click', (toggleDarkMode) => {
   document.body.classList.toggle('dark-mode');
   mobileMenu.classList.remove('active'); // Dark mode açıldığında mobil menüyü kapat
 });; // Mobil dark mode butonu
-
-// Bootstrap sliderı otomatik oynatma için interval belirle
-$('#contactHeroSlider').carousel({
-  interval: 3000, // 3 saniye
-  ride: 'carousel'
-});
 
 // Mobil Menü Elemanları
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');

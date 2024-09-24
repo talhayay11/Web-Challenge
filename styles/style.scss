@@ -63,16 +63,9 @@ $line-height-64: 64px;
  }
 
  &__navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   min-height: 80px;
   z-index: 10;
   background-color: $cold-steel !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
 
   &-brand {
    font-size: $font-size-24;
@@ -98,8 +91,11 @@ $line-height-64: 64px;
    
   &-nav {
    display: flex;
-   align-items: center;
    margin-right: 80px;
+
+   &--contact{
+    margin-left: 1010px;
+   }
   }
 
   &-item {
@@ -111,10 +107,6 @@ $line-height-64: 64px;
    font-size: $font-size-16;
    line-height: $line-height-28;
    font-family: $font-family-inter;
-
-   &:hover {
-    color: $white;
-   }
   }
 
   &-button {
@@ -146,24 +138,17 @@ $line-height-64: 64px;
  }
 
  &__category {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 128px 0;
   max-width: 1280px;
   max-height: 324px;
-  margin-left: 312px;
-  margin-bottom: 128px;
+  margin: 0 auto;
   
   &-title {
    font-size: $font-size-36;
    font-weight: bold;
-   text-align: center;
-   padding-bottom: 48px;
   }
   
   &-wrapper {
-   display: flex;
    width: 100%;
    min-width: 1280px;
    margin: 0 auto;
@@ -187,7 +172,6 @@ $line-height-64: 64px;
    }
     
    &--left {
-    position: relative;
     padding: 20px;
     border: 1px solid $clouded-vision;
     transition: background-color 0.3s ease;
@@ -197,16 +181,18 @@ $line-height-64: 64px;
     align-items: flex-start; 
     min-width: 296px;
     min-height: 228px;
+
+    &:hover {
+     background-color: $eyelash-viper; 
+    }
    }
 
    &-icon { 
 
     &--background { 
      height: 48px; 
-     display: flex; 
      align-items: flex-start; 
      justify-content: flex-start; 
-     position: relative; 
      top: 20%;  
      left: 20%;  
 
@@ -254,25 +240,19 @@ $line-height-64: 64px;
  } 
 
  &__authors {
-  padding-top: 128px;
-  text-align: center;
   max-width: 1280px;
   max-height: 420px;
-  margin-left: 300px;
+  margin: 0 auto;
   justify-content: space-around;
-  margin-bottom: 96px;
   
   &-title {
    font-size: $font-size-32;
    font-weight: bold;
-   margin-bottom: 48px;
   }
   
   &-item {
    background-color: $white-shoulders;
-   padding: 50px;
-   margin-bottom: 32px;
-   text-align: center;
+   padding: 30px;
    border-radius: 0px;
    min-width: 296px;
    max-height: 324px;
@@ -286,7 +266,6 @@ $line-height-64: 64px;
     height: 128px;
     border-radius: 50%;
     margin-bottom: 20px;
-    margin-top: -10px;
    }
   
    &-name {
@@ -310,14 +289,12 @@ $line-height-64: 64px;
    &-title {
     font-size: $font-size-16;
     white-space: nowrap; 
-    margin-left: -20px;
+    margin-left: -5px;
     min-width: 240px;
     max-height: 20px;
    }
   
    &-social {
-    display: flex;
-    justify-content: center;
     gap: 16px;
     max-width: 112px;
     max-height: 16px;
@@ -332,15 +309,16 @@ $line-height-64: 64px;
  }
 
  &__join {
-  padding: 128px 0;
   background-color: $white; 
   max-width: 414px;
   margin: 0 auto; 
-  text-align: center;
-  display: flex;
   flex-direction: column; 
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 128px;
+  margin-top: 128px;
+
+  &--about-page {
+    margin-top: 400px;
+  }
 
   &-content {
    max-height: 256px;
@@ -374,7 +352,6 @@ $line-height-64: 64px;
     background-color: $eyelash-viper;
     text-decoration: none;
     cursor: pointer;
-    border: none;
 
     &:hover {
      background-color: darken($eyelash-viper, 10%);
@@ -399,19 +376,14 @@ $line-height-64: 64px;
   color: $white;
   position: absolute; 
   min-height: 560px;
-  width: 100%;
   
   &-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    margin-bottom: 54px;
   
    &-bracket {
     font-size: $font-size-28;
     color: $white;
     margin-left: 170px;
-    position: relative;
     font-weight: bold;
     min-width: 140px;
     max-height: 28.35px;
@@ -425,8 +397,6 @@ $line-height-64: 64px;
    }
   
    &-nav {
-    display: flex;
-    gap: 24px;
     margin-right: 190px; 
     min-width: 434px;
     max-height: 28.65px;
@@ -434,6 +404,7 @@ $line-height-64: 64px;
   
     &-link {
      color: $white;
+     padding-left: 24px;
      text-decoration: none;
      font-size: $font-size-16;
      font-family: $font-family-inter;
@@ -447,9 +418,6 @@ $line-height-64: 64px;
    padding: 0px 80px;
    min-width: 1280px;
    min-height: 256px;
-   display: flex; 
-   justify-content: space-between; 
-   align-items: center; 
    flex-wrap: wrap;
    margin-left: 170px;
    width: 80%;
@@ -465,14 +433,11 @@ $line-height-64: 64px;
    }
   
    &-form {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 24px;
   
     &-input {
-     padding: 15px;
+     padding: 14px 24.92px;
      border: 1px solid $granite-canyon;
-     border-radius: 0px;
      width: 300px;
      color: $carbon;
      background-color: $shady-character;
@@ -481,7 +446,7 @@ $line-height-64: 64px;
     &-button {
      background-color: $eyelash-viper;
      border: none;
-     padding: 15px 30px;
+     padding: 16px 48px;
      color: $carbon;
      font-weight: bold;
      cursor: pointer;
@@ -495,7 +460,6 @@ $line-height-64: 64px;
   }
   
   &-footer {
-   position: relative;
    color: $clouded-vision;
   
    &-address {
@@ -521,11 +485,8 @@ $line-height-64: 64px;
    }
   
    &-social {
-    position: absolute;
-    right: 175px; 
+    left: 79%; 
     bottom: -90px; 
-    display: flex;
-    gap: 26px;
     margin-right: 20px;
     min-width: 144px;
     max-height: 16px;
@@ -533,6 +494,7 @@ $line-height-64: 64px;
     &-icon {
      width: 16px;
      height: 16px;
+     margin-left: 26px;
      filter: brightness(0) invert(1); 
      opacity: 0.7; 
      transition: filter 0.3s ease, opacity 0.3s ease;
@@ -549,12 +511,8 @@ $line-height-64: 64px;
 .home {
 
  &__hero {
-  position: relative;
-  width: 100%;
   height: 1300px;
-  display: flex;
   justify-content: flex-start; 
-  align-items: center;
   margin-bottom: -150px;
 
   &-image {
@@ -572,13 +530,11 @@ $line-height-64: 64px;
    max-height: 400px;
    margin-left: 100px;
    margin-top: -300px;
-   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: flex-start; 
    color: $white;
    z-index: 2;
-   position: relative;
 
    &-category {
     font-size: $font-size-16;
@@ -605,7 +561,6 @@ $line-height-64: 64px;
    &-title {
     font-size: $font-size-56;
     font-weight: 700;
-    min-width: 803px;
     line-height: $line-height-64;
     margin-bottom: 24px;
     font-family: $font-family-primary;
@@ -619,7 +574,7 @@ $line-height-64: 64px;
     line-height: $line-height-28;
     font-family: $font-family-inter;
     font-weight: 400;
-    min-width: 243px;
+    letter-spacing: 0.28px;
 
     &--color {
      color: $eyelash-viper; 
@@ -636,20 +591,13 @@ $line-height-64: 64px;
 
    &-button {
     background-color: $eyelash-viper;
-    border: none;
-    min-width: 204px;
     padding: 16px 48px;
-    position: relative;
     color: $carbon;
     font-family: $font-family-primary;
     font-weight: 700;
     font-size: $font-size-18;
     line-height: $line-height-24;
-    text-align: center;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 0;
     margin-top: 48px;
 
@@ -661,10 +609,7 @@ $line-height-64: 64px;
  }
 
  &__posts {
-  display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 100%;
   max-width: 1282px;
   padding: 78px;
   padding-left: 298px; 
@@ -675,10 +620,6 @@ $line-height-64: 64px;
    max-width: 733px;
    min-height: 804px;
    margin-right: 32px;
-
-   &-image-container {
-    position: relative;
-   }
 
    &-title {
     font-size: $font-size-36;
@@ -701,7 +642,6 @@ $line-height-64: 64px;
     align-items: flex-start;
 
     &-image {
-     width: 100%;
      min-width: 669px;
      min-height: 352px;
     }
@@ -748,9 +688,6 @@ $line-height-64: 64px;
      border: none;
      min-width: 204px;
      min-height: 56px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      cursor: pointer;
      border-radius: 0;
      font-family: $font-family-primary;
@@ -769,10 +706,8 @@ $line-height-64: 64px;
   }
 
   &-list {
-   display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   position: relative;
    min-width: 517px;
    min-height: 804px;
 
@@ -802,13 +737,10 @@ $line-height-64: 64px;
     list-style: none;
     padding: 0;
     margin-top: 32px;
-    display: flex;
     flex-direction: column;
 
     &-item {
      background-color: $white;
-     position: relative; 
-     display: flex;
      flex-direction: column;
      justify-content: flex-start; 
      border-radius: 0;  
@@ -852,50 +784,39 @@ $line-height-64: 64px;
  }
    
  &__about {
-  padding-top: 160px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 128px;
   flex-direction: column;
    
   &::before {
    content: "";
    position: absolute;
-   top: 136px;  
-   left: 53.5%; 
+   top: 104.3px;  
+   left: 55.8%; 
    transform: translateX(-50%);
    height: 23px;
    width: 100%;
    max-width: 1061px;
    background: linear-gradient(to right, $eyelash-viper 70%, $liberty 30%);
   }
-
+  
   .container {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   min-width: 1280px;
-   margin-right: 270px;
-  }
-
-  &-container-wrapper {
-   min-width: 1280px; 
-   min-height: 500px; 
-   margin-left: -55px;
-   padding: 96px 61px 96px 80px; 
-   position: relative;
-   background-color: $alpine-goat;
-   display: flex;
-   justify-content: space-around;
-   align-items: flex-start;
-  }
-
-  .row {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 1280px;
+    margin-right: 270px;
+    margin-bottom: 128px;
+   }
+ 
+   &-container-wrapper {
+    min-width: 1280px; 
+    min-height: 500px; 
+    margin-left: -55px;
+    padding: 96px 61px 96px 80px; 
+    background-color: $alpine-goat;
+    justify-content: space-around;
+    align-items: flex-start;
+   }
 
   &-section {
    max-width: 515px;
@@ -978,12 +899,10 @@ $line-height-64: 64px;
   }
   
   &-story {
-   position: relative;
    padding: 200px 0;
    margin-bottom: -150px;
   
    .container {
-    position: relative;
     z-index: 2;
     max-width: 1280px;
     max-height: 705px;
@@ -1043,8 +962,6 @@ $line-height-64: 64px;
      max-width: 269px;
      min-height: 56px;
      padding: 16px 48px;
-     text-align: center;
-     border-radius: 0;
      line-height: $line-height-24;
      cursor: pointer;
      margin-top: 32px;
@@ -1066,7 +983,6 @@ $line-height-64: 64px;
    margin-left: 0;
   
    &-title { 
-    display: flex; 
     flex-direction: column; 
     font-size: $font-size-24;
     align-items: flex-start; 
@@ -1092,8 +1008,6 @@ $line-height-64: 64px;
    } 
   
    &-logos {  
-    display: flex; 
-    justify-content: center; 
     gap: 73px; 
     margin-top: -35px; 
     padding-left: 100px;
@@ -1115,7 +1029,6 @@ $line-height-64: 64px;
   
   &-testimonials {
    margin: 0 auto;
-   margin-top: 96px;
    padding-top: 92px;
    background-color: $clear-moon;
    max-width: 1280px;
@@ -1130,8 +1043,7 @@ $line-height-64: 64px;
    &-text {
     max-width: 349px;
     max-height: 200px;
-    margin-left: 20px;
-    margin-top: -20px;
+    margin-left: 112px;
 
     &::after {
      content: "";
@@ -1144,19 +1056,18 @@ $line-height-64: 64px;
      background-color: $granite-canyon; 
     }
 
-    &-heading {  
+    &-heading {
      font-size: $font-size-16;
      letter-spacing: 3px; 
-     margin-bottom: 12px; 
+     margin-bottom: 12px;
      font-family: $font-family-inter;
      line-height: $line-height-20;
      max-width: 153px;
     } 
   
-    &-subheading { 
+    &-subheading {
      font-size: $font-size-36;
      font-weight: bold;
-     margin-bottom: 16px; 
      min-width: 345px;
      min-height: 96px;
      font-family: $font-family-primary;
@@ -1175,6 +1086,7 @@ $line-height-64: 64px;
 
    &-item {
     margin-left: 10px;
+    margin-top: 10px;
     height: 310px;
     width: 532px;
 
@@ -1190,8 +1102,6 @@ $line-height-64: 64px;
    }
 
    &-nav {
-    display: flex;
-    align-items: center;
     margin-top: -55px;
     margin-left: 200px;
         
@@ -1201,9 +1111,6 @@ $line-height-64: 64px;
      border-radius: 50%;  
      width: 50px;
      height: 50px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      cursor: pointer;
      margin-right: 10px;
       
@@ -1223,9 +1130,6 @@ $line-height-64: 64px;
      border-radius: 50%;  
      width: 40px;
      height: 40px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      cursor: pointer;
      margin-right: 10px;
      margin-left: 200px;
@@ -1242,8 +1146,6 @@ $line-height-64: 64px;
    }
 
    &-author {
-    display: flex;
-    align-items: start;
     max-height: 60px;
     max-width: 257px;
     margin-top: -8px;
@@ -1292,9 +1194,7 @@ $line-height-64: 64px;
   }
 
   &-content {
-   display: flex;
    flex-direction: column;
-   justify-content: center;
    color: $carbon; 
    max-width: 624px;
    max-height: 332px;
@@ -1304,9 +1204,10 @@ $line-height-64: 64px;
    &-featured {
     font-size: $font-size-16;
     font-family: $font-family-inter;
+    line-height: $line-height-20;
     max-width: 167px;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px;
     color: $boat-anchor; 
     white-space: nowrap;
@@ -1317,7 +1218,6 @@ $line-height-64: 64px;
     font-weight: bold;
     font-family: $font-family-primary;
     line-height: $line-height-48;
-    margin-bottom: 15px;
     min-width: 624px;
     max-height: 96px;
     letter-spacing: -2px;
@@ -1326,7 +1226,6 @@ $line-height-64: 64px;
    &-meta {
     font-size: $font-size-14;
     color: $boat-anchor; 
-    margin-bottom: 16px;
     line-height: $line-height-20;
     font-family: $font-family-inter;
     max-width: 202px;
@@ -1351,11 +1250,10 @@ $line-height-64: 64px;
     color: $cold-steel;
     font-weight: bold;
     padding: 16px 24px;
-    border-radius: 0;
     font-size: $font-size-18;
     line-height: $line-height-24;
     max-width: 204px;
-    min-height: 56px;
+    max-height: 56px;
 
     &:hover {
      background-color: darken($eyelash-viper, 10%);
@@ -1364,7 +1262,6 @@ $line-height-64: 64px;
   }
 
   &-image {
-   display: flex;
    justify-content: right;
    align-items: end;
 
@@ -1390,26 +1287,23 @@ $line-height-64: 64px;
   }
 
   &-divider {
-   border: none;           
-   height: 1px;                
-   background-color: $christmas-silver;  
-   margin-bottom: 64px; 
+   border: none;
+   height: 1px;
+   background-color: $christmas-silver;
+   margin-bottom: 64px;
    max-width: 1282px;
   }
 
   &-list {
-   display: flex;
    flex-direction: column;
    margin-left: 300px;
-   gap: 64px; 
    min-width: 1147px;
    min-height: 1846px;
 
    &-item {
-    display: flex;
     max-width: 1146px;
     min-height: 318px;
-    margin-bottom: 20px;
+    margin-bottom: 64px;
 
     &-image {
      width: 50%;
@@ -1456,12 +1350,8 @@ $line-height-64: 64px;
   }
 
   &-pagination {
-   text-align: center;
-   align-items: center;
-   justify-content: center;
    margin-left: 870px;
    max-height: 174px;
-   margin-top: 64px;
    display: inline-block;
       
    &-prev {
@@ -1489,14 +1379,9 @@ $line-height-64: 64px;
  &__about {
   padding: 40px 20px;
   margin-top: -20px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
   flex-direction: column;
 
   &-category {
-   display: flex;
    flex-direction: column;
    padding: 50px 0;
   
@@ -1512,15 +1397,11 @@ $line-height-64: 64px;
    }
   
    &-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     max-width: 1280px;
     margin: 0 auto;
    }
   
    &-item {
-    position: relative;
     padding: 20px;
     border: 1px solid $clouded-vision;
     transition: background-color 0.3s ease;
@@ -1886,7 +1767,7 @@ $line-height-64: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 270px;
+  padding: 10px 270px 91px;
 
   &-container {
    display: flex;
@@ -2035,7 +1916,6 @@ $line-height-64: 64px;
   }
 
   &-image-main {
-   width: 100%;
    max-width: 1280px;
    height: auto;
    margin-left: 300px;
@@ -2046,8 +1926,6 @@ $line-height-64: 64px;
    bottom: -25px;
    left: 35%;
    transform: translateX(-50%);
-   display: flex;
-   justify-content: center;
   }
 
   &-control {
@@ -2328,7 +2206,7 @@ $line-height-64: 64px;
  }
 
  &-nav {
-   width: 100%;
+  width: 100%;
  }
 
  &-list {
@@ -2369,31 +2247,31 @@ $line-height-64: 64px;
 }
 
 @media (min-width: 1000px) {
-  .menu-toggle {
-    display: none;
-  }
+ .menu-toggle {
+  display: none;
+ }
 }
 
 @media (max-width: 1000px) {
-  .dark-mode-btn {
-    display: none; 
-  }
+ .dark-mode-btn {
+  display: none; 
+ }
 
-  .menu-toggle {
-    display: flex;
-  }
+ .menu-toggle {
+  display: flex;
+ }
 
-  .menu-toggle-icon {
-    width: 30px; 
-    height: 3px;  
-    background-color: $white;  
-  }
+ .menu-toggle-icon {
+  width: 30px; 
+  height: auto;  
+  background-color: transparent;  
+ }
 }
 
 .dark-mode-btn {
  position: fixed;
  top: 20px;
- right: 10px;
+ right: 32px;
  width: 40px;
  height: 40px;
  background-color: $white;
@@ -2443,7 +2321,8 @@ $line-height-64: 64px;
  .blog__hero-content-meta--author,
  .blog__posts-list-item-content-category,
  .contact__read-next-author--highlight,
- .contact__hero-content-title {
+ .contact__hero-content-title,
+ .page__join-content-text {
   color: $white !important;
  }
 
@@ -2467,8 +2346,7 @@ $line-height-64: 64px;
  .contact__posts,
  .contact__posts-list-text,
  .dark-mode-btn,
- .about__hero,
- .menu-toggle-icon {
+ .about__hero {
   background-color: $atlantic-charter;
   color: $white;
  }
@@ -2481,7 +2359,8 @@ $line-height-64: 64px;
  .page__newsletter-content-form-button,
  .blog__hero-content-button,
  .scroll-up-btn,
- .home__posts-featured-content-button {
+ .home__posts-featured-content-button,
+ .page__join-content-button {
   background-color: $carbon;
   color: $white;
   border: 0px solid $shoe-wax;
@@ -2504,6 +2383,7 @@ $line-height-64: 64px;
 
  .page__authors-item,
  .page__category-item,
+ .page__category-item--left,
  .blog__about-category-item {
   background-color: $white;
   color: $cold-steel;

@@ -12,17 +12,15 @@
 
 <body>
  <header class="page__header">
-  <nav class="page__navbar navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="page__navbar navbar navbar-expand-lg navbar-light fixed-top d-flex">
    <p class="page__navbar-brand" href="#">
    <span class="page__navbar-brand-bracket">{</span>
    <span class="page__navbar-brand-name">Finsweet</span>
    </p>
   
    <button id="mobileMenuToggle" class="menu-toggle">
-    <span class="menu-toggle-icon"></span>
-    <span class="menu-toggle-icon"></span>
-    <span class="menu-toggle-icon"></span>
-   </button>
+    <img src="images/menu-black.png" alt="Menu Icon" id="mobileMenuToggleIcon" class="menu-toggle-icon">
+  </button>
   
    <div id="mobileMenu" class="menu menu-mobile">
     <nav class="menu-nav menu-mobile-nav">
@@ -71,9 +69,9 @@
   </nav>
  </header>
 
- <section class="home__hero">
+ <section class="home__hero d-flex position-relative align-items-center w-100">
   <img src="images/hero.png" alt="Hero Image" class="home__hero-image">
-  <div class="home__hero-content">
+  <div class="home__hero-content d-flex position-relative">
    <p class="home__hero-content-category">POSTED ON 
     <span class="home__hero-content-category--highlight">STARTUP</span></p>
    <h1 class="home__hero-content-title">Step-by-step guide to choosing great font pairs</h1>
@@ -81,42 +79,42 @@
    <p class="home__hero-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
       
-   <p href="#" class="home__hero-content-button">Read More ></p>
+   <p href="#" class="home__hero-content-button position-relative justify-content-center">Read More ></p>
   </div>
  </section>
 
- <section class="home__posts">
+ <section class="home__posts d-flex justify-content-between w-100">
   <div class="col-md-6 home__posts-featured">
    <h3 class="home__posts-featured-title">Featured Post</h3>
    <div class="home__posts-featured-content">
-    <img src="images/house.png" alt="Featured Image" class="home__posts-featured-content-image">
+    <img src="images/house.png" alt="Featured Image" class="home__posts-featured-content-image w-100">
     <p class="home__posts-featured-content-meta">By <span class="home__posts-featured-content-meta--author">John Doe</span> | May 23, 2022</p>
     <p class="home__posts-featured-content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
     <p class="home__posts-featured-content-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-    <p href="#" class="home__posts-featured-content-button">Read More ></p>
+    <p href="#" class="home__posts-featured-content-button d-flex justify-content-center align-items-center">Read More ></p>
    </div>
   </div>
 
-  <div class="col-md-6 home__posts-list">
+  <div class="col-md-6 home__posts-list d-flex position-relative">
    <h3 class="home__posts-list-title">All Posts</h3>
    <a href="#" class="home__posts-list-view-all">View All</a>
-   <ul class="home__posts-list-items"> 
-    <li class="home__posts-list-items-item">
+   <ul class="home__posts-list-items d-flex"> 
+    <li class="home__posts-list-items-item position-relative d-flex">
      <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Deo</span> |  Aug 23, 2021</p>
      <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p>
     </li>
 
-    <li class="home__posts-list-items-item">
+    <li class="home__posts-list-items-item position-relative d-flex">
      <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Doe</span> | Aug 23, 2021</p>
      <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p>     
     </li>
 
-    <li class="home__posts-list-items-item"> 
+    <li class="home__posts-list-items-item position-relative d-flex"> 
      <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Deo</span> | Aug 23, 2021</p>
      <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p> 
     </li>
 
-    <li class="home__posts-list-items-item">
+    <li class="home__posts-list-items-item position-relative d-flex">
      <p class="home__posts-list-items-item-meta">By <span class="home__posts-list-items-item-meta--author">John Deo</span> | Aug 23, 2021</p>
      <p class="home__posts-list-items-item-text">8 Figma design systems that you can download for free today.</p>
     </li>
@@ -124,33 +122,33 @@
   </div>
  </section>
 
- <section class="home__about">
-  <div class="container">
-   <div class="home__about-container-wrapper"> 
+ <section class="home__about position-relative d-flex justify-content-between w-100">
+  <div class="container d-flex justify-content-between">
+   <div class="home__about-container-wrapper position-relative d-flex"> 
     <div class="col-md-6 home__about-section">
-     <h3 class="home__about-section-title">ABOUT US</h3>
+     <h3 class="home__about-section-title mb-4">ABOUT US</h3>
      <p class="home__about-section-subtitle">We are a community of content writers who share their learnings</p>
-     <p class="home__about-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+     <p class="home__about-section-description mb-3 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.</p>
          
      <a href="#" class="home__about-section-link">Read More ></a>
     </div>
           
     <div class="col-md-6 home__about-mission-section">
-     <h3 class="home__about-mission-section-title">OUR MISSION</h3>
+     <h3 class="home__about-mission-section-title mb-4">OUR MISSION</h3>
      <p class="home__about-mission-section-subtitle">Creating valuable content for creatives all around the world</p>
-     <p class="home__about-mission-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+     <p class="home__about-mission-section-description mb-3 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
    </div>
   </div>
 
-  <div class="page__category">
-   <h2 class="page__category-title">Choose A Category</h2>
-   <div class="page__category-wrapper">
-    <div class="page__category-item--left">
+  <div class="page__category d-flex align-items-center">
+   <h2 class="page__category-title text-center pb-5">Choose A Category</h2>
+   <div class="page__category-wrapper d-flex">
+    <div class="page__category-item--left position-relative">
      <div class="page__category-item-icon">
-      <img src="images/icon-background.png" alt="Business Background" class="page__category-item-icon--background">
+      <img src="images/icon-background.png" alt="Business Background" class="page__category-item-icon--background d-flex position-relative">
       <img src="images/business.png" alt="Business Icon" class="page__category-item-icon--background-img page__category-item-icon--large">
      </div>
 
@@ -158,9 +156,9 @@
      <p class="page__category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
-    <div class="page__category-item">
+    <div class="page__category-item position-relative">
      <div class="page__category-item-icon">
-      <img src="images/icon-background.png" alt="Startup Background" class="page__category-item-icon--background">
+      <img src="images/icon-background.png" alt="Startup Background" class="page__category-item-icon--background d-flex position-relative">
       <img src="images/startup.png" alt="Startup Icon" class="page__category-item-icon--background-img">
      </div>
     
@@ -168,9 +166,9 @@
      <p class="page__category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
-    <div class="page__category-item">
+    <div class="page__category-item position-relative">
      <div class="page__category-item-icon">
-      <img src="images/icon-background.png" alt="Economy Background" class="page__category-item-icon--background">
+      <img src="images/icon-background.png" alt="Economy Background" class="page__category-item-icon--background position-relative d-flex">
       <img src="images/economy.png" alt="Economy Icon" class="page__category-item-icon--background-img">
      </div>
         
@@ -178,9 +176,9 @@
      <p class="page__category-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
-    <div class="page__category-item">
+    <div class="page__category-item position-relative">
      <div class="page__category-item-icon">
-      <img src="images/icon-background.png" alt="Technology Background" class="page__category-item-icon--background">
+      <img src="images/icon-background.png" alt="Technology Background" class="page__category-item-icon--background d-flex position-relative">
       <img src="images/technology.png" alt="Technology Icon" class="page__category-item-icon--background-img">
      </div>
 
@@ -190,89 +188,91 @@
    </div>
   </div>
   
-  <div class="home__about-story">
-   <div class="container">
+  <div class="home__about-story position-relative">
+   <div class="container position-relative d-flex justify-content-between">
     <img src="images/friends.png" alt="Story Image" class="home__about-story-image">
     <div class="home__about-story-content">
-     <h3 class="home__about-story-content-title">WHY WE STARTED</h3>
-     <p class="home__about-story-content-subtitle">It started out as a simple idea and evolved into our passion</p>
-     <span class="home__about-story-content-description">
+     <h3 class="home__about-story-content-title mb-4">WHY WE STARTED</h3>
+     <p class="home__about-story-content-subtitle mb-3">It started out as a simple idea and evolved into our passion</p>
+     <span class="home__about-story-content-description mb-4">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span>
           
-     <p href="#" class="home__about-story-content-button">Discover our story ></p>
+     <p href="#" class="home__about-story-content-button rounded-0 text-center">Discover our story ></p>
     </div>
    </div>
   </div>
   
-  <div class="page__authors">
-   <h2 class="page__authors-title">List of Authors</h2>
-   <div class="container">
-    <div class="col-lg-3">
-     <div class="page__authors-item">
-      <img src="images/floyd.png" alt="Author 1" class="page__authors-item-img">
-      <h3 class="page__authors-item-name">Floyd Miles</h3>
-      <p class="page__authors-item-title">Content Writer @Company</p>
-      <div class="page__authors-item-social"> 
-       <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></a>
+  <div class="page__authors text-center">
+    <h2 class="page__authors-title mb-5">List of Authors</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="page__authors-item text-center rounded-0">
+            <img src="images/floyd.png" alt="Author 1" class="page__authors-item-img">
+              <h3 class="page__authors-item-name">Floyd Miles</h3>
+              <p class="page__authors-item-title">Content Writer @Company</p>
+              <div class="page__authors-item-social d-flex justify-content-center">
+                <i href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></i>
+              </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="page__authors-item text-center rounded-0">
+            <img src="images/dianne.png" alt="Author 2" class="page__authors-item-img">
+              <h3 class="page__authors-item-name">Dianne Russell</h3>
+              <p class="page__authors-item-title">Content Writer @Company</p>
+              <div class="page__authors-item-social d-flex justify-content-center">
+                <i href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></i>
+              </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="page__authors-item text-center rounded-0">
+            <img src="images/jenny.png" alt="Author 3" class="page__authors-item-img">
+              <h3 class="page__authors-item-name">Jenny Wilson</h3>
+              <p class="page__authors-item-title">Content Writer @Company</p>
+              <div class="page__authors-item-social d-flex justify-content-center">
+                <i href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></i>
+              </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6">
+          <div class="page__authors-item text-center rounded-0">
+            <img src="images/leslie.png" alt="Author 4" class="page__authors-item-img">
+              <h3 class="page__authors-item-name page__authors-item-name--position">Leslie Alexander</h3>
+              <p class="page__authors-item-title">Content Writer @Company</p>
+              <div class="page__authors-item-social d-flex justify-content-center">
+                <i href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></i>
+                <i href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></i>
+              </div>
+          </div>
+        </div>
       </div>
-     </div>
     </div>
-        
-    <div class="col-lg-3">
-     <div class="page__authors-item">
-      <img src="images/dianne.png" alt="Author 2" class="page__authors-item-img">
-      <h3 class="page__authors-item-name">Dianne Russell</h3>
-      <p class="page__authors-item-title">Content Writer @Company</p>    
-      <div class="page__authors-item-social"> 
-       <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></a>
-      </div>
-     </div>
-    </div>
-        
-    <div class="col-lg-3">
-     <div class="page__authors-item">
-      <img src="images/jenny.png" alt="Author 3" class="page__authors-item-img">
-      <h3 class="page__authors-item-name">Jenny Wilson</h3>
-      <p class="page__authors-item-title">Content Writer @Company</p>      
-      <div class="page__authors-item-social"> 
-       <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></a>
-      </div>
-     </div>
-    </div>
-        
-    <div class="col-lg-3">
-     <div class="page__authors-item">
-      <img src="images/leslie.png" alt="Author 4" class="page__authors-item-img">
-      <h3 class="page__authors-item-name--position">Leslie Alexander</h3>
-      <p class="page__authors-item-title">Content Writer @Company</p>
-      <div class="page__authors-item-social"> 
-       <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__authors-item-social-img"></a>
-       <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__authors-item-social-img"></a>
-      </div>
-     </div>
-    </div>
-   </div>
   </div>
 
   <div class="container">
    <div class="home__about-featured">
-    <div class="home__about-featured-title">
+    <div class="home__about-featured-title d-flex">
      <span class="home__about-featured-title-line-first">We are</span>
      <span class="home__about-featured-title-line-second">Featured in</span>
     </div>
 
-    <div class="home__about-featured-logos">
+    <div class="home__about-featured-logos justify-content-center d-flex">
      <img src="images/logo-one.png" alt="Logo 1" class="home__about-featured-logos-img">
      <img src="images/logo-two.png" alt="Logo 2" class="home__about-featured-logos-img">
      <img src="images/logo-three.png" alt="Logo 3" class="home__about-featured-logos-img">
@@ -286,7 +286,7 @@
    <div class="container">
     <div class="col-md-6 home__about-testimonials-text">
      <h3 class="home__about-testimonials-text-heading">TESTIMONIALS</h3>
-      <p class="home__about-testimonials-text-subheading">What people say about our blog</p>
+      <p class="home__about-testimonials-text-subheading mb-3">What people say about our blog</p>
       <span class="home__about-testimonials-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
     </div>
         
@@ -294,17 +294,17 @@
      <div class="home__about-testimonials-item">
       <p class="home__about-testimonials-item-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <img src="images/jonathan.png" alt="Author" class="home__about-testimonials-img">
-        <div class="home__about-testimonials-author">
+        <div class="home__about-testimonials-author d-flex align-items-center">
          <p class="home__about-testimonials-author-name">Jonathan Vallem</p>
          <span class="home__about-testimonials-author-location">New York, USA</span>
         </div>
 
-       <div class="home__about-testimonials-nav">
-        <button class="home__about-testimonials-nav-next">
+       <div class="home__about-testimonials-nav d-flex align-items-center">
+        <button class="home__about-testimonials-nav-next d-flex align-items-center justify-content-center">
          <img src="images/right-arrow.png" alt="Right Arrow" class="home__about-testimonials-nav-next-img">
         </button>
         
-        <button class="home__about-testimonials-nav-prev">
+        <button class="home__about-testimonials-nav-prev d-flex align-items-center justify-content-center">
          <img src="images/left-arrow.png" alt="Left Arrow" class="home__about-testimonials-nav-prev-img">
         </button>
        </div>
@@ -313,7 +313,7 @@
    </div>
   </div>
 
-  <div class="page__join">
+  <div class="page__join text-center">
    <div class="page__join-content">
     <div class="page__join-content-title">Join our team to be a part of our story</div>
     <div class="page__join-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
@@ -324,39 +324,39 @@
   </div>
  </section>
 
- <div class="page__newsletter">
-  <div class="page__newsletter-header" href="#">
-   <span class="page__newsletter-header-bracket">{
+ <footer class="page__newsletter w-100">
+  <div class="page__newsletter-header d-flex justify-content-between align-items-center" href="#">
+   <span class="page__newsletter-header-bracket position-relative">{
    <span class="page__newsletter-header-name">Finsweet</span></span>
     
-   <nav class="page__newsletter-header-nav">
-    <p href="index.html" class="page__newsletter-header-nav-link">Home</p>
-    <p href="blog.html" class="page__newsletter-header-nav-link">Blog</p>
-    <p href="about.html" class="page__newsletter-header-nav-link">About us</p>
-    <p href="contact.html" class="page__newsletter-header-nav-link">Contact us</p>
-    <p href="privacy.html" class="page__newsletter-header-nav-link">Privacy Policy</p>
+   <nav class="page__newsletter-header-nav justify-content-end">
+    <a href="index.html" class="page__newsletter-header-nav-link">Home</a>
+    <a href="blog.html" class="page__newsletter-header-nav-link">Blog</a>
+    <a href="about.html" class="page__newsletter-header-nav-link">About us</a>
+    <a href="contact.html" class="page__newsletter-header-nav-link">Contact us</a>
+    <a class="page__newsletter-header-nav-link">Privacy Policy</a>
    </nav>
   </div>
 
-  <div class="page__newsletter-content">
+  <div class="page__newsletter-content justify-content-between d-flex align-items-center">
    <p class="page__newsletter-content-title">Subscribe to our news letter to get latest updates and news</p>
-   <form class="page__newsletter-content-form">
-    <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input">
+   <form class="page__newsletter-content-form d-flex justify-content-center">
+    <input type="email" placeholder="Enter Your Email" class="page__newsletter-content-form-input rounded-0">
     <button type="submit" class="page__newsletter-content-form-button">Subscribe</button>
    </form>
   </div>
   
-  <div class="page__newsletter-footer">
+  <div class="page__newsletter-footer d-flex position-relative">
    <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
    <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
-   <div class="page__newsletter-footer-social">
-    <a href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></a>
-    <a href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></a>
-    <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></a>
+   <div class="page__newsletter-footer-social position-relative">
+    <i href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></i>
+    <i href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></i>
+    <i href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></i>
+    <i href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></i>
    </div>
   </div>
- </div>
+</footer>
 
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

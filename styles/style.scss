@@ -27,8 +27,15 @@ $christmas-silver: #e0e0e0; //Gümüş
 $atlantic-charter: #2c2d40ff;
 
 // Font Ailesi
-$font-family-primary: 'Sen', sans-serif;
+$font-family-sen: 'Sen', sans-serif;
 $font-family-inter: 'Inter', sans-serif;
+
+//font-weight
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-900: 900;
 
 // Font Büyüklüğü
 $font-size-14: 14px;
@@ -63,14 +70,14 @@ $line-height-64: 64px;
  }
 
  &__navbar {
-  min-height: 80px;
   z-index: 10;
+  height: 80px;
   background-color: $cold-steel !important;
 
   &-brand {
    font-size: $font-size-24;
-   font-family: $font-family-primary;
-   font-weight: bold;
+   font-family: $font-family-sen;
+   font-weight: $font-weight-700;
    color: $white;
    margin-left: 83px;
    display: flex;
@@ -90,12 +97,7 @@ $line-height-64: 64px;
   }
    
   &-nav {
-   display: flex;
    margin-right: 80px;
-
-   &--contact{
-    margin-left: 1010px;
-   }
   }
 
   &-item {
@@ -110,18 +112,12 @@ $line-height-64: 64px;
   }
 
   &-button {
-   display: flex;
-   justify-content: center;
    background-color: $white;
-   min-width: 179px;
+   max-width: 179px;
    max-height: 56px;
    padding: 16px 48px;
-   border: none;
    cursor: pointer;
-   opacity: 1;
-   border-radius: 0;
-   position: relative;
-   margin-left: 32px; 
+   margin-left: 32px;
 
    &:hover {
     background-color: darken($white, 10%);
@@ -129,10 +125,10 @@ $line-height-64: 64px;
   }
 
   &-text {
-    font-weight: 700;
+   font-weight: $font-weight-700;
    color: $carbon;
    font-size: $font-size-18;
-   font-family: $font-family-primary;
+   font-family: $font-family-sen;
    line-height: $line-height-24;
   }
  }
@@ -141,103 +137,90 @@ $line-height-64: 64px;
   flex-direction: column;
   max-width: 1280px;
   max-height: 324px;
-  margin: 0 auto;
   
   &-title {
    font-size: $font-size-36;
-   font-weight: bold;
-  }
-  
-  &-wrapper {
-   width: 100%;
-   min-width: 1280px;
-   margin: 0 auto;
+   line-height: $line-height-48;
+   font-family: $font-family-sen;
+   font-weight: $font-weight-700;
+   white-space: nowrap;
+   max-width: 302px;
+   max-height: 48px;
+   margin-bottom: 48px;
   }
   
   &-item {
-   position: relative;
-   padding: 20px;
+   padding: 32px 32px;
    border: 1px solid $clouded-vision;
    transition: background-color 0.3s ease;
-   text-align: left;
-   display: flex;
    flex-direction: column;
-   align-items: flex-start; 
+   align-items: flex-start;
    margin-left: 32px;
-   min-width: 296px;
-   min-height: 228px;
-     
+   max-height: 228px;
+  
    &:hover {
-    background-color: $eyelash-viper; 
+    background-color: $eyelash-viper;
    }
     
    &--left {
-    padding: 20px;
+    padding: 32px 32px;
     border: 1px solid $clouded-vision;
-    transition: background-color 0.3s ease;
     text-align: left;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    min-width: 296px;
-    min-height: 228px;
+    align-items: flex-start;
+    max-height: 228px;
 
     &:hover {
-     background-color: $eyelash-viper; 
+     background-color: $eyelash-viper;
     }
    }
 
-   &-icon { 
+   &-icon {
 
-    &--background { 
-     height: 48px; 
-     align-items: flex-start; 
-     justify-content: flex-start; 
-     top: 20%;  
-     left: 20%;  
+    &--background {
+     height: 48px;
+     align-items: flex-start;
+     justify-content: flex-start;
 
-     &-img { 
-      width: 23px;  
-      position: absolute;  
-      transform: translate(-50%, -50%);  
-      height: auto; 
-      padding-bottom: 35px; 
-      left: 19%;  
-     } 
-    } 
+     &-img {
+      width: 23px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      height: auto;
+      padding-bottom: 50px;
+      left: 19%;
+     }
+    }
 
     &--large {
      width: 40px;
-     height: 70px;
     }
-   } 
+   }
   
-   &-title { 
+   &-title {
     font-size: $font-size-28;
-    font-weight: bold; 
-    margin-bottom: 1px; 
-    text-align: left; 
-    padding: 10px;  
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    text-align: left;
+    font-family: $font-family-sen;
     max-width: 107px;
     max-height: 40px;
-    padding-left: 10px;
-    margin-top: 16px;
-    margin-bottom: 4px;
+    padding-top: 16px;
     line-height: $line-height-40;
-   } 
+   }
   
-   &-description {  
+   &-description {
     font-size: $font-size-16;
-    color: $boat-anchor;  
-    text-align: left;  
-    padding-left: 10px;
+    color: $boat-anchor;
+    text-align: left;
     max-width: 232px;
+    padding-top: 4px;
+    margin-bottom: 0;
+    font-weight: $font-weight-400;
     font-family: $font-family-inter;
     line-height: $line-height-28;
    }
   }
- } 
+ }
 
  &__authors {
   max-width: 1280px;
@@ -246,16 +229,19 @@ $line-height-64: 64px;
   justify-content: space-around;
   
   &-title {
-   font-size: $font-size-32;
-   font-weight: bold;
+   font-size: $font-size-36;
+   line-height: $line-height-48;
+   font-family: $font-family-sen;
+   letter-spacing: -2px;
+   font-weight: $font-weight-700;
   }
   
   &-item {
    background-color: $white-shoulders;
    padding: 30px;
    border-radius: 0px;
-   min-width: 296px;
    max-height: 324px;
+   padding: 40px 28px;
         
    &:hover {
     background-color: $clear-moon; 
@@ -270,9 +256,10 @@ $line-height-64: 64px;
   
    &-name {
     font-size: $font-size-28;
-    font-weight: bold;
+    font-weight: $font-weight-700;
+    letter-spacing: -1px;
     line-height: $line-height-40;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     white-space: nowrap; 
 
     &--position {
@@ -280,17 +267,20 @@ $line-height-64: 64px;
      margin-bottom: 10px;
      line-height: $line-height-40;
      font-size: $font-size-28;
-     font-family: $font-family-primary;
+     font-family: $font-family-sen;
      white-space: nowrap;
-     font-weight: bold;
+     font-weight: $font-weight-700;
     }
    }
   
    &-title {
-    font-size: $font-size-16;
-    white-space: nowrap; 
+    font-size: $font-size-14;
+    font-family: $font-family-inter;
+    line-height: $line-height-20;
+    font-weight: $font-weight-400;
+    white-space: nowrap;
+    padding: 0 32px;
     margin-left: -5px;
-    min-width: 240px;
     max-height: 20px;
    }
   
@@ -317,17 +307,19 @@ $line-height-64: 64px;
   margin-top: 128px;
 
   &--about-page {
-    margin-top: 400px;
+    margin-top: 450px;
   }
 
   &-content {
    max-height: 256px;
 
    &-title {
-    font-size: $font-size-32;
-    font-weight: bold;
-    font-family: $font-family-primary;
-    margin-bottom: 24px;
+    font-size: $font-size-36;
+    font-weight: $font-weight-700;
+    line-height: $line-height-48;
+    letter-spacing: -2px;
+    font-family: $font-family-sen;
+    margin-bottom: 16px;
     flex-direction: column;
     max-height: 96px;
    }
@@ -350,7 +342,6 @@ $line-height-64: 64px;
     border-radius: 0;
     transition: background-color 0.3s ease;
     background-color: $eyelash-viper;
-    text-decoration: none;
     cursor: pointer;
 
     &:hover {
@@ -358,12 +349,11 @@ $line-height-64: 64px;
     }
 
     &-link {
-     font-size: $font-size-16;
-     font-weight: bold;
-     flex-direction: column;
+     font-size: $font-size-18;
+     font-weight: $font-weight-700;
      line-height: $line-height-24;
      max-width: 78px;
-     padding-left: 38px;
+     padding-left: 30px;
      white-space: nowrap;
     }
    }
@@ -374,8 +364,9 @@ $line-height-64: 64px;
   background-color: $cold-steel;
   padding: 40px 20px;
   color: $white;
-  position: absolute; 
-  min-height: 560px;
+  position: absolute;
+  height: 100%;
+  max-height: 560px;
   
   &-header {
    margin-bottom: 54px;
@@ -383,24 +374,25 @@ $line-height-64: 64px;
    &-bracket {
     font-size: $font-size-28;
     color: $white;
-    margin-left: 170px;
-    font-weight: bold;
-    min-width: 140px;
+    margin-left: 280px;
+    padding: 0 14.13px;
+    font-weight: $font-weight-700;
     max-height: 28.35px;
    }
   
    &-name {
     font-size: $font-size-24;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     color: $white;
     margin-left: -5px;
    }
   
    &-nav {
-    margin-right: 190px; 
-    min-width: 434px;
+    margin-right: 350px; 
+    max-width: 434px;
     max-height: 28.65px;
     padding: 10px 10px;
+    white-space: nowrap;
   
     &-link {
      color: $white;
@@ -415,19 +407,17 @@ $line-height-64: 64px;
   
   &-content {
    background-color: $shady-character;
-   padding: 0px 80px;
-   min-width: 1280px;
-   min-height: 256px;
+   padding: 72px 64px;
    flex-wrap: wrap;
-   margin-left: 170px;
-   width: 80%;
+   max-width: 1280px;
+   margin: 0 auto;
   
    &-title {
     font-size: $font-size-36;
     line-height: $line-height-48;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     letter-spacing: -2px;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     max-width: 562px;
     max-height: 96px;
    }
@@ -438,18 +428,19 @@ $line-height-64: 64px;
     &-input {
      padding: 14px 24.92px;
      border: 1px solid $granite-canyon;
-     width: 300px;
+     width: 323px;
      color: $carbon;
      background-color: $shady-character;
     }
   
     &-button {
      background-color: $eyelash-viper;
-     border: none;
+     width: 179px;
      padding: 16px 48px;
      color: $carbon;
-     font-weight: bold;
+     font-weight: $font-weight-700;
      cursor: pointer;
+     border: none;
      transition: background-color 0.3s ease;
   
      &:hover {
@@ -461,34 +452,30 @@ $line-height-64: 64px;
   
   &-footer {
    color: $clouded-vision;
-  
+   
    &-address {
     position: absolute;
-    left: 170px; 
-    bottom: -80px; 
+    left: 16%;
+    bottom: -80px;
     flex-direction: column;
     font-family: $font-family-inter;
     font-size: $font-size-16;
     line-height: $line-height-28;
-    min-width: 361px;
    }
 
    &-contact {
     position: absolute;
-    left: 170px; 
-    bottom: -110px; 
+    left: 16%;
+    bottom: -110px;
     flex-direction: column;
     font-family: $font-family-inter;
     font-size: $font-size-16;
     line-height: $line-height-28;
-    min-width: 361px;
    }
   
    &-social {
-    left: 79%; 
-    bottom: -90px; 
-    margin-right: 20px;
-    min-width: 144px;
+    left: 74.5%;
+    bottom: -90px;
     max-height: 16px;
   
     &-icon {
@@ -511,15 +498,15 @@ $line-height-64: 64px;
 .home {
 
  &__hero {
-  height: 1300px;
+  height: 900px;
+  width: 1440px;
+  margin-bottom: 128px;
   justify-content: flex-start; 
-  margin-bottom: -150px;
 
   &-image {
    position: absolute;
-   top: 80px;
    width: 100%;
-   height: 1000px;
+   height: 900px;
    object-fit: cover;
    z-index: -1;
    filter: brightness(0.5); 
@@ -527,11 +514,9 @@ $line-height-64: 64px;
 
   &-content {
    max-width: 804px;
-   max-height: 400px;
-   margin-left: 100px;
-   margin-top: -300px;
+   font-weight: $font-weight-400;
+   margin-left: 80px;
    flex-direction: column;
-   justify-content: center;
    align-items: flex-start; 
    color: $white;
    z-index: 2;
@@ -543,27 +528,26 @@ $line-height-64: 64px;
     letter-spacing: 3px;
     color: $white;
     white-space: nowrap;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     max-width: 222px;
     max-height: 20px;
       
     &--highlight {
-     font-weight: bold;
      font-size: $font-size-16;
      line-height: $line-height-20;
+     font-weight: $font-weight-900;
      font-family: $font-family-inter;
      letter-spacing: 3px;
-     font-weight: 600;
      color: $white;
     }
    }
 
    &-title {
     font-size: $font-size-56;
-    font-weight: 700;
+    font-weight: $font-weight-700;
     line-height: $line-height-64;
     margin-bottom: 24px;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     color: $white;
     letter-spacing: -2px;
    }
@@ -573,11 +557,15 @@ $line-height-64: 64px;
     margin-bottom: 16px;
     line-height: $line-height-28;
     font-family: $font-family-inter;
-    font-weight: 400;
+    font-weight: $font-weight-400;
     letter-spacing: 0.28px;
 
     &--color {
-     color: $eyelash-viper; 
+     color: $eyelash-viper;
+     font-size: $font-size-16;
+     line-height: $line-height-28;
+     font-family: $font-family-inter;
+     font-weight: $font-weight-400;
     } 
    }
 
@@ -586,20 +574,20 @@ $line-height-64: 64px;
     line-height: $line-height-28;
     max-width: 599px;
     font-family: $font-family-inter;
-    font-weight: 400;
+    font-weight: $font-weight-400;
+    margin-bottom: 48px;
    }
 
    &-button {
     background-color: $eyelash-viper;
     padding: 16px 48px;
     color: $carbon;
-    font-family: $font-family-primary;
-    font-weight: 700;
+    border: none;
+    font-family: $font-family-sen;
+    font-weight: $font-weight-700;
     font-size: $font-size-18;
     line-height: $line-height-24;
     cursor: pointer;
-    border-radius: 0;
-    margin-top: 48px;
 
     &:hover {
      background-color: darken($eyelash-viper, 10%);
@@ -611,10 +599,8 @@ $line-height-64: 64px;
  &__posts {
   flex-wrap: nowrap;
   max-width: 1282px;
-  padding: 78px;
-  padding-left: 298px; 
+  margin: 0 auto;
   max-height: 804px;
-  margin-bottom: 128px;
 
   &-featured {
    max-width: 733px;
@@ -623,8 +609,9 @@ $line-height-64: 64px;
 
    &-title {
     font-size: $font-size-36;
-    font-weight: bold;
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    letter-spacing: -2px;
+    font-family: $font-family-sen;
     line-height: $line-height-48;
     margin-bottom: 32px;
     max-width: 223px;
@@ -637,27 +624,22 @@ $line-height-64: 64px;
     border: 1px solid $black;
     min-width: 733px;
     max-height: 724px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    &-image {
-     min-width: 669px;
-     min-height: 352px;
-    }
 
     &-meta {
      font-size: $font-size-14;
      color: $boat-anchor;
+     font-weight: $font-weight-500;
      line-height: $line-height-20;
      font-family: $font-family-inter;
-     margin-bottom: 16px;
-     margin-top: 28px;
-     min-width: 202px;
+     margin-top: 32px;
+     padding: 0 6.8px;
 
      &--author {
       font-family: $font-family-inter;
-      color: $liberty !important;
+      color: $liberty;
+      font-weight: $font-weight-500;
       font-size: $font-size-14;
       line-height: $line-height-20;
      }
@@ -665,12 +647,11 @@ $line-height-64: 64px;
 
     &-title {
      font-size: $font-size-28;
-     font-weight: bold;
-     font-family: $font-family-primary;
+     font-weight: $font-weight-700;
+     font-family: $font-family-sen;
      line-height: $line-height-40;
      letter-spacing: -1px;
      margin-bottom: 16px;
-     min-width: 669px;
     }
 
     &-description {
@@ -678,25 +659,23 @@ $line-height-64: 64px;
      line-height: $line-height-28;
      font-family: $font-family-inter;
      color: $granite-canyon;
-     margin-bottom: 28px;
+     font-weight: $font-weight-400;
+     margin-bottom: 32px;
      max-width: 551px;
      max-height: 56px;
     }
 
     &-button {
      background-color: $eyelash-viper;
+     width: 204px;
+     height: 56px;
      border: none;
-     min-width: 204px;
-     min-height: 56px;
      cursor: pointer;
-     border-radius: 0;
-     font-family: $font-family-primary;
+     font-family: $font-family-sen;
      color: $carbon;
-     font-weight: 700;
+     font-weight: $font-weight-700;
      font-size: $font-size-18;
      line-height: $line-height-24;
-     left: 0;
-     text-align: left; 
 
      &:hover {
       background-color: darken($eyelash-viper, 10%);
@@ -708,45 +687,46 @@ $line-height-64: 64px;
   &-list {
    flex-direction: column;
    justify-content: flex-start;
-   min-width: 517px;
+   max-width: 517px;
    min-height: 804px;
 
    &-title {
     font-size: $font-size-36;
-    font-weight: bold;
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    letter-spacing: -2px;
+    font-family: $font-family-sen;
     line-height: $line-height-48;
     max-width: 133px;
     max-height: 48px;
+    margin-bottom: 32px;
     white-space: nowrap;
    }
 
    &-view-all {
     font-size: $font-size-16;
     color: $liberty;
-    text-decoration: none;
+    font-family: $font-family-inter;
     line-height: $line-height-28;
     align-self: flex-end; 
     position: absolute;
     margin-top: 11px;
     cursor: pointer;
-    min-width: 60px;
    }
 
    &-items {
     list-style: none;
     padding: 0;
-    margin-top: 32px;
+    width: 106.2%;
+    max-width: 517px;
     flex-direction: column;
 
     &-item {
      background-color: $white;
      flex-direction: column;
      justify-content: flex-start; 
-     border-radius: 0;  
+     border-radius: 0;
+     padding-left: 32px;
      transition: background-color 0.3s ease;
-     min-width: 517px;
-     min-height: 181px;
 
      &:hover {
       background-color: $clear-moon; 
@@ -757,8 +737,8 @@ $line-height-64: 64px;
       color: $boat-anchor;
       line-height: $line-height-20;
       font-family: $font-family-inter;
+      font-weight: $font-weight-500;
       margin-bottom: 8px;
-      margin-left: 32px;
       margin-top: 32px;
       max-width: 199px;
 
@@ -771,12 +751,10 @@ $line-height-64: 64px;
       max-width: 369px;
       max-height: 96px;
       font-size: $font-size-24;
-      font-weight: bold;
+      font-weight: $font-weight-700;
       line-height: $line-height-32;
-      font-family: $font-family-primary;
-      margin-left: 32px;
-      padding-top: 4px;    
-      padding-bottom: 4px;  
+      font-family: $font-family-sen;
+      margin: 0 0 25px 0;
      }
     }
    }
@@ -809,9 +787,8 @@ $line-height-64: 64px;
    }
  
    &-container-wrapper {
-    min-width: 1280px; 
-    min-height: 500px; 
     margin-left: -55px;
+    min-width: 1280px;
     padding: 96px 61px 96px 80px; 
     background-color: $alpine-goat;
     justify-content: space-around;
@@ -821,11 +798,10 @@ $line-height-64: 64px;
   &-section {
    max-width: 515px;
    max-height: 308px;
-   margin-left: -50px;
 
    &-title {
     font-size: $font-size-16;
-    font-weight: 600;
+    font-weight: $font-weight-600;
     letter-spacing: 3px;
     margin-bottom: 24px;
     max-width: 104px;
@@ -835,12 +811,11 @@ $line-height-64: 64px;
    }
 
    &-subtitle {
-    font-size: 37.3px;
-    font-weight: 700;
-    font-family: $font-family-primary;
+    font-size: $font-size-36;
+    font-weight: $font-weight-700;
+    font-family: $font-family-sen;
     line-height: $line-height-48;
-    min-width: 494px;
-    min-height: 144px;
+    width: 494px;
     letter-spacing: -2px;
    }
 
@@ -848,8 +823,6 @@ $line-height-64: 64px;
     font-size: $font-size-16;
     color: $granite-canyon;
     line-height: $line-height-28;
-    margin-bottom: 16px;
-    margin-top: 16px;
     font-family: $font-family-inter;
     min-width: 515px;
    }
@@ -857,20 +830,21 @@ $line-height-64: 64px;
    &-link {
     font-size: $font-size-18;
     color: $liberty;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     line-height: $line-height-32;
-    width: 108px;
-    height: 32px;
+    max-width: 108px;
+    max-height: 32px;
    }
   }
 
   &-mission-section {
+   max-width: 516px;
+   max-height: 248.73px;
 
    &-title {
     font-size: $font-size-16;
-    font-weight: 600;
+    font-weight: $font-weight-600;
     letter-spacing: 3px;
-    margin-bottom: 24px;
     font-family: $font-family-inter;
     line-height: $line-height-20;
     max-width: 124px;
@@ -879,28 +853,26 @@ $line-height-64: 64px;
   
    &-subtitle {
     font-size: $font-size-28;
-    font-weight: bold;
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    font-family: $font-family-sen;
     line-height: $line-height-40;
     max-width: 481px;
-    min-height: 80px;
    }
   
    &-description {
     font-size: $font-size-16;
     color: $granite-canyon;
     line-height: $line-height-28;
-    margin-bottom: 16px;
-    margin-top: 16px;
     font-family: $font-family-inter;
-    max-width: 516px;
+    width: 516px;
     max-height: 108.73px;
    }
   }
   
   &-story {
-   padding: 200px 0;
-   margin-bottom: -150px;
+   max-height: 705px;
+   padding: 128px 0;
+   margin-bottom: 256px;
   
    .container {
     z-index: 2;
@@ -909,7 +881,8 @@ $line-height-64: 64px;
    }
   
    &-image {
-    min-width: 949px; 
+    max-width: 949px;
+    width: 100%;
     margin-left: -55px;
     height: auto; 
     z-index: 1;
@@ -928,20 +901,22 @@ $line-height-64: 64px;
   
     &-title {
      font-size: $font-size-16;
-     font-weight: bold;
+     font-weight: $font-weight-600;
      margin-bottom: 24px;
+     letter-spacing: 3px;
      font-family: $font-family-inter;
      line-height: $line-height-20;
      max-width: 189px;
+     white-space: nowrap;
     }
   
     &-subtitle {
-     font-size: $font-size-46;
-     font-family: $font-family-primary;
+     font-size: $font-size-48;
+     font-family: $font-family-sen;
      line-height: $line-height-64;
-     font-weight: bold;
-     margin-bottom: 16px;
-     max-width: 546px;
+     font-weight: $font-weight-700;
+     letter-spacing: -2px;
+     max-width: 525px;
     }
   
     &-description {
@@ -949,18 +924,19 @@ $line-height-64: 64px;
      color: $boat-anchor;
      font-family: $font-family-inter;
      line-height: $line-height-28;
+     font-weight: $font-weight-400;
      max-width: 546px;
      max-height: 84px;
-     margin-bottom: 24px;
     }
   
     &-button {
      background-color: $eyelash-viper;
      color: $carbon;
      font-size: $font-size-18;
-     font-weight: bold;
+     font-weight: $font-weight-700;
+     border: none;
+     max-height: 56px;
      max-width: 269px;
-     min-height: 56px;
      padding: 16px 48px;
      line-height: $line-height-24;
      cursor: pointer;
@@ -977,33 +953,32 @@ $line-height-64: 64px;
   &-featured {
    background-color: $white; 
    text-align: left; 
-   min-width: 1237px;
    max-height: 52px;
-   padding: 96px 0 96px 0;
-   margin-left: 0;
+   padding: 96px 0 0 80px;
   
    &-title { 
-    flex-direction: column; 
-    font-size: $font-size-24;
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: -10px;
-    margin-left: -20px;
+    margin-left: -120px;
     max-width: 136px;
     max-height: 52px;
   
     &-line-first { 
-     padding-top: 5px; 
-     font-size: $font-size-14;   
+     padding-top: 5px;
+     font-size: $font-size-14;
      line-height: $line-height-20;
-     font-family: $font-family-inter;   
-     color: $granite-canyon;   
+     font-family: $font-family-inter;
+     color: $granite-canyon;
+     font-weight: $font-weight-400;
     } 
   
     &-line-second {  
      font-size: $font-size-24;
      line-height: $line-height-32;
-     font-family: $font-family-primary; 
+     font-family: $font-family-sen;
      color: $granite-canyon;
+     font-weight: $font-weight-700;
     } 
    } 
   
@@ -1032,12 +1007,12 @@ $line-height-64: 64px;
    padding-top: 92px;
    background-color: $clear-moon;
    max-width: 1280px;
-   min-height: 464px;
+   max-height: 464px;
   
    &-img {
     border-radius: 50%;
     margin-right: 10px;
-    margin-top: 121px;
+    margin-top: 111px;
    }
    
    &-text {
@@ -1049,7 +1024,7 @@ $line-height-64: 64px;
      content: "";
      position: absolute;
      opacity: 0.3;
-     top: -5px;
+     top: 0px;
      right: -96px; 
      height: 310px;
      width: 0.2px; 
@@ -1060,6 +1035,7 @@ $line-height-64: 64px;
      font-size: $font-size-16;
      letter-spacing: 3px; 
      margin-bottom: 12px;
+     font-weight: $font-weight-600;
      font-family: $font-family-inter;
      line-height: $line-height-20;
      max-width: 153px;
@@ -1067,36 +1043,32 @@ $line-height-64: 64px;
   
     &-subheading {
      font-size: $font-size-36;
-     font-weight: bold;
-     min-width: 345px;
-     min-height: 96px;
-     font-family: $font-family-primary;
+     font-weight: $font-weight-700;
+     width: 345px;
+     letter-spacing: -2px;
+     font-family: $font-family-sen;
      line-height: $line-height-48;
     }
   
     &-description {
      font-size: $font-size-16;
      color: $boat-anchor;
+     font-weight: $font-weight-400;
      line-height: $line-height-28;
      font-family: $font-family-inter;
-     min-width: 349px;
-     max-height: 56px;
+     max-width: 349px;
     }
    }
 
    &-item {
-    margin-left: 10px;
-    margin-top: 10px;
     height: 310px;
     width: 532px;
 
     &-intro {
      font-size: $font-size-24;
-     font-family: $font-family-primary;
+     font-family: $font-family-sen;
      max-width: 460px;
-     min-height: 128px;
-     margin-top: -30px;
-     font-weight: bold;
+     font-weight: $font-weight-700;
      line-height: $line-height-32;
     }
    }
@@ -1107,7 +1079,6 @@ $line-height-64: 64px;
         
     &-prev {
      background-color: $dark-tone-ink;  
-     border: none;
      border-radius: 50%;  
      width: 50px;
      height: 50px;
@@ -1152,23 +1123,21 @@ $line-height-64: 64px;
     flex-direction: column;
     
     &-name {
-     font-weight: bold;
+     font-weight: $font-weight-700;
      white-space: nowrap;
-     font-family: $font-family-primary;
+     font-family: $font-family-sen;
      font-size: $font-size-24;
      line-height: $line-height-32;
-     min-width: 193px;
+     max-width: 193px;
      margin-left: 60px;
      margin-top: -50px;
     }
     
     &-location {
      color: $boat-anchor;
-     font-weight: 400;
-     margin-left: 60px;
+     font-weight: $font-weight-400;
      margin-top: -15px;
      max-width: 114px;
-     min-height: 28px;
      white-space: nowrap;
      font-family: $font-family-inter;
      font-size: $font-size-16;
@@ -1183,14 +1152,16 @@ $line-height-64: 64px;
 
  &__hero {
   background-color: $alpine-goat; 
-  padding: 80px 0;
+  max-height: 519px;
 
   .container {
-   margin: 94px auto;
+   margin: 64px auto;
+   padding: 80px 0;
   }
 
   .row {
-    min-width: 1280px;
+   min-width: 1280px;
+   margin-left: -100px;
   }
 
   &-content {
@@ -1198,7 +1169,7 @@ $line-height-64: 64px;
    color: $carbon; 
    max-width: 624px;
    max-height: 332px;
-   margin-right: 100px;
+   margin-right: 121px;
    margin-top: 20px;
 
    &-featured {
@@ -1207,7 +1178,7 @@ $line-height-64: 64px;
     line-height: $line-height-20;
     max-width: 167px;
     letter-spacing: 3px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     margin-bottom: 20px;
     color: $boat-anchor; 
     white-space: nowrap;
@@ -1215,10 +1186,10 @@ $line-height-64: 64px;
 
    &-title {
     font-size: $font-size-36;
-    font-weight: bold;
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    font-family: $font-family-sen;
     line-height: $line-height-48;
-    min-width: 624px;
+    width: 624px;
     max-height: 96px;
     letter-spacing: -2px;
    }
@@ -1248,9 +1219,11 @@ $line-height-64: 64px;
    &-button {
     background-color: $eyelash-viper;
     color: $cold-steel;
-    font-weight: bold;
-    padding: 16px 24px;
+    font-weight: $font-weight-700;
+    padding: 16px 48px;
+    white-space: nowrap;
     font-size: $font-size-18;
+    font-family: $font-family-sen;
     line-height: $line-height-24;
     max-width: 204px;
     max-height: 56px;
@@ -1266,24 +1239,24 @@ $line-height-64: 64px;
    align-items: end;
 
    &-img {
-    min-width: 515px;
+    max-width: 515px;
     height: auto;
    }
   }
  }
 
  &__posts {
-  padding: 60px 0;
 
   &-title {
    font-size: $font-size-48;
    line-height: $line-height-64;
    letter-spacing: -2px;
-   font-weight: bold;
-   font-family: $font-family-primary;
-   margin-left: 315px;
+   font-weight: $font-weight-700;
+   font-family: $font-family-sen;
+   margin: 0 0 0 315px;
+   padding-bottom: 32px;
    max-width: 1282px;
-   min-height: 96px;
+   max-height: 96px;
   }
 
   &-divider {
@@ -1297,12 +1270,12 @@ $line-height-64: 64px;
   &-list {
    flex-direction: column;
    margin-left: 300px;
-   min-width: 1147px;
-   min-height: 1846px;
+   max-width: 1147px;
+   max-height: 1846px;
 
    &-item {
     max-width: 1146px;
-    min-height: 318px;
+    max-height: 318px;
     margin-bottom: 64px;
 
     &-image {
@@ -1318,22 +1291,22 @@ $line-height-64: 64px;
 
      &-category {
       font-size: $font-size-16;
-      font-weight: bold;
+      font-weight: $font-weight-600;
       color: $liberty; 
       margin-bottom: 20px;
       max-width: 183.37px;
+      letter-spacing: 3px;
       font-family: $font-family-inter;
       line-height: $line-height-20;
      }
 
      &-title {
       font-size: $font-size-36;
-      font-weight: bold;
-      margin-bottom: 12px;
+      font-weight: $font-weight-700;
       line-height: $line-height-48;
-      font-family: $font-family-primary;
+      font-family: $font-family-sen;
       letter-spacing: -2px;
-      max-width: 602px;
+      max-width: 602.89px;
       max-height: 96px;
      }
 
@@ -1342,6 +1315,7 @@ $line-height-64: 64px;
       line-height: $line-height-28;
       color: $boat-anchor;
       font-family: $font-family-inter;
+      font-weight: $font-weight-400;
       max-width: 624px;
       max-height: 56px;
      }
@@ -1351,123 +1325,49 @@ $line-height-64: 64px;
 
   &-pagination {
    margin-left: 870px;
+   margin-top: 64px;
    max-height: 174px;
    display: inline-block;
       
    &-prev {
     display: inline;
     color: $granite-canyon; 
-    text-decoration: none;
+    font-weight: $font-weight-700;
     margin: 0 10px;
     font-size: $font-size-24;
     line-height: $line-height-32;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
    }
 
    &-next {
     display: inline;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     margin: 0 10px;
+    letter-spacing: -1px;
     font-size: $font-size-28;
     line-height: $line-height-40;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
    }
   }
  }
 
  &__about {
-  padding: 40px 20px;
-  margin-top: -20px;
+  margin-top: 64px;
   flex-direction: column;
 
   &-category {
-   flex-direction: column;
-   padding: 50px 0;
-  
+    display: flex;
+    
    &-title {
     font-size: $font-size-36;
-    font-weight: bold;
+    line-height: $line-height-48;
+    font-weight: $font-weight-700;
+    letter-spacing: -2px;
     margin-bottom: 48px;
-    text-align: left;
-    padding-left: 330px;
-    width: 218px;
-    min-height: 48px;
+    max-width: 218px;
+    margin-left: -1060px;
+    max-height: 48px;
     white-space: nowrap;
-   }
-  
-   &-wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-   }
-  
-   &-item {
-    padding: 20px;
-    border: 1px solid $clouded-vision;
-    transition: background-color 0.3s ease;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start; 
-    margin-left: 32px;
-    min-width: 296px;
-    min-height: 228px;
-     
-    &:hover {
-     background-color: $eyelash-viper; 
-    }
-      
-    &-icon { 
-
-     &--background { 
-      height: 48px; 
-      display: flex; 
-      align-items: flex-start; 
-      justify-content: flex-start; 
-      position: relative; 
-      top: 21%;  
-      left: 20%;  
-  
-      &-img { 
-       width: 23px;  
-       position: absolute;  
-       transform: translate(-50%, -50%);  
-       height: auto; 
-       padding-bottom: 35px; 
-       left: 18%;  
-      } 
-     } 
-
-     &--large {
-      width: 40px;
-      height: 70px;
-     }
-    } 
-  
-    &-title { 
-     font-size: $font-size-28;
-     font-weight: bold; 
-     margin-bottom: 4px; 
-     margin-top: 16px;
-     text-align: left; 
-     padding: 10px;  
-     font-family: $font-family-primary;  
-     padding-left: 10px;
-     line-height: $line-height-40;
-     max-width: 107px;
-     max-height: 40px;
-    } 
-  
-    &-description {  
-     font-size: $font-size-16;
-     color: $boat-anchor;  
-     text-align: left;  
-     padding-left: 10px;
-     font-family: $font-family-inter;
-     line-height: $line-height-28;
-     max-width: 232px;
-    }
    }
   } 
  }
@@ -1479,7 +1379,7 @@ $line-height-64: 64px;
   position: relative;
   background-color: $white;
   color: $cold-steel;
-  padding: 200px;
+  padding-top: 160px;
   text-align: center;
 
   .row {
@@ -1495,9 +1395,8 @@ $line-height-64: 64px;
    position: relative;
    flex-direction: column;
    min-width: 624px;
-   min-height: 356px;
-   top: 25%;
-   padding: 40px 40px;
+   
+   padding: 64px;
    margin-left: 23px;
 
    &-title {
@@ -1506,46 +1405,44 @@ $line-height-64: 64px;
     line-height: $line-height-20;
     text-align: left;
     display: flex;
-    padding-left: 20px;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    max-width: 104px;
    }
 
    &-description {
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     font-size: $font-size-48;
     line-height: $line-height-64;
     display: flex;
     text-align: left;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     max-width: 496px;
     max-height: 192px;
-    padding-left: 20px;
     letter-spacing: -2px;
    }
   }
 
   &-description {
    min-width: 477px;
-   min-height: 112px;
    margin-left: 120px;
-   padding-top: 175px;
+   padding-top: 102px;
 
    &-text {
     font-size: $font-size-16;
     font-family: $font-family-inter;
     line-height: $line-height-28;
     text-align: left;
-    display: inline-block;
    }
   }
 
   &-image {
    width: 200%;
-   max-width: none;
    object-fit: cover;
    position: relative;
-   z-index: 0; 
+   margin-top: -89px;
+   z-index: 0;
    min-width: 1280px;
-   min-height: 444px;
    object-fit: cover;
    left: -6%;  
   }
@@ -1553,37 +1450,38 @@ $line-height-64: 64px;
 
  &__stats {
   position: absolute;
-  bottom: -65px; 
+  bottom: 23px; 
   left: 31.5%;
   transform: translateX(-50%);
   background-color: $eyelash-viper; 
-  min-width: 630px;
   max-height: 156px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 35px;
+  padding: 32px 48px 32px 48px;
   box-sizing: border-box;
  
   &-item {
-   min-width: 136px;
    max-height: 92px;
-    
+   margin-right: 68px;
+
    &-number {
     font-size: $font-size-56; 
     color: $carbon-333; 
-    font-weight: bold;
+    font-weight: $font-weight-700;
     text-align: left;
     line-height: $line-height-64;
     max-width: 126.59px;
     margin-bottom: 0;
-    font-family: $font-family-primary;
-   }
+    letter-spacing: -2px;
+    font-family: $font-family-sen;
+  }
 
    &-text {
     font-size: $font-size-16;
-    color: $carbon; 
+    color: $carbon;
+    font-weight: $font-weight-400;
     font-family: $font-family-inter;
     line-height: $line-height-28;
    }
@@ -1595,7 +1493,7 @@ $line-height-64: 64px;
   &::before {
    content: "";
    position: absolute;
-   top: 108.8%;  
+   top: 94.8%;  
    left: 44.9%; 
    transform: translateX(-50%); 
    height: 23px;
@@ -1607,7 +1505,7 @@ $line-height-64: 64px;
 
   .container {
    max-width: 1280px;
-   max-height: 500px;
+   font-weight: $font-weight-500;
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
@@ -1617,11 +1515,10 @@ $line-height-64: 64px;
    max-width: 1280px; 
    min-height: 441px; 
    margin: 0 auto; 
-   padding: 40px; 
-   margin-top: -112px;
+   padding: 128px 108px 64px 108px; 
    position: relative;
-   z-index: 0; 
    background-color: $alpine-goat;
+   margin-bottom: 128px;
   }
 
   .row {
@@ -1633,14 +1530,12 @@ $line-height-64: 64px;
   &-section {
    max-width: 516px;
    max-height: 249px;
-   text-align: left;
    margin-right: 32px;
-   margin-top: 60px;
-   margin-left: 80px;
+   text-align: left;
 
    &-title {
     font-size: $font-size-16;
-    font-weight: 600;
+    font-weight: $font-weight-600;
     letter-spacing: 3px;
     margin-bottom: 24px;
     font-family: $font-family-inter;
@@ -1651,8 +1546,8 @@ $line-height-64: 64px;
 
    &-subtitle {
     font-size: $font-size-28;
-    font-weight: bold;
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    font-family: $font-family-sen;
     line-height: $line-height-40;
     max-width: 481px;
     max-height: 80px;
@@ -1663,18 +1558,19 @@ $line-height-64: 64px;
     color: $granite-canyon;
     line-height: $line-height-28;
     font-family: $font-family-inter;
-    min-width: 516px;
+    font-weight: $font-weight-400;
+    max-width: 516px;
     max-height: 109px;
    }
   } 
 
   &-mission-section {
-    margin-top: 60px;
     max-width: 516px;
+    max-height: 249px;
     
    &-title {
     font-size: $font-size-16;
-    font-weight: 600;
+    font-weight: $font-weight-600;
     letter-spacing: 3px;
     margin-bottom: 24px;
     font-family: $font-family-inter;
@@ -1685,8 +1581,8 @@ $line-height-64: 64px;
 
    &-subtitle {
     font-size: $font-size-28;
-    font-weight: bold;
-    font-family: $font-family-primary;
+    font-weight: $font-weight-700;
+    font-family: $font-family-sen;
     line-height: $line-height-40;
     max-width: 475px;
     max-height: 80px;
@@ -1697,17 +1593,20 @@ $line-height-64: 64px;
     color: $granite-canyon;
     line-height: $line-height-28;
     font-family: $font-family-inter;
-    min-width: 516px;
+    max-width: 516px;
     max-height: 109px;
    }
   }
  }
 
  &__team {
-  padding: 128px 100px;
+  max-width: 1280px;
+  max-height: 480px;
+  margin: 0 auto;
+  margin-bottom: 128px;
 
   &-content {
-   margin-right: 100px;
+   margin-right: 80px;
    max-width: 519px;
    max-height: 316px;
   }
@@ -1715,19 +1614,19 @@ $line-height-64: 64px;
   &-title {
    font-size: $font-size-36;
    line-height: $line-height-48;
-   font-family: $font-family-primary;
-   font-weight: bold;
+   font-family: $font-family-sen;
+   letter-spacing: -2px;
+   font-weight: $font-weight-700;
    margin-bottom: 16px;
    text-align: left;
-   min-width: 444px;
+   max-width: 444px;
   }
 
   &-subtitle {
    font-size: $font-size-24;
    line-height: $line-height-32;
-   font-family: $font-family-primary;
-   font-weight: bold;
-   margin-bottom: 20px;
+   font-family: $font-family-sen;
+   font-weight: $font-weight-700;
    text-align: left;
    min-width: 519px;
    max-height: 96px;
@@ -1737,13 +1636,9 @@ $line-height-64: 64px;
    font-size: $font-size-16;
    line-height: $line-height-28;
    font-family: $font-family-inter;
-   text-align: left;
-   min-width: 519px;
+   font-weight: $font-weight-400;
+   width: 519px;
    max-height: 140px;
-  }
-
-  &-image-wrapper {
-   position: relative;
   }
 
   &-image {
@@ -1757,7 +1652,7 @@ $line-height-64: 64px;
    background-color: $eyelash-viper; 
    width: 103px;
    height: 116px;
-   top: 120px;
+   top: 114px;
    left: -50px;
    border-radius: 50px 0 0 0;
   }
@@ -1767,7 +1662,10 @@ $line-height-64: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 270px 91px;
+  margin-left: 315px;
+  max-width: 1207px;
+  height: 517px;
+  margin-bottom: 91px;
 
   &-container {
    display: flex;
@@ -1779,6 +1677,7 @@ $line-height-64: 64px;
   &-image {
    position: relative;
    width: 50%;
+   margin-right: 64px;
 
    &-img {
     width: 100%;
@@ -1798,26 +1697,24 @@ $line-height-64: 64px;
   }
   
   &-content {
-   width: 45%;
 
    &-title {
     font-size: $font-size-36;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     line-height: $line-height-48;
-    font-weight: 700;
+    font-weight: $font-weight-700;
     margin-bottom: 16px;
     letter-spacing: -2px;
-    min-width: 401px;
+    max-width: 401px;
     max-height: 48px;
    }
 
    &-subtitle {
     font-size: $font-size-24;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     line-height: $line-height-32;
-    font-weight: 700;
-    margin-bottom: 10px;
-    width: 511px;
+    font-weight: $font-weight-700;
+    max-width: 511px;
     max-height: 96px;
    }
 
@@ -1825,9 +1722,10 @@ $line-height-64: 64px;
     font-size: $font-size-16;
     font-family: $font-family-inter;
     line-height: $line-height-28;
-    font-weight: 400;
-    width: 519px;
+    font-weight: $font-weight-400;
+    max-width: 519px;
     max-height: 140px;
+    margin-bottom: 0;
    }
   }
  }
@@ -1841,7 +1739,7 @@ $line-height-64: 64px;
   .container {
    display: flex;
    align-items: center;
-   padding: 200px;
+   padding: 208px 256px 64px 256px;
   }
 
   .row {
@@ -1855,14 +1753,18 @@ $line-height-64: 64px;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   max-width: 768px;
+   max-height: 282px;
+   margin: 0 auto;
+   margin-left: -50px;
 
    &-title {
     font-size: $font-size-28;
     line-height: $line-height-40;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     color: $royalty;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     margin-left: 40px;
     letter-spacing: -1px;
     margin-bottom: -5px;
@@ -1876,7 +1778,7 @@ $line-height-64: 64px;
     line-height: $line-height-28;
     font-family: $font-family-inter;
     color: $granite-canyon;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     margin-left: 40px;
     max-width: 224px;
     max-height: 28px;
@@ -1884,9 +1786,9 @@ $line-height-64: 64px;
 
    &-subtitle {
     font-size: $font-size-48;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     line-height: $line-height-64;
-    font-weight: 700;
+    font-weight: $font-weight-700;
     letter-spacing: -2px;
     max-width: 768px;
     max-height: 128px;
@@ -1896,9 +1798,9 @@ $line-height-64: 64px;
    &-tag {
     font-size: $font-size-24;
     line-height: $line-height-32;
-    font-family: $font-family-primary;
+    font-family: $font-family-sen;
     white-space: nowrap;
-    font-weight: 700;
+    font-weight: $font-weight-700;
     max-width: 88px;
     max-height: 32px; 
     margin-left: -20px;
@@ -1974,54 +1876,79 @@ $line-height-64: 64px;
  }
 
  &__posts {
-  padding: 40px 20px;
+  padding-top: 64px;
   background-color: $white;
   margin-bottom: 128px;
   
   &-title {
    font-size: $font-size-36;
-   font-weight: bold;
+   font-weight: $font-weight-700;
    line-height: $line-height-48;
    margin-bottom: 16px;
-   font-family: $font-family-primary;
+   font-family: $font-family-sen;
    letter-spacing: -2px;
-   min-width: 843px;
+   max-width: 843px;
 
    &--space-36 {
     font-size: $font-size-36;
-    font-weight: bold;
+    font-weight: $font-weight-700;
     line-height: $line-height-48;
     margin-bottom: 16px;
-    font-family: $font-family-primary;
+    margin-top: 48px;
+    font-family: $font-family-sen;
     letter-spacing: -2px;
-    min-width: 836.11px;
+    max-width: 836.11px;
+   }
+
+   &--bottom {
+    font-size: $font-size-36;
+    font-weight: $font-weight-700;
+    line-height: $line-height-48;
+    margin-bottom: 16px;
+    margin-top: 48px;
+    font-family: $font-family-sen;
+    letter-spacing: -2px;
+    max-width: 843px;
    }
   }
 
   &-text {
    font-size: $font-size-16;
    line-height: $line-height-28;
-   margin-bottom: 24px;
+   margin-bottom: 0;
    font-family: $font-family-inter;
-   color: $boat-anchor;
-   min-width: 843px;
+   color: $granite-canyon;
+   max-width: 843px;
    max-height: 112px;
 
    &--space-36 {
-    margin-top: 24px;
-    min-width: 836px;
-    min-height: 112px;
-    font-weight: 400;
+    max-width: 836px;
+    max-height: 112px;
+    font-weight: $font-weight-400;
+    margin-bottom: 0;
+    color: $granite-canyon;
     font-family: $font-family-inter;
     font-size: $font-size-16;
     line-height: $line-height-28;
    }
 
    &--space-37 {
-    margin-top: 24px;
-    min-width: 837px;
-    min-height: 112px;
-    font-weight: 400;
+    max-width: 837px;
+    max-height: 112px;
+    font-weight: $font-weight-400;
+    margin-bottom: 24px;
+    color: $granite-canyon;
+    font-family: $font-family-inter;
+    font-size: $font-size-16;
+    line-height: $line-height-28;
+   }
+
+   &--space-38 {
+    max-width: 837px;
+    max-height: 112px;
+    font-weight: $font-weight-400;
+    margin-bottom: 0;
+    color: $granite-canyon;
     font-family: $font-family-inter;
     font-size: $font-size-16;
     line-height: $line-height-28;
@@ -2035,21 +1962,37 @@ $line-height-64: 64px;
    &-text {
     font-size: $font-size-24;
     line-height: $line-height-32;
-    font-family: $font-family-primary;
-    font-weight: 700;
+    font-family: $font-family-sen;
+    font-weight: $font-weight-700;
     color: $river-styx;
     margin-bottom: 2px;
     max-width: 680px;
+
+    &--top {
+      margin-top: 24px;
+      font-size: $font-size-24;
+      line-height: $line-height-32;
+      font-family: $font-family-sen;
+      font-weight: $font-weight-700;
+      color: $river-styx;
+      margin-bottom: 2px;
+      max-width: 625px;
+     }
+  
+     &--bottom {
+      margin-bottom: 24px;
+      font-size: $font-size-24;
+      line-height: $line-height-32;
+      font-family: $font-family-sen;
+      font-weight: $font-weight-700;
+      color: $river-styx;
+      max-width: 625px;
+     }
    }
   }
 
-  &-item {
-   margin-bottom: 40px;
-   padding: 20px 0;
-  }
-
   .container {
-   max-width: 843px;
+   max-width: 873px;
    max-height: 1164px;
    margin: 0 auto;
   }
@@ -2057,36 +2000,31 @@ $line-height-64: 64px;
 
  &__read-next {
   max-width: 1280px;
-  min-height: 782px;
+  max-height: 782px;
   align-items: center;  
   justify-content: center;
   margin-left: 340px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
   border-bottom: 1px solid $clouded-vision;
 
   &-title {
    font-size: $font-size-36;
    line-height: $line-height-48;
-   font-weight: bold;
-   margin-bottom: 50px;
-   font-family: $font-family-primary;
+   font-weight: $font-weight-700;
+   margin-bottom: 64px;
+   font-family: $font-family-sen;
    letter-spacing: -2px;
    max-width: 289px;
   }
 
-  &-card {
-   margin-bottom: 32px;
-  }
-
   &-image {
-   min-width: 405px;
+   max-width: 405px;
    margin-bottom: 32px;
   }
 
   &-content {
    text-align: left;
-   min-width: 405px;
-   min-height: 256px;
+   max-width: 405px;
   }
 
   &-author {
@@ -2094,19 +2032,25 @@ $line-height-64: 64px;
    font-family: $font-family-inter;
    line-height: $line-height-20;
    color: $boat-anchor;
-   margin-bottom: 10px;
+   font-weight: $font-weight-500;
+   margin-bottom: 16px;
    max-width: 199px;
 
    &--highlight {
     color: $liberty;
-   }
+    font-size: $font-size-14;
+    font-family: $font-family-inter;
+    line-height: $line-height-20;
+    font-weight: $font-weight-500;
+  }
   }
 
   &-post-title {
-   font-size: $font-size-26;
-   font-family: $font-family-primary;
-   font-weight: bold;
-   margin-bottom: 10px;
+   font-size: $font-size-28;
+   font-family: $font-family-sen;
+   font-weight: $font-weight-700;
+   margin-bottom: 16px;
+   letter-spacing: -1px;
    line-height: $line-height-40;
    max-width: 405px;
    max-height: 120px;
@@ -2117,6 +2061,7 @@ $line-height-64: 64px;
    line-height: $line-height-28;
    font-family: $font-family-inter;
    color: $boat-anchor;
+   margin-bottom: 0;
    max-width: 405px;
    max-height: 84px;
   }
@@ -2132,7 +2077,6 @@ $line-height-64: 64px;
  font-size: $font-size-18;
  background-color: $eyelash-viper;
  color: $white;
- border: none;
  outline: none;
  cursor: pointer;
  padding: 15px;
@@ -2190,21 +2134,6 @@ $line-height-64: 64px;
  align-items: center;
  cursor: pointer;
 
- &-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background: transparent;
-  border: none;
-  color: $white;
-  font-size: $font-size-30;
-  cursor: pointer;
-        
-  &:focus {
-   outline: none;
-  }
- }
-
  &-nav {
   width: 100%;
  }
@@ -2259,6 +2188,7 @@ $line-height-64: 64px;
 
  .menu-toggle {
   display: flex;
+  margin-top: -8px;
  }
 
  .menu-toggle-icon {
@@ -2300,6 +2230,11 @@ $line-height-64: 64px;
  .home__about-mission-section-description, 
  .blog__hero-content-description, 
  .contact__posts-text,
+ .contact__posts-text--space-36,
+ .contact__posts-text--space-37,
+ .contact__posts-text--space-38,
+ .home__hero-content-author--color,
+ .home__about-testimonials-author-location,
  .page__newsletter-footer-address, 
  .page__newsletter-footer-contact,
  .page__navbar-text,
@@ -2322,6 +2257,8 @@ $line-height-64: 64px;
  .blog__posts-list-item-content-category,
  .contact__read-next-author--highlight,
  .contact__hero-content-title,
+ .about__stats-item-number,
+ .about__stats-item-text,
  .page__join-content-text {
   color: $white !important;
  }
@@ -2332,6 +2269,7 @@ $line-height-64: 64px;
  .blog__hero,
  .about__hero-content,
  .about__posts-container-wrapper,
+ .about__stats,
  .blog__hero-content-title,
  .blog__hero-content-meta,
  .blog__hero-content-featured,
@@ -2345,6 +2283,8 @@ $line-height-64: 64px;
  .home__about-featured,
  .contact__posts,
  .contact__posts-list-text,
+ .contact__posts-list-text--top,
+ .contact__posts-list-text--bottom,
  .dark-mode-btn,
  .about__hero {
   background-color: $atlantic-charter;

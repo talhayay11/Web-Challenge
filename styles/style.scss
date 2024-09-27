@@ -22,9 +22,11 @@ $eyelash-viper: #f3c84b; // Sarı
 $clouded-vision: #d1d1d1; // Açık Gri
 $granite-canyon: #6d6e76; //Medium Gri
 $white-shoulders: #f1f0ed; // Çok Açık Gri
-$shady-character: #4c4c4c7e; //footer Gri
+$shady-character: #4c4c4c7e; 
+$shady-character-30: #4c4c4cff;
 $christmas-silver: #e0e0e0; //Gümüş 
 $atlantic-charter: #2c2d40ff;
+$atlantic-charter-40: #2e3040;
 
 // Font Ailesi
 $font-family-sen: 'Sen', sans-serif;
@@ -115,9 +117,10 @@ $line-height-64: 64px;
    background-color: $white;
    max-width: 179px;
    max-height: 56px;
-   padding: 12px 48px;
+   padding: 16px 48px;
    cursor: pointer;
    margin-left: 32px;
+   border: none;
 
    &:hover {
     background-color: darken($white, 10%);
@@ -406,7 +409,7 @@ $line-height-64: 64px;
   }
   
   &-content {
-   background-color: $shady-character;
+   background-color: $atlantic-charter-40;
    padding: 72px 64px;
    flex-wrap: wrap;
    max-width: 1280px;
@@ -430,7 +433,7 @@ $line-height-64: 64px;
      border: 1px solid $granite-canyon;
      width: 323px;
      color: $carbon;
-     background-color: $shady-character;
+     background-color: $atlantic-charter-40;
     }
   
     &-button {
@@ -1078,12 +1081,14 @@ $line-height-64: 64px;
     margin-left: 200px;
         
     &-prev {
-     background-color: $dark-tone-ink;  
+     background-color: $cold-steel;  
      border-radius: 50%;  
-     width: 50px;
-     height: 50px;
+     width: 62px;
+     height: 62px;
      cursor: pointer;
      margin-right: 10px;
+     margin-left: 8px;
+     border: none;
       
      &-img {
       filter: brightness(0) invert(1);  
@@ -1099,8 +1104,8 @@ $line-height-64: 64px;
      background-color: $white;  
      border: none;
      border-radius: 50%;  
-     width: 40px;
-     height: 40px;
+     width: 48px;
+     height: 48px;
      cursor: pointer;
      margin-right: 10px;
      margin-left: 200px;
@@ -1180,7 +1185,7 @@ $line-height-64: 64px;
     letter-spacing: 3px;
     font-weight: $font-weight-500;
     margin-bottom: 20px;
-    color: $boat-anchor; 
+    color: $cold-steel; 
     white-space: nowrap;
    }
 
@@ -1196,7 +1201,7 @@ $line-height-64: 64px;
 
    &-meta {
     font-size: $font-size-14;
-    color: $boat-anchor; 
+    color: $shady-character-30; 
     line-height: $line-height-20;
     font-family: $font-family-inter;
     max-width: 202px;
@@ -1804,8 +1809,12 @@ $line-height-64: 64px;
     max-width: 88px;
     max-height: 32px; 
     margin-left: -20px;
-    margin-top: 34px;
+    padding-top: 34px;
     margin-bottom: 64px;
+
+    &-icon {
+      margin-right: 4px;
+    }
    }
 
    &-image {

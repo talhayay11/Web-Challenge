@@ -14,6 +14,7 @@ $cold-steel: #232536; //siyah
 $river-styx: #161722;
 $clear-moon: #fbf6ea; //açık sarı
 $knighthood: #3b3c53;
+$knighthood-10: #4f5064;
 $alpine-goat: #f4f0f8; //lavender
 $boat-anchor: #6b6b6b; // Orta Gri
 $alpine-goat: #f4f0f8; //lavender
@@ -310,7 +311,7 @@ $line-height-64: 64px;
   margin-top: 128px;
 
   &--about-page {
-    margin-top: 450px;
+    margin-top: 484px;
   }
 
   &-content {
@@ -1479,28 +1480,27 @@ $line-height-64: 64px;
     line-height: $line-height-64;
     max-width: 126.59px;
     margin-bottom: 0;
-    letter-spacing: -2px;
     font-family: $font-family-sen;
 
     &::after {
      content: '';
      position: absolute;
-     left: 55px;
+     left: 52.5px;
      right: 50%;
      bottom: 73px;
-     width: 22px;
-     height: 6px;
+     width: 26px;
+     height: 7px;
      background-color: $carbon-333;
     }    
     
     &::before {
      content: '';
      position: absolute;
-     left: 244px;
+     left: 242px;
      right: 50%;
      bottom: 73px;
-     width: 22px;
-     height: 6px;
+     width: 26px;
+     height: 7px;
      background-color: $carbon-333;
     }
    }
@@ -2355,7 +2355,9 @@ $line-height-64: 64px;
  .page__authors-item,
  .page__category-item,
  .page__category-item--left,
- .blog__about-category-item {
+ .blog__about-category-item,
+ .about__stats-item-number::before,
+ .about__stats-item-number::after {
   background-color: $white;
   color: $cold-steel;
 
@@ -2374,6 +2376,19 @@ $line-height-64: 64px;
    filter: brightness(10); 
   }
  }
+
+ .contact__hero-content-tag-icon {
+  opacity: 1;
+  filter: contrast(3);
+ }
+
+ .about__posts::before {
+  background: linear-gradient(to left, $knighthood 70%, $knighthood-10 30%);
+ }
+
+ .home__about::before {
+ background: linear-gradient(to right, $knighthood 70%, $knighthood-10 30%);
+}
 
  .page__navbar,
  .menu-mobile {

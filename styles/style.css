@@ -207,7 +207,7 @@
   margin-top: 128px;
 }
 .page__join--about-page {
-  margin-top: 450px;
+  margin-top: 484px;
 }
 .page__join-content {
   max-height: 256px;
@@ -1226,27 +1226,26 @@
   line-height: 64px;
   max-width: 126.59px;
   margin-bottom: 0;
-  letter-spacing: -2px;
   font-family: "Sen", sans-serif;
 }
 .about__stats-item-number::after {
   content: "";
   position: absolute;
-  left: 55px;
+  left: 52.5px;
   right: 50%;
   bottom: 73px;
-  width: 22px;
-  height: 6px;
+  width: 26px;
+  height: 7px;
   background-color: #333;
 }
 .about__stats-item-number::before {
   content: "";
   position: absolute;
-  left: 244px;
+  left: 242px;
   right: 50%;
   bottom: 73px;
-  width: 22px;
-  height: 6px;
+  width: 26px;
+  height: 7px;
   background-color: #333;
 }
 .about__stats-item-text {
@@ -2005,14 +2004,18 @@ body.dark-mode .page__navbar-brand-name {
 body.dark-mode .page__authors-item,
 body.dark-mode .page__category-item,
 body.dark-mode .page__category-item--left,
-body.dark-mode .blog__about-category-item {
+body.dark-mode .blog__about-category-item,
+body.dark-mode .about__stats-item-number::before,
+body.dark-mode .about__stats-item-number::after {
   background-color: #FFFFFF;
   color: #232536;
 }
 body.dark-mode .page__authors-item:hover,
 body.dark-mode .page__category-item:hover,
 body.dark-mode .page__category-item--left:hover,
-body.dark-mode .blog__about-category-item:hover {
+body.dark-mode .blog__about-category-item:hover,
+body.dark-mode .about__stats-item-number::before:hover,
+body.dark-mode .about__stats-item-number::after:hover {
   background-color: #e6e6e6;
 }
 body.dark-mode .home__about-featured-logos-img {
@@ -2023,6 +2026,16 @@ body.dark-mode .home__about-featured-logos-img {
 body.dark-mode .home__about-featured-logos-img:hover {
   opacity: 0.9;
   filter: brightness(10);
+}
+body.dark-mode .contact__hero-content-tag-icon {
+  opacity: 1;
+  filter: contrast(3);
+}
+body.dark-mode .about__posts::before {
+  background: linear-gradient(to left, #3b3c53 70%, #4f5064 30%);
+}
+body.dark-mode .home__about::before {
+  background: linear-gradient(to right, #3b3c53 70%, #4f5064 30%);
 }
 body.dark-mode .page__navbar,
 body.dark-mode .menu-mobile {

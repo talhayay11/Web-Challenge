@@ -1481,7 +1481,29 @@ $line-height-64: 64px;
     margin-bottom: 0;
     letter-spacing: -2px;
     font-family: $font-family-sen;
-  }
+
+    &::after {
+     content: '';
+     position: absolute;
+     left: 55px;
+     right: 50%;
+     bottom: 73px;
+     width: 22px;
+     height: 6px;
+     background-color: $carbon-333;
+    }    
+    
+    &::before {
+     content: '';
+     position: absolute;
+     left: 244px;
+     right: 50%;
+     bottom: 73px;
+     width: 22px;
+     height: 6px;
+     background-color: $carbon-333;
+    }
+   }
 
    &-text {
     font-size: $font-size-16;

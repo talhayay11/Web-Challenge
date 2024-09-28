@@ -1229,6 +1229,26 @@
   letter-spacing: -2px;
   font-family: "Sen", sans-serif;
 }
+.about__stats-item-number::after {
+  content: "";
+  position: absolute;
+  left: 55px;
+  right: 50%;
+  bottom: 73px;
+  width: 22px;
+  height: 6px;
+  background-color: #333;
+}
+.about__stats-item-number::before {
+  content: "";
+  position: absolute;
+  left: 244px;
+  right: 50%;
+  bottom: 73px;
+  width: 22px;
+  height: 6px;
+  background-color: #333;
+}
 .about__stats-item-text {
   font-size: 16px;
   color: #333333;

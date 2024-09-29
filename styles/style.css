@@ -118,7 +118,7 @@
   font-family: "Sen", sans-serif;
   max-width: 107px;
   max-height: 40px;
-  padding-top: 16px;
+  margin-top: 16px;
   line-height: 40px;
 }
 .page__category-item-description {
@@ -604,14 +604,14 @@
   margin: 0 0 25px 0;
 }
 .home__about {
-  padding-top: 128px;
+  padding-top: 151px;
   flex-direction: column;
 }
 .home__about::before {
   content: "";
   position: absolute;
-  top: 104.3px;
-  left: 55.8%;
+  top: 127px;
+  left: 56.57%;
   transform: translateX(-50%);
   height: 23px;
   width: 100%;
@@ -623,11 +623,11 @@
   justify-content: space-between;
   align-items: flex-start;
   min-width: 1280px;
-  margin-right: 270px;
+  margin-right: 250px;
   margin-bottom: 128px;
 }
 .home__about-container-wrapper {
-  margin-left: -55px;
+  margin-left: -61px;
   min-width: 1280px;
   padding: 96px 61px 96px 80px;
   background-color: #f4f0f8;

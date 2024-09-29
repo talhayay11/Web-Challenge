@@ -208,7 +208,7 @@ $line-height-64: 64px;
     font-family: $font-family-sen;
     max-width: 107px;
     max-height: 40px;
-    padding-top: 16px;
+    margin-top: 16px;
     line-height: $line-height-40;
    }
   
@@ -766,14 +766,14 @@ $line-height-64: 64px;
  }
    
  &__about {
-  padding-top: 128px;
+  padding-top: 151px;
   flex-direction: column;
    
   &::before {
    content: "";
    position: absolute;
-   top: 104.3px;  
-   left: 55.8%; 
+   top: 127px;  
+   left: 56.57%; 
    transform: translateX(-50%);
    height: 23px;
    width: 100%;
@@ -786,12 +786,12 @@ $line-height-64: 64px;
     justify-content: space-between;
     align-items: flex-start;
     min-width: 1280px;
-    margin-right: 270px;
+    margin-right: 250px;
     margin-bottom: 128px;
    }
  
    &-container-wrapper {
-    margin-left: -55px;
+    margin-left: -61px;
     min-width: 1280px;
     padding: 96px 61px 96px 80px; 
     background-color: $alpine-goat;

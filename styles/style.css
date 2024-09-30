@@ -136,7 +136,14 @@
   max-width: 1280px;
   max-height: 420px;
   margin: 0 auto;
+  flex-direction: row;
   justify-content: space-around;
+}
+.page__authors .row {
+  width: 1280px;
+}
+.page__authors-card {
+  max-width: 296px;
 }
 .page__authors-title {
   font-size: 36px;
@@ -150,6 +157,7 @@
   padding: 30px;
   border-radius: 0px;
   max-height: 324px;
+  max-width: 296px;
   padding: 40px 28px;
 }
 .page__authors-item:hover {
@@ -192,7 +200,7 @@
   gap: 16px;
   max-width: 112px;
   max-height: 16px;
-  padding-left: 92px;
+  padding-left: 150px;
 }
 .page__authors-item-social-img {
   width: 16px;
@@ -712,7 +720,7 @@
 .home__about-story-image {
   max-width: 949px;
   width: 100%;
-  margin-left: -55px;
+  margin-left: -80px;
   height: auto;
   z-index: 1;
 }
@@ -724,7 +732,7 @@
   max-width: 706px;
   max-height: 584px;
   bottom: 0;
-  right: 40px;
+  right: 65px;
   padding-left: 50px;
 }
 .home__about-story-content-title {
@@ -949,7 +957,9 @@
   max-height: 519px;
 }
 .blog__hero .container {
-  margin: 64px auto;
+  margin: 0px auto;
+  margin-bottom: 64px;
+  margin-top: 80px;
   padding: 80px 0;
 }
 .blog__hero .row {
@@ -1094,7 +1104,7 @@
   max-height: 56px;
 }
 .blog__posts-pagination {
-  margin-left: 870px;
+  margin-left: 872px;
   margin-top: 64px;
   max-height: 174px;
   display: inline-block;
@@ -1592,9 +1602,8 @@
   height: 20px;
 }
 .contact__posts {
-  padding-top: 64px;
   background-color: #FFFFFF;
-  margin-bottom: 128px;
+  margin: 64px 0 128px;
 }
 .contact__posts-title {
   font-size: 36px;
@@ -1718,6 +1727,9 @@
   font-family: "Sen", sans-serif;
   letter-spacing: -2px;
   max-width: 289px;
+}
+.contact__read-next-card {
+  max-width: 405px;
 }
 .contact__read-next-image {
   max-width: 405px;
@@ -2004,19 +2016,19 @@ body.dark-mode .page__navbar-brand-name {
 body.dark-mode .page__authors-item,
 body.dark-mode .page__category-item,
 body.dark-mode .page__category-item--left,
-body.dark-mode .blog__about-category-item,
-body.dark-mode .about__stats-item-number::before,
-body.dark-mode .about__stats-item-number::after {
+body.dark-mode .blog__about-category-item {
   background-color: #FFFFFF;
   color: #232536;
 }
 body.dark-mode .page__authors-item:hover,
 body.dark-mode .page__category-item:hover,
 body.dark-mode .page__category-item--left:hover,
-body.dark-mode .blog__about-category-item:hover,
-body.dark-mode .about__stats-item-number::before:hover,
-body.dark-mode .about__stats-item-number::after:hover {
-  background-color: #e6e6e6;
+body.dark-mode .blog__about-category-item:hover {
+  background-color: #cccccc;
+}
+body.dark-mode .about__stats-item-number::before,
+body.dark-mode .about__stats-item-number::after {
+  background-color: #FFFFFF;
 }
 body.dark-mode .home__about-featured-logos-img {
   opacity: 1;

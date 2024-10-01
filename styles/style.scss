@@ -1,31 +1,31 @@
 // Renkler
-$white: #FFFFFF; // Beyaz
+$white: #FFFFFF;
 $white-20: #cccccc;
-$black: #00000011; //siyah
-$black-50:#00000080; 
-$black-80: #000000cc; //siyah 80
-$umbra: #1f1f1f; // Header arka plan
-$carbon: #333333; // Koyu Gri   
+$black: #00000011;
+$black-50:#00000080;
+$black-80: #000000cc;
+$umbra: #1f1f1f;
+$carbon: #333333;
 $carbon-333: #333;
-$liberty: #5a4999; // Mor  
+$liberty: #5a4999;
 $royalty: #592ea9;
-$shoe-wax: #2c2c2c; // Buton ve border
-$cold-steel: #232536; //siyah
+$shoe-wax: #2c2c2c;
+$cold-steel: #232536;
 $river-styx: #161722;
-$clear-moon: #fbf6ea; //açık sarı
+$clear-moon: #fbf6ea;
 $knighthood: #3b3c53;
 $knighthood-10: #4f5064;
-$alpine-goat: #f4f0f8; //lavender
-$boat-anchor: #6b6b6b; // Orta Gri
-$alpine-goat: #f4f0f8; //lavender
-$dark-tone-ink: #121212; // Koyu arka plan
-$eyelash-viper: #f3c84b; // Sarı
-$clouded-vision: #d1d1d1; // Açık Gri
-$granite-canyon: #6d6e76; //Medium Gri
-$white-shoulders: #f1f0ed; // Çok Açık Gri
-$shady-character: #4c4c4c7e; 
+$alpine-goat: #f4f0f8;
+$boat-anchor: #6b6b6b;
+$alpine-goat: #f4f0f8;
+$dark-tone-ink: #121212;
+$eyelash-viper: #f3c84b;
+$clouded-vision: #d1d1d1;
+$granite-canyon: #6d6e76;
+$white-shoulders: #f1f0ed;
+$shady-character: #4c4c4c7e;
 $shady-character-30: #4c4c4cff;
-$christmas-silver: #e0e0e0; //Gümüş 
+$christmas-silver: #e0e0e0;
 $atlantic-charter: #2c2d40ff;
 $atlantic-charter-40: #2e3040;
 
@@ -75,7 +75,7 @@ $line-height-64: 64px;
  &__navbar {
   z-index: 10;
   height: 80px;
-  background-color: $cold-steel !important;
+  background-color: $cold-steel;
 
   &-brand {
    font-size: $font-size-24;
@@ -313,10 +313,10 @@ $line-height-64: 64px;
  }
 
  &__join {
-  background-color: $white; 
+  background-color: $white;
   max-width: 414px;
-  margin: 0 auto; 
-  flex-direction: column; 
+  margin: 0 auto;
+  flex-direction: column;
   margin-bottom: 128px;
   margin-top: 128px;
 
@@ -422,7 +422,6 @@ $line-height-64: 64px;
   &-content {
    background-color: $atlantic-charter-40;
    padding: 72px 64px;
-   flex-wrap: wrap;
    max-width: 1280px;
    margin: 0 auto;
   
@@ -515,7 +514,7 @@ $line-height-64: 64px;
   height: 900px;
   width: 1440px;
   margin-bottom: 128px;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 
   &-image {
    position: absolute;
@@ -523,7 +522,7 @@ $line-height-64: 64px;
    height: 900px;
    object-fit: cover;
    z-index: -1;
-   filter: brightness(0.5); 
+   filter: brightness(0.5);
   }
 
   &-content {
@@ -545,14 +544,9 @@ $line-height-64: 64px;
     margin-bottom: 24px;
     max-width: 222px;
     max-height: 20px;
-      
-    &--highlight {
-     font-size: $font-size-16;
-     line-height: $line-height-20;
-     font-weight: $font-weight-900;
-     font-family: $font-family-inter;
-     letter-spacing: 3px;
-     color: $white;
+
+    &:has(.home__hero-content-category--highlight) span {
+      font-weight: $font-weight-900;
     }
    }
 
@@ -574,13 +568,9 @@ $line-height-64: 64px;
     font-weight: $font-weight-400;
     letter-spacing: 0.28px;
 
-    &--color {
-     color: $eyelash-viper;
-     font-size: $font-size-16;
-     line-height: $line-height-28;
-     font-family: $font-family-inter;
-     font-weight: $font-weight-400;
-    } 
+    &:has(.home__hero-content-author--color) span {
+      color: $eyelash-viper;
+    }
    }
 
    &-description {
@@ -650,12 +640,8 @@ $line-height-64: 64px;
      margin-top: 32px;
      padding: 0 6.8px;
 
-     &--author {
-      font-family: $font-family-inter;
+     &:has(.home__posts-featured-content-meta--author) span {
       color: $liberty;
-      font-weight: $font-weight-500;
-      font-size: $font-size-14;
-      line-height: $line-height-20;
      }
     }
 
@@ -681,8 +667,9 @@ $line-height-64: 64px;
 
     &-button {
      background-color: $eyelash-viper;
-     width: 204px;
-     height: 56px;
+     max-width: 204px;
+     max-height: 56px;
+     padding: 16px 48px;
      border: none;
      cursor: pointer;
      font-family: $font-family-sen;
@@ -728,7 +715,6 @@ $line-height-64: 64px;
    }
 
    &-items {
-    list-style: none;
     padding: 0;
     width: 106.2%;
     max-width: 517px;
@@ -756,9 +742,9 @@ $line-height-64: 64px;
       margin-top: 32px;
       max-width: 199px;
 
-      &--author {
-       color: $liberty;
-      }
+      &:has(.home__posts-list-items-item-meta--author) span {
+        color: $liberty;
+       }
      }
 
      &-text {
@@ -795,7 +781,7 @@ $line-height-64: 64px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-width: 1280px;
+    max-width: 1280px;
     margin-right: 250px;
     margin-bottom: 128px;
    }
@@ -974,7 +960,7 @@ $line-height-64: 64px;
     flex-direction: column;
     align-items: flex-start;
     margin-top: -10px;
-    margin-left: -120px;
+    margin-left: -145px;
     max-width: 136px;
     max-height: 52px;
   
@@ -999,7 +985,7 @@ $line-height-64: 64px;
    &-logos {  
     gap: 73px; 
     margin-top: -35px; 
-    padding-left: 100px;
+    padding-left: 86px;
 
     &-img { 
      width: auto; 
@@ -1341,7 +1327,7 @@ $line-height-64: 64px;
    }
   }
 
-  &-pagination {
+  &-page {
    margin-left: 872px;
    margin-top: 64px;
    max-height: 174px;
@@ -1474,11 +1460,7 @@ $line-height-64: 64px;
   background-color: $eyelash-viper; 
   max-height: 156px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   padding: 32px 48px 32px 48px;
-  box-sizing: border-box;
  
   &-item {
    max-height: 92px;
@@ -1552,7 +1534,7 @@ $line-height-64: 64px;
 
   &-container-wrapper {
    max-width: 1280px; 
-   min-height: 441px; 
+   max-height: 441px; 
    margin: 0 auto; 
    padding: 128px 108px 64px 108px; 
    position: relative;
@@ -1604,8 +1586,8 @@ $line-height-64: 64px;
   } 
 
   &-mission-section {
-    max-width: 516px;
-    max-height: 249px;
+   max-width: 516px;
+   max-height: 249px;
     
    &-title {
     font-size: $font-size-16;
@@ -1998,7 +1980,6 @@ $line-height-64: 64px;
   }
 
   &-list {
-   list-style: disc;
    padding-left: 20px;
  
    &-text {
@@ -2115,7 +2096,6 @@ $line-height-64: 64px;
 }
 
 .scroll-up-btn {
- display: none; 
  position: fixed;
  bottom: 30px; 
  right: 30px; 
@@ -2131,8 +2111,6 @@ $line-height-64: 64px;
  transition: opacity 0.3s;
  width: 50px; 
  height: 50px;
- text-align: center; 
- line-height: $line-height-20;
 
  &:hover {
   opacity: 1; 
@@ -2290,7 +2268,7 @@ $line-height-64: 64px;
  .home__posts-list-items-item-text,
  .home__posts-list-items-item-meta,
  .home__posts-featured-content-meta,
- .blog__posts-pagination-prev,
+ .blog__posts-page-prev,
  .blog__posts-list-item-content-description,
  .contact__hero-content-date,
  .contact__read-next-description,

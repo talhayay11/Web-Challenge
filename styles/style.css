@@ -5,7 +5,7 @@
 .page__navbar {
   z-index: 10;
   height: 80px;
-  background-color: #232536 !important;
+  background-color: #232536;
 }
 .page__navbar-brand {
   font-size: 24px;
@@ -303,7 +303,6 @@
 .page__newsletter-content {
   background-color: #2e3040;
   padding: 72px 64px;
-  flex-wrap: wrap;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -411,13 +410,8 @@
   max-width: 222px;
   max-height: 20px;
 }
-.home__hero-content-category--highlight {
-  font-size: 16px;
-  line-height: 20px;
+.home__hero-content-category:has(.home__hero-content-category--highlight) span {
   font-weight: 900;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 3px;
-  color: #FFFFFF;
 }
 .home__hero-content-title {
   font-size: 56px;
@@ -436,12 +430,8 @@
   font-weight: 400;
   letter-spacing: 0.28px;
 }
-.home__hero-content-author--color {
+.home__hero-content-author:has(.home__hero-content-author--color) span {
   color: #f3c84b;
-  font-size: 16px;
-  line-height: 28px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
 }
 .home__hero-content-description {
   font-size: 16px;
@@ -504,12 +494,8 @@
   margin-top: 32px;
   padding: 0 6.8px;
 }
-.home__posts-featured-content-meta--author {
-  font-family: "Inter", sans-serif;
+.home__posts-featured-content-meta:has(.home__posts-featured-content-meta--author) span {
   color: #5a4999;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
 }
 .home__posts-featured-content-title {
   font-size: 28px;
@@ -531,8 +517,9 @@
 }
 .home__posts-featured-content-button {
   background-color: #f3c84b;
-  width: 204px;
-  height: 56px;
+  max-width: 204px;
+  max-height: 56px;
+  padding: 16px 48px;
   border: none;
   cursor: pointer;
   font-family: "Sen", sans-serif;
@@ -572,7 +559,6 @@
   cursor: pointer;
 }
 .home__posts-list-items {
-  list-style: none;
   padding: 0;
   width: 106.2%;
   max-width: 517px;
@@ -599,7 +585,7 @@
   margin-top: 32px;
   max-width: 199px;
 }
-.home__posts-list-items-item-meta--author {
+.home__posts-list-items-item-meta:has(.home__posts-list-items-item-meta--author) span {
   color: #5a4999;
 }
 .home__posts-list-items-item-text {
@@ -630,7 +616,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-width: 1280px;
+  max-width: 1280px;
   margin-right: 250px;
   margin-bottom: 128px;
 }
@@ -789,7 +775,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: -10px;
-  margin-left: -120px;
+  margin-left: -145px;
   max-width: 136px;
   max-height: 52px;
 }
@@ -811,7 +797,7 @@
 .home__about-featured-logos {
   gap: 73px;
   margin-top: -35px;
-  padding-left: 100px;
+  padding-left: 86px;
 }
 .home__about-featured-logos-img {
   width: auto;
@@ -1103,13 +1089,13 @@
   max-width: 624px;
   max-height: 56px;
 }
-.blog__posts-pagination {
+.blog__posts-page {
   margin-left: 872px;
   margin-top: 64px;
   max-height: 174px;
   display: inline-block;
 }
-.blog__posts-pagination-prev {
+.blog__posts-page-prev {
   display: inline;
   color: #6d6e76;
   font-weight: 700;
@@ -1118,7 +1104,7 @@
   line-height: 32px;
   font-family: "Sen", sans-serif;
 }
-.blog__posts-pagination-next {
+.blog__posts-page-next {
   display: inline;
   font-weight: 700;
   margin: 0 10px;
@@ -1218,11 +1204,7 @@
   background-color: #f3c84b;
   max-height: 156px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   padding: 32px 48px 32px 48px;
-  box-sizing: border-box;
 }
 .about__stats-item {
   max-height: 92px;
@@ -1286,7 +1268,7 @@
 }
 .about__posts-container-wrapper {
   max-width: 1280px;
-  min-height: 441px;
+  max-height: 441px;
   margin: 0 auto;
   padding: 128px 108px 64px 108px;
   position: relative;
@@ -1674,7 +1656,6 @@
   line-height: 28px;
 }
 .contact__posts-list {
-  list-style: disc;
   padding-left: 20px;
 }
 .contact__posts-list-text {
@@ -1776,7 +1757,6 @@
 }
 
 .scroll-up-btn {
-  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -1792,8 +1772,6 @@
   transition: opacity 0.3s;
   width: 50px;
   height: 50px;
-  text-align: center;
-  line-height: 20px;
 }
 .scroll-up-btn:hover {
   opacity: 1;
@@ -1933,7 +1911,7 @@ body.dark-mode .page__join-text,
 body.dark-mode .home__posts-list-items-item-text,
 body.dark-mode .home__posts-list-items-item-meta,
 body.dark-mode .home__posts-featured-content-meta,
-body.dark-mode .blog__posts-pagination-prev,
+body.dark-mode .blog__posts-page-prev,
 body.dark-mode .blog__posts-list-item-content-description,
 body.dark-mode .contact__hero-content-date,
 body.dark-mode .contact__read-next-description,

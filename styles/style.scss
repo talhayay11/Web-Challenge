@@ -321,7 +321,7 @@ $line-height-64: 64px;
   margin-top: 128px;
 
   &--about-page {
-    margin-top: 484px;
+   margin-top: 484px;
   }
 
   &-content {
@@ -440,7 +440,7 @@ $line-height-64: 64px;
   
     &-input {
      padding: 14px 24.92px;
-     border: 1px solid $granite-canyon;
+     border: 1px solid $shady-character-30;
      width: 323px;
      color: $carbon;
      background-color: $atlantic-charter-40;
@@ -545,7 +545,7 @@ $line-height-64: 64px;
     max-width: 222px;
     max-height: 20px;
 
-    &:has(.home__hero-content-category--highlight) span {
+    &:has(span) span {
       font-weight: $font-weight-900;
     }
    }
@@ -568,7 +568,7 @@ $line-height-64: 64px;
     font-weight: $font-weight-400;
     letter-spacing: 0.28px;
 
-    &:has(.home__hero-content-author--color) span {
+    &:has(span) span {
       color: $eyelash-viper;
     }
    }
@@ -640,7 +640,7 @@ $line-height-64: 64px;
      margin-top: 32px;
      padding: 0 6.8px;
 
-     &:has(.home__posts-featured-content-meta--author) span {
+     &:has(span) span {
       color: $liberty;
      }
     }
@@ -742,7 +742,7 @@ $line-height-64: 64px;
       margin-top: 32px;
       max-width: 199px;
 
-      &:has(.home__posts-list-items-item-meta--author) span {
+      &:has(span) span {
         color: $liberty;
        }
      }
@@ -2283,7 +2283,9 @@ $line-height-64: 64px;
  .contact__hero-content-title,
  .about__stats-item-number,
  .about__stats-item-text,
- .page__join-content-text {
+ .page__join-content-text,
+ .home__about-featured-title-line-first,
+ .home__about-featured-title-line-second {
   color: $white !important;
  }
 
@@ -2317,6 +2319,7 @@ $line-height-64: 64px;
 
  .home__hero-content-button,
  .home__about-story-content-button,
+ .home__about-testimonials-nav-prev,
  .page__navbar-button,
  .menu-mobile-dark-mode-btn,
  .page__join-button,

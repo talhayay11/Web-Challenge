@@ -320,7 +320,7 @@
 }
 .page__newsletter-content-form-input {
   padding: 14px 24.92px;
-  border: 1px solid #6d6e76;
+  border: 1px solid #4c4c4c;
   width: 323px;
   color: #333333;
   background-color: #2e3040;
@@ -410,7 +410,7 @@
   max-width: 222px;
   max-height: 20px;
 }
-.home__hero-content-category:has(.home__hero-content-category--highlight) span {
+.home__hero-content-category:has(span) span {
   font-weight: 900;
 }
 .home__hero-content-title {
@@ -430,7 +430,7 @@
   font-weight: 400;
   letter-spacing: 0.28px;
 }
-.home__hero-content-author:has(.home__hero-content-author--color) span {
+.home__hero-content-author:has(span) span {
   color: #f3c84b;
 }
 .home__hero-content-description {
@@ -494,7 +494,7 @@
   margin-top: 32px;
   padding: 0 6.8px;
 }
-.home__posts-featured-content-meta:has(.home__posts-featured-content-meta--author) span {
+.home__posts-featured-content-meta:has(span) span {
   color: #5a4999;
 }
 .home__posts-featured-content-title {
@@ -585,7 +585,7 @@
   margin-top: 32px;
   max-width: 199px;
 }
-.home__posts-list-items-item-meta:has(.home__posts-list-items-item-meta--author) span {
+.home__posts-list-items-item-meta:has(span) span {
   color: #5a4999;
 }
 .home__posts-list-items-item-text {
@@ -1926,7 +1926,9 @@ body.dark-mode .contact__read-next-author--highlight,
 body.dark-mode .contact__hero-content-title,
 body.dark-mode .about__stats-item-number,
 body.dark-mode .about__stats-item-text,
-body.dark-mode .page__join-content-text {
+body.dark-mode .page__join-content-text,
+body.dark-mode .home__about-featured-title-line-first,
+body.dark-mode .home__about-featured-title-line-second {
   color: #FFFFFF !important;
 }
 body.dark-mode .home__about-container-wrapper,
@@ -1957,6 +1959,7 @@ body.dark-mode .about__hero {
 }
 body.dark-mode .home__hero-content-button,
 body.dark-mode .home__about-story-content-button,
+body.dark-mode .home__about-testimonials-nav-prev,
 body.dark-mode .page__navbar-button,
 body.dark-mode .menu-mobile-dark-mode-btn,
 body.dark-mode .page__join-button,
@@ -1972,6 +1975,7 @@ body.dark-mode .page__join-content-button {
 }
 body.dark-mode .home__hero-content-button:hover,
 body.dark-mode .home__about-story-content-button:hover,
+body.dark-mode .home__about-testimonials-nav-prev:hover,
 body.dark-mode .page__navbar-button:hover,
 body.dark-mode .menu-mobile-dark-mode-btn:hover,
 body.dark-mode .page__join-button:hover,

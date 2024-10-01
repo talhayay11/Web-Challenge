@@ -64,7 +64,7 @@ darkModeToggleMobile.addEventListener('click', (toggleDarkMode) => {
   document.body.classList.toggle('dark-mode');
   mobileMenu.classList.remove('active');
   updateIcons();
-});; 
+});
 
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');

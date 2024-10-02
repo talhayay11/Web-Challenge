@@ -6,6 +6,7 @@
   <title>Contact us | Finsweet</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -29,7 +30,6 @@
       <li class="menu-mobile-item"><a href="blog.html" class="menu-mobile-link">Blog<a></li>
       <li class="menu-mobile-item"><a href="about.html" class="menu-mobile-link">About</a></li>
       <li class="menu-mobile-item"><a href="contact.html" class="menu-mobile-link">Contact</a></li>
-  
       <li class="menu__item">
        <button id="darkModeToggleMobile" class="menu-mobile-dark-mode-btn">Dark Mode</button>
       </li>
@@ -85,12 +85,6 @@
   </div>
 
   <div id="contactHeroSlider" class="carousel slide contact__hero" data-ride="carousel">
-   <ol class="carousel-indicators contact__hero-indicators">
-    <li type="button" data-target="#contactHeroSlider" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-    <li type="button" data-bs-target="#contactHeroSlider" data-bs-slide-to="1" aria-label="Slide 2"></li>
-    <li type="button" data-bs-target="#contactHeroSlider" data-bs-slide-to="2" aria-label="Slide 3"></li>
-    </ol>
-    
    <div class="carousel-inner">
     <div class="carousel-item active">
      <img src="images/woman.png" alt="Woman" class="contact__hero-image-main d-block w-100">
@@ -217,10 +211,10 @@
    <p class="page__newsletter-footer-address">Finstreet 118 2561 Fintown</p>
    <p class="page__newsletter-footer-contact">Hello@finsweet.com 020 7993 2905</p>
    <div class="page__newsletter-footer-social position-relative">
-    <i href="#"><img src="images/facebook.png" alt="Facebook" class="page__newsletter-footer-social-icon"></i>
-    <i href="#"><img src="images/twitter.png" alt="Twitter" class="page__newsletter-footer-social-icon"></i>
-    <i href="#"><img src="images/instagram.png" alt="Instagram" class="page__newsletter-footer-social-icon"></i>
-    <i href="#"><img src="images/linkedin.png" alt="LinkedIn" class="page__newsletter-footer-social-icon"></i>
+    <a href="#"><i class="fa-brands fa-facebook page__newsletter-footer-social-icon"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter page__newsletter-footer-social-icon"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram page__newsletter-footer-social-icon"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin page__newsletter-footer-social-icon"></i></a>
    </div>
   </div>
 </footer>
@@ -230,6 +224,6 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
  </body>
  
- <button><img src="images/up-arrow.png" id="scrollUpBtn" class="scroll-up-btn"></button>
+ <a href="#" class="scroll-up-btn fa-solid fa-arrow-right fa-rotate-270" id="scrollUpBtn"></a>
  <script src="index.js"></script>
  </html>

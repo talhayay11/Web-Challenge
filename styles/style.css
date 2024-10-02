@@ -200,9 +200,10 @@
   gap: 16px;
   max-width: 112px;
   max-height: 16px;
-  padding-left: 150px;
+  margin: 0 auto;
 }
 .page__authors-item-social-img {
+  color: #232536;
   width: 16px;
   height: 16px;
 }
@@ -889,7 +890,8 @@
 }
 .home__about-testimonials-nav-prev-img {
   filter: brightness(0) invert(1);
-  width: 60%;
+  width: 100%;
+  font-size: 28px;
 }
 .home__about-testimonials-nav-prev:hover {
   background-color: black;
@@ -906,7 +908,7 @@
 }
 .home__about-testimonials-nav-next-img {
   filter: brightness(0);
-  width: 60%;
+  font-size: 18px;
 }
 .home__about-testimonials-nav-next:hover {
   background-color: white;
@@ -1539,7 +1541,7 @@
 .contact__hero-image-main {
   max-width: 1280px;
   height: auto;
-  margin-left: 300px;
+  margin: 0 auto;
 }
 .contact__hero-indicators {
   position: absolute;
@@ -1558,7 +1560,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 13.5%;
+  left: 14.2%;
 }
 .contact__hero-control-prev:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1574,7 +1576,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 14.6%;
+  right: 14.2%;
 }
 .contact__hero-control-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1766,7 +1768,7 @@
   color: #FFFFFF;
   outline: none;
   cursor: pointer;
-  padding: 15px;
+  padding: 16px;
   border-radius: 50%;
   opacity: 0.7;
   transition: opacity 0.3s;
@@ -1775,9 +1777,12 @@
 }
 .scroll-up-btn:hover {
   opacity: 1;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 .scroll-up-btn:focus {
   outline: none;
+  text-decoration: none;
 }
 
 .menu-toggle {

@@ -696,8 +696,7 @@
 }
 .home__about-story {
   max-height: 705px;
-  padding: 128px 0;
-  margin-bottom: 256px;
+  margin: 128px 0;
 }
 .home__about-story .container {
   z-index: 2;
@@ -719,7 +718,7 @@
   max-width: 706px;
   max-height: 584px;
   bottom: 0;
-  right: 65px;
+  right: 310px;
   padding-left: 50px;
 }
 .home__about-story-content-title {
@@ -1538,7 +1537,7 @@
   margin-left: -20px;
   margin-top: 64px;
 }
-.contact__hero-image-main {
+.contact__hero-image {
   max-width: 1280px;
   height: auto;
   margin: 0 auto;
